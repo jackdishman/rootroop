@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-link {
+	font-family: 'Poppins';
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 15px;
+}

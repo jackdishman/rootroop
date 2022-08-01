@@ -5,6 +5,6 @@ import Header from './components/Header.vue'
 </script>
 
 <template>
-	<div><Header /></div>
-	<div class="text-4xl">asdf</div>
+	<div><Header class="z-10 fixed w-full" style="height: 50px" /></div>
+	<router-view class="z-0" />
 </template>

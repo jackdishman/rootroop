@@ -1,36 +1,45 @@
 <template>
-	<div class="w-full bg-black flex flex-row justify-between items-center px-6" style="height: 50px">
+	<div class="w-full bg-black flex flex-row justify-between items-center px-6">
 		<!-- Left side: Logo -->
 		<router-link to="/"> <TextLogo /> </router-link>
 		<!-- Right side: links -->
 		<div class="flex flex-row">
-			<div class="relative">
-				<button class="text-white header-link px-4" @click="toggleRoosDropdown = !toggleRoosDropdown">ROOS</button>
-				<div v-show="toggleRoosDropdown" class="absolute bg-white">
-					<span>BUY ROOS</span>
-					<span>STAKE ROOS</span>
-					<span>TRAITS</span>
-				</div>
-			</div>
-			<button class="text-white header-link px-4">JOEYS</button>
-			<router-link to="/" class="text-white header-link px-4">TEAM</router-link>
-			<router-link to="/" class="text-white header-link px-4">STAKE</router-link>
-			<router-link to="/" class="text-white header-link px-4">ROADMAP</router-link>
-			<router-link to="/" class="text-white header-link px-4">OFFICIAL LINKS</router-link>
-			<router-link to="/" class="text-white header-link px-4">FAQ</router-link>
-			<router-link to="/" class="text-white header-link px-4">PARTNERS</router-link>
-			<router-link to="/" class="text-white header-link px-4">JOBS</router-link>
-			<router-link to="/" class="text-white header-link pl-4">SHOP</router-link>
+			<HeaderDropdown
+				:label="`ROOS`"
+				:list="[
+					{ title: `BUY ROOS`, url: `/buy` },
+					{ title: `STAKE ROOS`, url: `/stake` },
+					{ title: `TRAITS`, url: `/traits` },
+				]"
+			/>
+			<HeaderDropdown
+				:label="`JOEYS`"
+				:list="[
+					{ title: `BUY JOEYS`, url: `/buy` },
+					{ title: `STAKE ROOS`, url: `/stake` },
+					{ title: `TRAITS`, url: `/traits` },
+				]"
+			/>
+			<router-link to="/" class="text-white header-link p-4">TEAM</router-link>
+			<router-link to="/" class="text-white header-link p-4">STAKE</router-link>
+			<router-link to="/" class="text-white header-link p-4">ROADMAP</router-link>
+			<router-link to="/" class="text-white header-link p-4">OFFICIAL LINKS</router-link>
+			<router-link to="/" class="text-white header-link p-4">FAQ</router-link>
+			<router-link to="/" class="text-white header-link p-4">PARTNERS</router-link>
+			<router-link to="/" class="text-white header-link p-4">JOBS</router-link>
+			<router-link to="/" class="text-white header-link p-4">SHOP</router-link>
 		</div>
 	</div>
 </template>
 
 <script lang="ts">
 import TextLogo from '@/components/TextLogo.vue'
+import HeaderDropdown from './HeaderDropdown.vue'
 export default {
 	name: 'TopHeader',
 	components: {
 		TextLogo,
+		HeaderDropdown,
 	},
 	data() {
 		return {
@@ -40,14 +49,3 @@ export default {
 	methods: {},
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.header-link {
-	font-family: 'Poppins';
-	font-style: italic;
-	font-weight: 700;
-	font-size: 1.25rem;
-	line-height: 15px;
-}
-</style>
