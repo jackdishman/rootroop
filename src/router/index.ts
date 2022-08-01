@@ -1,17 +1,17 @@
-import { createWebHistory, createRouter } from "vue-router"
-import Index from "../pages/Index.vue"
+import { createWebHistory, createRouter } from 'vue-router'
+import Index from '../pages/Index.vue'
 
 const routes = [
 	{
-		path: "/",
-		name: "Index",
+		path: '/',
+		name: 'Index',
 		component: Index,
-		meta: { requiresAuth: true, title: "Author dashboard - Blogchain" },
+		meta: { title: 'Roo Troop' },
 	},
 ]
 
 const router = createRouter({
-	history: createWebHistory(""),
+	history: createWebHistory(''),
 	routes,
 })
 

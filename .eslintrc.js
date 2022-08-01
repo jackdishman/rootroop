@@ -4,7 +4,7 @@ module.exports = {
 		node: true,
 		'vue/setup-compiler-macros': true,
 	},
-	extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
+	extends: ['plugin:vue/vue3-recommended', '@vue/typescript/recommended', 'plugin:prettier/recommended'],
 	parserOptions: {
 		ecmaVersion: 2020,
 	},
