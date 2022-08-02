@@ -1,6 +1,6 @@
 <template>
 	<div class="relative">
-		<button class="flex text-white header-link px-4 focus:outline-none my-4" @click="showDropdown = !showDropdown">
+		<button class="flex text-white header-link px-4 focus:outline-none my-4" @click.stop="showDropdown = !showDropdown">
 			{{ label }}<ChevronDown class="ml-2" :style="showDropdown ? `transform: rotate(180deg)` : ``" />
 		</button>
 		<div
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import ChevronDown from './icons/ChevronDown.vue'
 
 defineProps<{
@@ -25,4 +25,14 @@ defineProps<{
 }>()
 
 const showDropdown = ref<boolean>(false)
+
+onMounted(() => {
+	document.addEventListener(`click`, (e) => {
+		// Dropdown is closed
+		if (!showDropdown.value) {
+			return
+		}
+		showDropdown.value = false
+	})
+})
 </script>

@@ -1,7 +1,7 @@
 <template>
 	<div class="w-full bg-black flex flex-row justify-between items-center px-6">
 		<!-- Left side: Logo -->
-		<router-link to="/"> <TextLogo /> </router-link>
+		<router-link to="/"> <TextLogo :large="false" /> </router-link>
 		<!-- Right side: links -->
 		<div class="flex flex-row">
 			<HeaderDropdown
