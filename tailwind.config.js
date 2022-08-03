@@ -7,6 +7,7 @@ module.exports = {
 		extend: {
 			colors: {
 				rooRed: `#dc3545`,
+				rooBlack: `#13171A`,
 			},
 		},
 	},
