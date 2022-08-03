@@ -1,10 +1,15 @@
 <template>
-	<div class="flex flex-row overflow-hidden">
-		<section id="ticker" class="anchor">
-			<div class="ticker-wrap" style="background: rgba(0, 0, 0, 0.84)">
+	<div class="flex flex-row overflow-hidden relative">
+		<div
+			class="absolute w-full bg-green-500 h-12"
+			style="background: linear-gradient(90deg, #415c5f -1.84%, #c4cdd5 51.13%, #131d1c 101.94%)"
+		></div>
+		<!-- floating announcements -->
+		<div id="ticker" class="anchor h-12 z-10">
+			<div class="ticker-wrap h-12 flex items-center" style="background: transparent">
 				<div class="ticker">
 					<div class="ticker__item">
-						<p class="text-uppercase">
+						<p class="text-uppercase text-white">
 							<span class="pr-5">NEWS:</span>JOEYBEANS SOLD OUT!<span class="pr-5">BUY ON OPENSEA</span
 							><span class="pr-10">CHECK OUT THE NEW ROO TROOP BOUNTY HUB AND $ROOLAH SHOP!</span
 							><span class="pr-10"
@@ -14,7 +19,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	</div>
 </template>
 
@@ -56,18 +61,16 @@
 	bottom: 0;
 	width: 100%;
 	overflow: hidden;
-	height: 4rem;
 	background-color: rgba(0, 0, 0, 0.9);
 	padding-left: 100%;
 	box-sizing: content-box;
-	z-index: 10;
 }
 .ticker-wrap .ticker {
 	display: inline-block;
-	height: 4rem;
-	line-height: 4rem;
+	/* height: 4rem;
+	line-height: 4rem; */
 	white-space: nowrap;
-	padding-right: 100%;
+	padding-right: 50%;
 	box-sizing: content-box;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
@@ -80,18 +83,9 @@
 }
 .ticker-wrap .ticker__item {
 	display: inline-block;
-	padding: 0 2rem;
-	font-size: 2rem;
-	color: white;
 }
 
 body {
 	padding-bottom: 5rem;
-}
-
-h1,
-h2,
-p {
-	padding: 0 5%;
 }
 </style>
