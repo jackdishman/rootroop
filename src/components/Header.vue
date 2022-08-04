@@ -7,17 +7,17 @@
 			<HeaderDropdown
 				:label="`ROOS`"
 				:list="[
-					{ title: `BUY ROOS`, url: `/buy` },
-					{ title: `STAKE ROOS`, url: `/stake` },
-					{ title: `TRAITS`, url: `/traits` },
+					{ title: `BUY ROOS`, url: `/` },
+					{ title: `STAKE ROOS`, url: `/` },
+					{ title: `TRAITS`, url: `/` },
 				]"
 			/>
 			<HeaderDropdown
 				:label="`JOEYS`"
 				:list="[
-					{ title: `BUY JOEYS`, url: `/buy` },
-					{ title: `STAKE ROOS`, url: `/stake` },
-					{ title: `TRAITS`, url: `/traits` },
+					{ title: `BUY JOEYS`, url: `/` },
+					{ title: `STAKE ROOS`, url: `/` },
+					{ title: `TRAITS`, url: `/` },
 				]"
 			/>
 			<router-link to="/" class="text-white header-link p-4">TEAM</router-link>

@@ -13,7 +13,10 @@
     "sourceMap": true,
     "baseUrl": ".",
     "noUnusedLocals": true,
-    "types": [
+    "noImplicitAny": false,
+    "allowJs": true,
+    
+        "types": [
       "webpack-env"
     ],
     "paths": {

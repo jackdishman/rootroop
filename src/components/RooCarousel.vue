@@ -1,0 +1,83 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { Carousel, Slide } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
+
+export default defineComponent({
+	name: 'RooCarousel',
+	components: {
+		Carousel,
+		Slide,
+		// Navigation,
+	},
+	data: () => ({
+		// carousel settings
+		settings: {
+			itemsToShow: 1,
+			snapAlign: 'center',
+		},
+		// breakpoints are mobile first
+		// any settings not specified will fallback to the carousel settings
+		breakpoints: {
+			// 700px and up
+			700: {
+				itemsToShow: 3.5,
+				snapAlign: 'center',
+			},
+			// 1024 and up
+			1024: {
+				itemsToShow: 5,
+				snapAlign: 'start',
+			},
+			1440: {
+				itemsToShow: 6.5,
+				snapAlign: 'start',
+			},
+		},
+		images: [],
+	}),
+	mounted() {
+		const path = require.context('../assets/images/slider/', true, /\.webp$/)
+		this.images = path.keys().map(path) as []
+
+		// const images = importAll(require.context('../assets/images/slider/', true, /\.webp$/))
+		// console.log(images)
+	},
+})
+</script>
+
+<template>
+	<div class="relative">
+		<div class="absolute h-full w-full py-2 bg-green-500"></div>
+		<div class="py-4">
+			<Carousel
+				:settings="settings"
+				:breakpoints="breakpoints"
+				:autoplay="2000"
+				:items-to-show="3.5"
+				:wrap-around="true"
+			>
+				<Slide v-for="i in images" :key="i">
+					<div class="carousel__item px-4">
+						<img class="selector" :src="i" />
+					</div>
+				</Slide>
+			</Carousel>
+		</div>
+	</div>
+</template>
+
+<style>
+.carousel__prev--in-active,
+.carousel__next--in-active {
+	display: none;
+}
+.selector {
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+</style>

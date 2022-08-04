@@ -6,6 +6,7 @@ import TwitterLogo from '@/components/icons/Twitter.vue'
 import DiscordLogo from '@/components/icons/Discord.vue'
 import OpenSeaLogo from '@/components/icons/OpenSea.vue'
 import NewsBanner from '@/components/Banner.vue'
+import RooCarousel from '@/components/RooCarousel.vue'
 
 const video = ref<HTMLVideoElement>()
 const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
@@ -53,4 +54,6 @@ onMounted(() => {
 			</video>
 		</div>
 	</div>
+	<!-- Roo carousel -->
+	<RooCarousel />
 </template>
