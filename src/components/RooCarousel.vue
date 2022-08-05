@@ -48,7 +48,7 @@ export default defineComponent({
 
 <template>
 	<div class="relative">
-		<div class="absolute h-full w-full py-2 bg-green-500"></div>
+		<div class="absolute h-full w-full py-2 carousel-background"></div>
 		<div class="py-4">
 			<Carousel
 				:settings="settings"
@@ -79,5 +79,8 @@ export default defineComponent({
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+}
+.carousel-background {
+	background: linear-gradient(92.67deg, #1b1e1e -7.06%, #5f839b 16.92%, #a4aeb7 51.45%, #708da2 77.14%, #191e1d 100%);
 }
 </style>

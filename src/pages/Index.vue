@@ -7,6 +7,8 @@ import DiscordLogo from '@/components/icons/Discord.vue'
 import OpenSeaLogo from '@/components/icons/OpenSea.vue'
 import NewsBanner from '@/components/Banner.vue'
 import RooCarousel from '@/components/RooCarousel.vue'
+import RooTraits from '@/components/RooTraits.vue'
+import Stats from '@/components/Stats.vue'
 
 const video = ref<HTMLVideoElement>()
 const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
@@ -56,4 +58,8 @@ onMounted(() => {
 	</div>
 	<!-- Roo carousel -->
 	<RooCarousel />
+	<!-- Every roo is unique -->
+	<RooTraits />
+	<!-- Our proud stats -->
+	<Stats />
 </template>
