@@ -37,7 +37,7 @@ export default defineComponent({
 		images: [],
 	}),
 	mounted() {
-		const path = require.context('../assets/images/slider/', true, /\.webp$/)
+		const path = require.context('@/assets/images/slider/', true, /\.webp$/)
 		this.images = path.keys().map(path) as []
 
 		// const images = importAll(require.context('../assets/images/slider/', true, /\.webp$/))

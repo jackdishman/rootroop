@@ -5,10 +5,13 @@ import InstagramLogo from '@/components/icons/Instagram.vue'
 import TwitterLogo from '@/components/icons/Twitter.vue'
 import DiscordLogo from '@/components/icons/Discord.vue'
 import OpenSeaLogo from '@/components/icons/OpenSea.vue'
-import NewsBanner from '@/components/Banner.vue'
-import RooCarousel from '@/components/RooCarousel.vue'
-import RooTraits from '@/components/RooTraits.vue'
-import Stats from '@/components/Stats.vue'
+import NewsBanner from '@/components/home/Banner.vue'
+import RooCarousel from '@/components/home/RooCarousel.vue'
+import RooTraits from '@/components/home/RooTraits.vue'
+import Stats from '@/components/home/Stats.vue'
+import Comparison from '@/components/home/Comparison.vue'
+import Roadmap from '@/components/home/Roadmap.vue'
+import JobMarketplace from '@/components/home/JobMarketplace.vue'
 
 const video = ref<HTMLVideoElement>()
 const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
@@ -62,4 +65,10 @@ onMounted(() => {
 	<RooTraits />
 	<!-- Our proud stats -->
 	<Stats />
+	<!-- Roos vs Joeys comparison -->
+	<Comparison />
+	<!-- roadmap -->
+	<Roadmap />
+	<!-- Job marketplace intro -->
+	<JobMarketplace />
 </template>
