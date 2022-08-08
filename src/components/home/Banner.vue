@@ -1,16 +1,16 @@
 <template>
 	<div class="flex flex-row overflow-hidden relative">
 		<div
-			class="absolute w-full bg-green-500 h-12"
+			class="absolute w-full bg-green-500 h-10"
 			style="background: linear-gradient(90deg, #415c5f -1.84%, #c4cdd5 51.13%, #131d1c 101.94%)"
 		></div>
 		<!-- floating announcements -->
-		<div id="ticker" class="anchor h-12 z-10">
-			<div class="ticker-wrap h-12 flex items-center" style="background: transparent">
+		<div id="ticker" class="anchor h-10 z-10">
+			<div class="ticker-wrap h-10 flex items-center" style="background: transparent">
 				<div class="ticker">
 					<div class="ticker__item">
-						<p class="text-uppercase text-white">
-							<span class="pr-5">NEWS:</span>JOEYBEANS SOLD OUT!<span class="pr-5">BUY ON OPENSEA</span
+						<p class="text-uppercase text-white font-bold italic">
+							<span class="pr-5">NEWS:</span>JOEYBEANS SOLD OUT!<span class="pr-5 pl-1">BUY ON OPENSEA</span
 							><span class="pr-10">CHECK OUT THE NEW ROO TROOP BOUNTY HUB AND $ROOLAH SHOP!</span
 							><span class="pr-10"
 								>STØNE & JON WILL BE HOSTING A PANEL AT NFT NYC ON HOW TO MAKE WEB3 JOBS ACCESSIBLE.</span

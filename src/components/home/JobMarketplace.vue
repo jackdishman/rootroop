@@ -8,7 +8,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 		<div class="w-2/3 pr-5">
 			<h2 class="uppercase text-4xl">Job Marketplace</h2>
 			<div class="my-4 font-bold italic"><RedUnderscore /></div>
-			<p>
+			<p class="mb-6">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -16,6 +16,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 				laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 				dolore magna aliqua.
 			</p>
+			<button class="rounded-lg text-white font-semibold bg-rooRed w-28 py-1 text-sm">Jobs</button>
 		</div>
 		<!-- Right side: floating images -->
 		<div class="relative w-1/3">

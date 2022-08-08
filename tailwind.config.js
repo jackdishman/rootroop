@@ -9,6 +9,10 @@ module.exports = {
 				rooRed: `#dc3545`,
 				rooBlack: `#13171A`,
 			},
+			fontFamily: {
+				sans: [`Poppins`, `sans-serif`],
+				serif: [`Poppins Serif`, `serif`],
+			},
 		},
 	},
 	variants: {

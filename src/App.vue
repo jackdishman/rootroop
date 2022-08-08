@@ -6,5 +6,5 @@ import Header from './components/Header.vue'
 
 <template>
 	<div><Header class="z-20 fixed w-full" style="height: 50px" /></div>
-	<router-view />
+	<router-view class="font-poppins" />
 </template>

@@ -3,7 +3,7 @@
 		<!-- Left side: Logo -->
 		<router-link to="/"> <TextLogo :large="false" /> </router-link>
 		<!-- Right side: links -->
-		<div class="flex flex-row">
+		<div class="flex flex-row text-sm">
 			<HeaderDropdown
 				:label="`ROOS`"
 				:list="[
