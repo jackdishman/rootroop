@@ -13,6 +13,7 @@ import Comparison from '@/components/home/Comparison.vue'
 import Roadmap from '@/components/home/Roadmap.vue'
 import JobMarketplace from '@/components/home/JobMarketplace.vue'
 import Team from '@/components/home/Team.vue'
+import Partners from '@/components/home/Partners.vue'
 
 const video = ref<HTMLVideoElement>()
 const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
@@ -74,4 +75,6 @@ onMounted(() => {
 	<JobMarketplace />
 	<!-- Team -->
 	<Team />
+	<!-- Partners -->
+	<Partners />
 </template>

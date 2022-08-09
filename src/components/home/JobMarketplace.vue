@@ -3,20 +3,23 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 </script>
 
 <template>
-	<div class="flex flex-row justify-center w-full my-12">
+	<div class="flex flex-row justify-center w-full my-12 py-14 px-24">
 		<!-- Left side: title and description -->
 		<div class="w-2/3 pr-5">
-			<h2 class="uppercase text-4xl">Job Marketplace</h2>
+			<h2 class="uppercase text-4xl font-bold italic">Job Marketplace</h2>
 			<div class="my-4 font-bold italic"><RedUnderscore /></div>
-			<p class="mb-6">
+			<p class="mb-4">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
 				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-				laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua.
+				laborum.
 			</p>
-			<button class="rounded-lg text-white font-semibold bg-rooRed w-28 py-1 text-sm">Jobs</button>
+			<p class="mb-6">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+				magna aliqua.
+			</p>
+			<button class="rounded-lg text-white font-semibold bg-rooRed w-28 py-2 text-sm">Jobs</button>
 		</div>
 		<!-- Right side: floating images -->
 		<div class="relative w-1/3">
