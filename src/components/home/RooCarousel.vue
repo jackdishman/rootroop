@@ -21,16 +21,16 @@ export default defineComponent({
 		breakpoints: {
 			// 700px and up
 			700: {
-				itemsToShow: 3.5,
+				itemsToShow: 4.5,
 				snapAlign: 'center',
 			},
 			// 1024 and up
 			1024: {
-				itemsToShow: 5,
+				itemsToShow: 6.5,
 				snapAlign: 'start',
 			},
 			1440: {
-				itemsToShow: 6.5,
+				itemsToShow: 9.5,
 				snapAlign: 'start',
 			},
 		},
@@ -59,7 +59,7 @@ export default defineComponent({
 			>
 				<Slide v-for="i in images" :key="i">
 					<div class="carousel__item px-4">
-						<img class="selector" :src="i" />
+						<img class="selector w-32 h-32" :src="i" />
 					</div>
 				</Slide>
 			</Carousel>

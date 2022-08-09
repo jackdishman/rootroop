@@ -11,24 +11,24 @@ function activateTrait(trait: string) {
 </script>
 
 <template>
-	<div class="flex justify-center bg-rooBlack p-10">
+	<div class="flex justify-center bg-rooBlack p-10 items-center">
 		<!-- Left side: Image -->
 		<div class="bg-rooRed p-1 mr-4">
 			<img :src="require(`@/assets/images/traits/${activeTrait}.png`)" class="w-64 h-64 bg-white" />
 		</div>
 		<!-- Right side: traits -->
-		<div class="ml-4">
-			<h2 class="uppercase text-white italic font-semibold text-4xl">Every Roo is unique</h2>
+		<div class="ml-6">
+			<h2 class="uppercase text-white italic font-semibold text-3xl">Every Roo is unique</h2>
 			<!-- ____ traits -->
 			<div class="flex items-end my-4">
-				<RedUnderscore />
-				<h3 class="text-white text-2xl font-bold italic">Traits</h3>
+				<RedUnderscore class="mb-3 mr-3" />
+				<h3 class="text-white text-lg font-bold italic">Traits</h3>
 			</div>
 			<!-- Trait selector -->
 			<div class="grid grid-cols-3 gap-2">
 				<div v-for="t in traits" :key="t" class="flex items-center">
 					<button
-						class="rounded-lg w-full px-6 py-2 font-semibold"
+						class="rounded-lg w-full px-6 py-2 font-semibold uppercase text-xs"
 						:class="t === activeTrait ? `text-white border border-rooRed` : `inactiveButton`"
 						@click="activateTrait(t)"
 					>
