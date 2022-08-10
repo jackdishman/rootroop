@@ -39,7 +39,7 @@ onMounted(() => {
 		</video>
 		<div class="flex items-center justify-center h-full relative z-10"><TextLogo :large="true" /></div>
 		<!-- Social links -->
-		<div class="flex items-center justify-center relative -mt-24">
+		<div class="flex items-center justify-center relative -mt-24 text-white">
 			<a href=""><InstagramLogo /></a>
 			<a href="" class="mx-2"><TwitterLogo /></a>
 			<a href="" class="mr-2"><DiscordLogo /></a>

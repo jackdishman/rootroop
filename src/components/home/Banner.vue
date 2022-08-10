@@ -84,8 +84,4 @@
 .ticker-wrap .ticker__item {
 	display: inline-block;
 }
-
-body {
-	padding-bottom: 5rem;
-}
 </style>

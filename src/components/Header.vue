@@ -1,3 +1,21 @@
+<script lang="ts">
+import TextLogo from '@/components/TextLogo.vue'
+import HeaderDropdown from './HeaderDropdown.vue'
+export default {
+	name: 'TopHeader',
+	components: {
+		TextLogo,
+		HeaderDropdown,
+	},
+	data() {
+		return {
+			toggleRoosDropdown: false,
+		}
+	},
+	methods: {},
+}
+</script>
+
 <template>
 	<div class="w-full bg-black flex flex-row justify-between items-center px-6">
 		<!-- Left side: Logo -->
@@ -31,21 +49,3 @@
 		</div>
 	</div>
 </template>
-
-<script lang="ts">
-import TextLogo from '@/components/TextLogo.vue'
-import HeaderDropdown from './HeaderDropdown.vue'
-export default {
-	name: 'TopHeader',
-	components: {
-		TextLogo,
-		HeaderDropdown,
-	},
-	data() {
-		return {
-			toggleRoosDropdown: false,
-		}
-	},
-	methods: {},
-}
-</script>
