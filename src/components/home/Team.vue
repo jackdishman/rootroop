@@ -17,7 +17,7 @@ import TwitterIcon from '@/components/icons/Twitter.vue'
 					<h3 class="font-medium text-white text-lg italic">STØNE</h3>
 					<h6 class="font-semibold text-sm italic text-white">Morgan Stone</h6>
 					<h6 class="font-semibold text-sm italic text-rooRed">Founder & CEO</h6>
-					<a href="" class="pt-2">
+					<a href="" class="pt-2 text-white">
 						<TwitterIcon />
 					</a>
 				</div>
@@ -29,7 +29,7 @@ import TwitterIcon from '@/components/icons/Twitter.vue'
 					<h3 class="font-medium text-white text-lg italic">ToxicPizza</h3>
 					<h6 class="font-semibold text-sm italic text-white">Cory Cherven</h6>
 					<h6 class="font-semibold text-sm italic text-rooRed">CTO</h6>
-					<a href="" class="pt-2">
+					<a href="" class="pt-2 text-white">
 						<TwitterIcon />
 					</a>
 				</div>
@@ -41,7 +41,7 @@ import TwitterIcon from '@/components/icons/Twitter.vue'
 					<h3 class="font-medium text-white text-lg italic">ITSOKTOCRY</h3>
 					<h6 class="font-semibold text-sm italic text-white">Gwen Stacy</h6>
 					<h6 class="font-semibold text-sm italic text-rooRed">Artist</h6>
-					<a href="" class="pt-2">
+					<a href="" class="pt-2 text-white">
 						<TwitterIcon />
 					</a>
 				</div>
@@ -53,7 +53,7 @@ import TwitterIcon from '@/components/icons/Twitter.vue'
 					<h3 class="font-medium text-white text-lg italic">HiddenLotus</h3>
 					<h6 class="font-semibold text-sm italic text-white">Lu</h6>
 					<h6 class="font-semibold text-sm italic text-rooRed">Web Developer</h6>
-					<a href="" class="pt-2">
+					<a href="" class="pt-2 text-white">
 						<TwitterIcon />
 					</a>
 				</div>
@@ -65,7 +65,7 @@ import TwitterIcon from '@/components/icons/Twitter.vue'
 					<h3 class="font-medium text-white text-lg italic">YUNGGOD</h3>
 					<h6 class="font-semibold text-sm italic text-white">William Bordeau</h6>
 					<h6 class="font-semibold text-sm italic text-rooRed">Discord Developer</h6>
-					<a href="" class="pt-2">
+					<a href="" class="pt-2 text-white">
 						<TwitterIcon />
 					</a>
 				</div>
@@ -77,7 +77,7 @@ import TwitterIcon from '@/components/icons/Twitter.vue'
 					<h3 class="font-medium text-white text-lg italic">TOBBER</h3>
 					<h6 class="font-semibold text-sm italic text-white">TOBBER</h6>
 					<h6 class="font-semibold text-sm italic text-rooRed">Meme prince</h6>
-					<a href="" class="pt-2">
+					<a href="" class="pt-2 text-white">
 						<TwitterIcon />
 					</a>
 				</div>

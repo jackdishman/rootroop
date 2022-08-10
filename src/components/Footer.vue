@@ -16,26 +16,28 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 }
 </script>
 <template>
-	<div class="bg-rooBlack flex flex-row justify-center">
+	<div class="bg-rooBlack pt-10 pl-20 flex justify-center xl:justify-start">
+		<TextLogo :large="true" class="w-32 h-20" />
+	</div>
+	<div class="bg-rooBlack xl:flex md:flex-row justify-center pb-10 px-24">
 		<!-- Roo logo & socials -->
-		<div class="w-64 flex-shrink-0 w-1/3">
-			<TextLogo :large="true" class="w-32 h-20" />
-			<p class="text-xs text-white italic leading-6">
+		<div class="w-full xl:w-1/3 flex-shrink-0">
+			<p class="text-xs text-white italic leading-6 text-center xl:text-left">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula.
 			</p>
 			<!-- Socials -->
-			<div class="text-white flex flex-row text-rooRed mt-5">
+			<div class="text-white flex flex-row text-rooRed mt-5 xl:mb-0 mb-5 xl:justify-start justify-center">
 				<DiscordLogo class="w-6 h-6" /> <OpenSea class="w-6 h-6" /> <Twitter class="w-6 h-6" />
 			</div>
 		</div>
 		<!-- Middle: Disclaimers -->
-		<div class="px-10 w-1/3">
+		<div class="px-10 w-full xl:w-1/3">
 			<button
 				class="focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
 				:class="activeDropdown === `terms` ? `text-rooRed` : `text-white`"
 				@click="setActiveDropdown(`terms`)"
 			>
-				<span> Terms & conditions </span>
+				<span class="text-start"> Terms & conditions </span>
 				<ChevronDown />
 			</button>
 			<div v-show="activeDropdown === `terms`" class="text-white text-xs leading-6">
@@ -47,11 +49,11 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 			</div>
 			<!-- NFTs Are Not Intended as Investments -->
 			<button
-				class="text-white focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
+				class="mt-5 text-white focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
 				:class="activeDropdown === `investments` ? `text-rooRed` : `text-white`"
 				@click="setActiveDropdown(`investments`)"
 			>
-				<span> NFTs Are Not Intended as Investments </span>
+				<span class="text-start"> NFTs Are Not Intended as Investments </span>
 				<ChevronDown class="text-white" />
 			</button>
 			<div v-show="activeDropdown === `investments`" class="text-white text-xs leading-6">
@@ -62,14 +64,14 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 			</div>
 		</div>
 		<!-- More disclaimers -->
-		<div class="w-1/3">
+		<div class="px-10 w-full xl:w-1/3">
 			<!-- Class action waiver -->
 			<button
-				class="focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
+				class="mt-5 xl:mt-0 focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
 				:class="activeDropdown === `waiver` ? `text-rooRed` : `text-white`"
 				@click="setActiveDropdown(`waiver`)"
 			>
-				<span> Class action waiver </span>
+				<span class="text-start"> Class action waiver </span>
 				<ChevronDown />
 			</button>
 			<div v-show="activeDropdown === `waiver`" class="text-white text-xs leading-6">
@@ -79,10 +81,10 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 			<!-- Arbitration -->
 			<button
 				:class="activeDropdown === `arbitration` ? `text-rooRed` : `text-white`"
-				class="focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
+				class="mt-5 focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
 				@click="setActiveDropdown(`arbitration`)"
 			>
-				<span> Arbitration </span>
+				<span class="text-start"> Arbitration </span>
 				<ChevronDown class="text-white" />
 			</button>
 			<div v-show="activeDropdown === `arbitration`" class="text-white text-xs leading-6">
@@ -92,10 +94,10 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 			<!-- jurisdiction and choice of Law -->
 			<button
 				:class="activeDropdown === `jurisdiction` ? `text-rooRed` : `text-white`"
-				class="focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
+				class="mt-5 focus:outline-none uppercase font-bold italic flex w-full justify-between items-center"
 				@click="setActiveDropdown(`jurisdiction`)"
 			>
-				<span> jurisdiction and choice of Law </span>
+				<span class="text-start"> jurisdiction and choice of Law </span>
 				<ChevronDown class="text-white" />
 			</button>
 			<div v-show="activeDropdown === `jurisdiction`" class="text-white text-xs leading-6">
