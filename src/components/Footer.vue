@@ -106,7 +106,7 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 			</div>
 		</div>
 	</div>
-	<div class="border-t-2 border-rooRed bg-black py-5 text-sm">
-		<h6 class="text-white text-center font-normal">Roo Troop LLC 2021. All Rights Reserved.</h6>
+	<div class="border-t-2 border-rooRed bg-black py-5">
+		<h6 class="text-white text-center font-normal text-xs">Roo Troop LLC 2021. All Rights Reserved.</h6>
 	</div>
 </template>

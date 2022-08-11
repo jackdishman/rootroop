@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import Index from '../pages/Index.vue'
 import Home from '@/pages/Home.vue'
+import Partners from '@/pages/Partners.vue'
 
 const routes = [
 	{
@@ -14,6 +15,12 @@ const routes = [
 		name: 'Home',
 		component: Home,
 		meta: { title: 'Home - Roo Troop' },
+	},
+	{
+		path: '/partners',
+		name: 'Partners',
+		component: Partners,
+		meta: { title: 'Partners - Roo Troop' },
 	},
 ]
 

@@ -43,7 +43,7 @@ export default {
 			<router-link to="/" class="text-white header-link p-4">ROADMAP</router-link>
 			<router-link to="/" class="text-white header-link p-4">OFFICIAL LINKS</router-link>
 			<router-link to="/" class="text-white header-link p-4">FAQ</router-link>
-			<router-link to="/" class="text-white header-link p-4">PARTNERS</router-link>
+			<router-link to="/partners" class="text-white header-link p-4">PARTNERS</router-link>
 			<router-link to="/" class="text-white header-link p-4">JOBS</router-link>
 			<router-link to="/" class="text-white header-link p-4">SHOP</router-link>
 		</div>
