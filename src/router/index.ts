@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import Index from '../pages/Index.vue'
+import Home from '@/pages/Home.vue'
 
 const routes = [
 	{
@@ -7,6 +8,12 @@ const routes = [
 		name: 'Index',
 		component: Index,
 		meta: { title: 'Roo Troop' },
+	},
+	{
+		path: '/home',
+		name: 'Home',
+		component: Home,
+		meta: { title: 'Home - Roo Troop' },
 	},
 ]
 
