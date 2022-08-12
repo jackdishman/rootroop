@@ -50,10 +50,10 @@ onMounted(() => {
 	<!-- Mission and video -->
 	<div class="flex flex-row w-full items-center justify-around py-10">
 		<h4 class="italic w-1/3 text-rooBlack font-semibold font-poppins text-xl leading-9">
-			The <span class="uppercase text-rooRed font-bold">mission</span> of Roo Troop is to
-			<span class="uppercase text-rooRed font-bold">unite a community</span> that is eager to build in Web3/NFTs and
-			provide them with the multiple facets of utility needed to
-			<span class="uppercase text-rooRed font-bold">succeed</span>
+			The <span class="uppercase text-rooRed font-bold">MISSION</span> of Roo Troop is to
+			<span class="uppercase text-rooRed font-bold">UNITE A COMMUNITY</span> that is eager to build in Web 3.0 and
+			successfully roll out the first <span class="uppercase text-rooRed font-bold">ON-CHAIN JOB MARKETPLACE</span>
+			, a platform that will disrupt the traditional job market.
 		</h4>
 		<div class="bg-rooRed w-1/3">
 			<video controls class="w-full border-4 border-rooRed">

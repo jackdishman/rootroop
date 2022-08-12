@@ -4,6 +4,8 @@ import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 const images = ref<string[]>([
+	require(`@/assets/images/slider/1.webp`),
+	require(`@/assets/images/slider/666.webp`),
 	require(`@/assets/images/slider/103.webp`),
 	require(`@/assets/images/slider/185.webp`),
 	require(`@/assets/images/slider/225.webp`),
@@ -13,11 +15,9 @@ const images = ref<string[]>([
 	require(`@/assets/images/slider/537.webp`),
 	require(`@/assets/images/slider/634.webp`),
 	require(`@/assets/images/slider/637.webp`),
-	require(`@/assets/images/slider/666.webp`),
 	require(`@/assets/images/slider/783.webp`),
 	require(`@/assets/images/slider/886.webp`),
 	require(`@/assets/images/slider/927.webp`),
-	require(`@/assets/images/slider/1069.webp`),
 	require(`@/assets/images/slider/1183.webp`),
 	require(`@/assets/images/slider/1423.webp`),
 	require(`@/assets/images/slider/1454.webp`),
@@ -38,7 +38,6 @@ const joeyImages = ref<string[]>([
 	require(`@/assets/images/joeys/21.webp`),
 	require(`@/assets/images/joeys/20.webp`),
 	require(`@/assets/images/joeys/19.webp`),
-	require(`@/assets/images/joeys/18.webp`),
 	require(`@/assets/images/joeys/17.webp`),
 	require(`@/assets/images/joeys/16.webp`),
 	require(`@/assets/images/joeys/15.webp`),
@@ -79,29 +78,44 @@ const joeyImages = ref<string[]>([
 				</span>
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Roo</h5>
-			<div class="flex justify-center">
+			<!-- <div class="flex justify-center">
 				<p class="w-48 text-white text-xs text-normal leading-5">
 					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
 					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
 				</p>
-			</div>
+			</div> -->
 			<div class="flex justify-center">
 				<ul class="text-rooRed w-48 py-5 list-disc list-inside text-sm">
-					<li>test</li>
-					<li>test</li>
-					<li>test</li>
+					<li>Genesis NFT in the Roo Troop ecosystem</li>
+					<li>First-tier access</li>
+					<li>Giveaways</li>
+					<li>Access to Mod Mob</li>
+					<li>Rarity-based staking</li>
+					<li>Whitelist opportunities</li>
+					<li>Access to Kanga-Kademy</li>
+					<li>Discounts on all brand deals</li>
+					<li><a href="#">Access to the $ROOLAH Shop</a></li>
+					<li><a href="#">Discounts on Roo Tech solutions</a></li>
+					<li>Access to all alpha channels & tools</li>
+					<li>Access to all utility from partnerships</li>
+					<li>Ability to list services on the $ROOLAH Shop</li>
+					<li>Free or discounted entry to Roo Troop IRL events</li>
+					<li>Ability to compete in Roo Troop sponsored events</li>
+					<li>Exclusive visibility to job listings one week before the public</li>
+					<li>Larger token airdrop upon the marketplace's full public launch</li>
+					<li>Free features within the on-chain job marketplace that will be monetized for others</li>
 				</ul>
 			</div>
 			<div class="flex justify-center mb-10">
 				<div class="w-36">
 					<button class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm" style="border-radius: 7px">
-						Buy a Roo
+						Buy Roos
 					</button>
 					<button
 						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm"
 						style="border-radius: 7px"
 					>
-						Stake a Roo
+						Stake Roos
 					</button>
 				</div>
 			</div>
@@ -120,30 +134,36 @@ const joeyImages = ref<string[]>([
 					</Carousel>
 				</span>
 			</div>
-			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Roo</h5>
-			<div class="flex justify-center">
+			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Joey</h5>
+			<!-- <div class="flex justify-center">
 				<p class="w-48 text-white text-xs text-normal leading-5">
-					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
 				</p>
-			</div>
+			</div> -->
 			<div class="flex justify-center">
 				<ul class="text-rooRed w-48 py-5 list-disc list-inside text-sm">
-					<li>test</li>
-					<li>test</li>
-					<li>test</li>
+					<li>Companion NFT in the Roo Troop ecosystem</li>
+					<li>Second-tier access</li>
+					<li>Access to Mod Mob</li>
+					<li><a href="#">Access to the $ROOLAH Shop</a></li>
+					<li>Discounts on select brand deals</li>
+					<li>Rarity-based staking at 1/2 the rate as Roos</li>
+					<li>Ability to compete in Roo Troop sponsored events</li>
+					<li>Token airdrop upon the marketplace's full public launch</li>
+					<li>Access to Kanga-Kademy & any education-based partnerships</li>
+					<li>Access to all alpha channels & tools, including any alpha-centric partnerships</li>
+					<li>Added perks within the on-chain job marketplace when holding both Roos + Joeys</li>
 				</ul>
 			</div>
 			<div class="flex justify-center mb-10">
 				<div class="w-36">
 					<button class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm" style="border-radius: 7px">
-						Buy a Roo
+						Buy joeys
 					</button>
 					<button
 						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm"
 						style="border-radius: 7px"
 					>
-						Stake a Roo
+						Stake joeys
 					</button>
 				</div>
 			</div>
