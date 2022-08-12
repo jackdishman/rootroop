@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import RedUnderscore from '@/components/icons/RedUnderscore.vue'
-import TwitterIcon from '@/components/icons/Twitter.vue'
+import TeamCard from '@/components/TeamCard.vue'
 </script>
 <template>
 	<div class="bg-rooBlack w-full py-10 flex justify-center">
@@ -10,77 +10,125 @@ import TwitterIcon from '@/components/icons/Twitter.vue'
 			<div class="flex justify-center mt-1"><RedUnderscore /></div>
 			<div class="grid grid-cols-3 gap-y-10 gap-x-12 mt-12">
 				<!-- Stone -->
-				<div class="flex flex-col items-center">
-					<div class="bg-rooRed p-1">
-						<img :src="require(`@/assets/images/team/stone.webp`)" class="w-28 h-28" />
-					</div>
-					<h3 class="font-medium text-white text-lg italic">STØNE</h3>
-					<h6 class="font-semibold text-sm italic text-white">Morgan Stone</h6>
-					<h6 class="font-semibold text-sm italic text-rooRed">Founder & CEO</h6>
-					<a href="" class="pt-2 text-white">
-						<TwitterIcon />
-					</a>
-				</div>
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/stone.webp`)"
+					:name="`Morgan Stone`"
+					:screenName="`STØNE`"
+					:title="`Founder & CEO`"
+					:twitterURL="`https://twitter.com/MorganStoneee`"
+				/>
 				<!-- ToxicPizza -->
-				<div class="flex flex-col items-center">
-					<div class="bg-rooRed p-1">
-						<img :src="require(`@/assets/images/team/cory.webp`)" class="w-28 h-28" />
-					</div>
-					<h3 class="font-medium text-white text-lg italic">ToxicPizza</h3>
-					<h6 class="font-semibold text-sm italic text-white">Cory Cherven</h6>
-					<h6 class="font-semibold text-sm italic text-rooRed">CTO</h6>
-					<a href="" class="pt-2 text-white">
-						<TwitterIcon />
-					</a>
-				</div>
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/cory.webp`)"
+					:name="`Cory Cherven`"
+					:screenName="`ToxicPizza`"
+					:title="`CTO`"
+					:twitterURL="`https://twitter.com/Animalmix55`"
+				/>
 				<!-- ITSOKTOCRY -->
-				<div class="flex flex-col items-center">
-					<div class="bg-rooRed p-1">
-						<img :src="require(`@/assets/images/team/itsoktocry.webp`)" class="w-28 h-28" />
-					</div>
-					<h3 class="font-medium text-white text-lg italic">ITSOKTOCRY</h3>
-					<h6 class="font-semibold text-sm italic text-white">Gwen Stacy</h6>
-					<h6 class="font-semibold text-sm italic text-rooRed">Artist</h6>
-					<a href="" class="pt-2 text-white">
-						<TwitterIcon />
-					</a>
-				</div>
-				<!-- HiddenLotus -->
-				<div class="flex flex-col items-center">
-					<div class="bg-rooRed p-1">
-						<img :src="require(`@/assets/images/team/hiddenlotus.webp`)" class="w-28 h-28" />
-					</div>
-					<h3 class="font-medium text-white text-lg italic">HiddenLotus</h3>
-					<h6 class="font-semibold text-sm italic text-white">Lu</h6>
-					<h6 class="font-semibold text-sm italic text-rooRed">Web Developer</h6>
-					<a href="" class="pt-2 text-white">
-						<TwitterIcon />
-					</a>
-				</div>
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/itsoktocry.webp`)"
+					:name="`Gwen Stacy`"
+					:screenName="`ITSOKTOCRY`"
+					:title="`Artist`"
+					:twitterURL="`https://twitter.com/itsokdontbesad`"
+				/>
 				<!-- YUNGGOD -->
-				<div class="flex flex-col items-center">
-					<div class="bg-rooRed p-1">
-						<img :src="require(`@/assets/images/team/yunggod.webp`)" class="w-28 h-28" />
-					</div>
-					<h3 class="font-medium text-white text-lg italic">YUNGGOD</h3>
-					<h6 class="font-semibold text-sm italic text-white">William Bordeau</h6>
-					<h6 class="font-semibold text-sm italic text-rooRed">Discord Developer</h6>
-					<a href="" class="pt-2 text-white">
-						<TwitterIcon />
-					</a>
-				</div>
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/yunggod.webp`)"
+					:name="`William Bordeau`"
+					:screenName="`YUNGGOD`"
+					:title="`Discord Developer`"
+					:twitterURL="`https://twitter.com/hiddenlotustech`"
+				/>
+				<!-- HiddenLotus -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/hiddenlotus.webp`)"
+					:name="`Lu`"
+					:screenName="`HiddenLotus`"
+					:title="`Web Developer`"
+					:twitterURL="`https://twitter.com/hiddenlotustech`"
+				/>
+				<!-- Brad -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:name="`Brad Hartzell`"
+					:screenName="`Brad`"
+					:title="`Meme prince`"
+					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
+				/>
+				<!-- Dish -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/dish.webp`)"
+					:name="`Jack Dishman`"
+					:screenName="`DISH`"
+					:title="`Web Developer`"
+					:twitterURL="`https://mobile.twitter.com/JackDishman`"
+				/>
+				<!-- Rev -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/rev.webp`)"
+					:name="`Revant Singh`"
+					:screenName="`Rev`"
+					:title="`Software Consultant`"
+					:twitterURL="`https://twitter.com/revantxsingh`"
+				/>
 				<!-- TOBBER -->
-				<div class="flex flex-col items-center">
-					<div class="bg-rooRed p-1">
-						<img :src="require(`@/assets/images/team/tobber.webp`)" class="w-28 h-28" />
-					</div>
-					<h3 class="font-medium text-white text-lg italic">TOBBER</h3>
-					<h6 class="font-semibold text-sm italic text-white">TOBBER</h6>
-					<h6 class="font-semibold text-sm italic text-rooRed">Meme prince</h6>
-					<a href="" class="pt-2 text-white">
-						<TwitterIcon />
-					</a>
-				</div>
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:name="`TOBBER`"
+					:screenName="`TOBBER`"
+					:title="`Meme prince`"
+					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
+				/>
+				<!-- WK (Will Koester | Community Manager | https://twitter.com/WK_17_ ) -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/wk.webp`)"
+					:name="`Will Koester`"
+					:ScreenName="`WK`"
+					:title="`Community Manager`"
+					:twitterURL="`https://twitter.com/WK_17_`"
+				/>
+				<!-- Dfc2west (Don Clewley | Bounty Hub Manager | https://twitter.com/Dfc2west ) ->  -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/dfc.webp`)"
+					:name="`Don Clewley`"
+					:screenName="`Dfc2west`"
+					:title="`Bounty Hub Manager`"
+					:twitterURL="`https://twitter.com/Dfc2west`"
+				/>
+				<!-- Metacon (Kevin Schellman | Social Media Manager | https://twitter.com/metacon68 | attached pfp below)  -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/metacon.webp`)"
+					:name="`Kevin Schellman`"
+					:screenName="`Metacon`"
+					:title="`Social Media Manager`"
+					:twitterURL="`https://twitter.com/metacon68`"
+				/>
+				<!-- El Chingon (Gio Hernandez-Parra [will get you pfp + socials] listed as Holder Relations) ->  -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:name="`Gio Hernandez-Parra`"
+					:screenName="`El Chingon`"
+					:title="`Holder Relations`"
+					:twitterURL="`https://twitter.com/metacon68`"
+				/>
+				<!-- NairoFee (Michael Mwangi [will get you pfp + socials] listed as Troop Analyst) ->  -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:name="`Michael Mwangi`"
+					:screenName="`NairoFee`"
+					:title="`Troop Analyst`"
+					:twitterURL="`https://twitter.com/metacon68`"
+				/>
+				<!-- LooksLegit (Justin LeBlang [will get you pfp + socials] listed as Troop Spaces Leader) -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:name="`Justin LeBlang`"
+					:screenName="`LooksLegit`"
+					:title="`Troop Analyst`"
+					:twitterURL="`https://twitter.com/metacon68`"
+				/>
 			</div>
 		</div>
 	</div>
