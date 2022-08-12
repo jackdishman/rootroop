@@ -56,6 +56,29 @@ const joeyImages = ref<string[]>([
 	require(`@/assets/images/joeys/2.webp`),
 	require(`@/assets/images/joeys/1.webp`),
 ])
+const incubatorImages = ref<string[]>([
+	require(`@/assets/images/incubators/unnamed.png`),
+	require(`@/assets/images/incubators/unnamed_1.png`),
+	require(`@/assets/images/incubators/unnamed_2.png`),
+	require(`@/assets/images/incubators/unnamed_3.png`),
+	require(`@/assets/images/incubators/unnamed_4.png`),
+	require(`@/assets/images/incubators/unnamed_5.png`),
+	require(`@/assets/images/incubators/unnamed_6.png`),
+	require(`@/assets/images/incubators/unnamed_7.png`),
+	require(`@/assets/images/incubators/unnamed_8.png`),
+	require(`@/assets/images/incubators/unnamed_9.png`),
+	require(`@/assets/images/incubators/unnamed_10.png`),
+	require(`@/assets/images/incubators/unnamed_11.png`),
+	require(`@/assets/images/incubators/unnamed_12.png`),
+	require(`@/assets/images/incubators/unnamed_13.png`),
+	require(`@/assets/images/incubators/unnamed_14.png`),
+	require(`@/assets/images/incubators/unnamed_15.png`),
+	require(`@/assets/images/incubators/unnamed_16.png`),
+	require(`@/assets/images/incubators/unnamed_17.png`),
+	require(`@/assets/images/incubators/unnamed_18.png`),
+	require(`@/assets/images/incubators/unnamed_19.png`),
+	require(`@/assets/images/incubators/unnamed_20.png`),
+])
 </script>
 
 <template>
@@ -64,7 +87,7 @@ const joeyImages = ref<string[]>([
 	</h2>
 	<div class="flex justify-center">
 		<!-- Roos -->
-		<div class="mr-5 bg-rooBlack">
+		<div class="mr-5 bg-rooBlack w-1/4">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -85,7 +108,7 @@ const joeyImages = ref<string[]>([
 				</p>
 			</div> -->
 			<div class="flex justify-center">
-				<ul class="text-rooRed w-48 py-5 list-disc list-inside text-sm">
+				<ul class="text-rooRed py-5 px-10 list-disc list-inside text-sm">
 					<li>Genesis NFT in the Roo Troop ecosystem</li>
 					<li>First-tier access</li>
 					<li>Giveaways</li>
@@ -121,7 +144,7 @@ const joeyImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Joeys -->
-		<div class="mr-5 bg-rooBlack">
+		<div class="mr-5 bg-rooBlack w-1/4">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -140,7 +163,7 @@ const joeyImages = ref<string[]>([
 				</p>
 			</div> -->
 			<div class="flex justify-center">
-				<ul class="text-rooRed w-48 py-5 list-disc list-inside text-sm">
+				<ul class="text-rooRed py-5 px-10 py-5 list-disc list-inside text-sm">
 					<li>Companion NFT in the Roo Troop ecosystem</li>
 					<li>Second-tier access</li>
 					<li>Access to Mod Mob</li>
@@ -164,6 +187,43 @@ const joeyImages = ref<string[]>([
 						style="border-radius: 7px"
 					>
 						Stake joeys
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Incubators -->
+		<div class="mr-5 bg-rooBlack w-1/4">
+			<div class="flex justify-center mx-10 mt-10 mb-5">
+				<span class="w-48 h-48 bg-rooRed">
+					<Carousel :items-to-show="1">
+						<Slide v-for="img in incubatorImages" :key="img">
+							<img :src="img" class="p-1 carousel__item" />
+						</Slide>
+						<template #addons>
+							<Navigation />
+						</template>
+					</Carousel>
+				</span>
+			</div>
+			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Incubators</h5>
+			<div class="flex justify-center">
+				<p class="py-5 px-10 text-white text-xs text-normal leading-5 py-5">
+					The Joeybean Incubators need to be incubated (hyperlink incubation page) for 12 weeks in order to turn into
+					fully matured Joeys. Incubators come with almost all of the same utility as Joeys, except they cannot be
+					staked & there may be some perks upon the marketplace's full public launch for those holding Incubators
+					instead of Joeys.
+				</p>
+			</div>
+			<div class="flex justify-center mb-10">
+				<div class="w-36">
+					<button class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm" style="border-radius: 7px">
+						Buy Incubators
+					</button>
+					<button
+						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm"
+						style="border-radius: 7px"
+					>
+						Stake Incubators
 					</button>
 				</div>
 			</div>
