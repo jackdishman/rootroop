@@ -51,10 +51,10 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- Brad -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:imgSrc="require(`@/assets/images/team/bradh.jpg`)"
 					:name="`Brad Hartzell`"
 					:screenName="`Brad`"
-					:title="`Meme prince`"
+					:title="`Head of Product`"
 					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
 				/>
 				<!-- Dish -->
@@ -107,7 +107,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- El Chingon (Gio Hernandez-Parra [will get you pfp + socials] listed as Holder Relations) ->  -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:imgSrc="require(`@/assets/images/team/gio.png`)"
 					:name="`Gio Hernandez-Parra`"
 					:screenName="`El Chingon`"
 					:title="`Holder Relations`"
@@ -115,7 +115,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- NairoFee (Michael Mwangi [will get you pfp + socials] listed as Troop Analyst) ->  -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:imgSrc="require(`@/assets/images/team/nairo.png`)"
 					:name="`Michael Mwangi`"
 					:screenName="`NairoFee`"
 					:title="`Troop Analyst`"

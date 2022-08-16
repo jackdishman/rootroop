@@ -20,7 +20,13 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 				href="https://forms.gle/uL1hgbvu8nEUZHJdA"
 				target="_blank"
 				class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"
-				>SEARCH FOR JOBS | POST JOBS (FREE)</a
+				>SEARCH FOR JOBS</a
+			>
+			<a
+				href="https://forms.gle/uL1hgbvu8nEUZHJdA"
+				target="_blank"
+				class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm ml-5"
+				>POST JOBS (FREE)</a
 			>
 		</div>
 		<!-- Right side: floating images -->
