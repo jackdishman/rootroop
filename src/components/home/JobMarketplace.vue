@@ -30,7 +30,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			>
 		</div>
 		<!-- Right side: floating images -->
-		<div class="relative w-1/3">
+		<div class="relative w-1/3 -mt-16">
 			<img :src="require(`@/assets/images/jobs/image1.webp`)" class="absolute top-0 w-64 left-0" />
 			<img :src="require(`@/assets/images/jobs/image2.webp`)" class="absolute top-16 w-64 left-16" />
 			<img :src="require(`@/assets/images/jobs/image3.webp`)" class="absolute top-32 w-64 left-32" />

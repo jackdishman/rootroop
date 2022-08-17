@@ -4,12 +4,10 @@
 import Header from './components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import router from '@/router/index'
-
-console.log(router)
 </script>
 
-<template>
+<template class="font-poppins">
 	<div v-if="router.currentRoute.value.fullPath !== `/`"><Header class="z-20 fixed w-full" style="height: 50px" /></div>
-	<router-view class="font-poppins" />
+	<router-view />
 	<Footer v-if="router.currentRoute.value.fullPath !== `/`" />
 </template>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import TwitterIcon from '@/components/icons/Twitter.vue'
 defineProps({
 	imgSrc: {
 		type: String,

@@ -57,7 +57,7 @@ onMounted(() => {
 		</h4>
 		<div class="bg-rooRed w-1/3">
 			<video controls class="w-full border-4 border-rooRed">
-				<source src="require(`/src/assets/video/rooWeb.mp4`)" type="video/mp4" />
+				<source :src="require(`/src/assets/video/rooWeb.mp4`)" type="video/mp4" />
 			</video>
 		</div>
 	</div>
