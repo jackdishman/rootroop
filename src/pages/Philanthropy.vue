@@ -26,8 +26,9 @@ import SubpageHeader from '@/components/SubpageHeader.vue'
 				Their natural habitat in the Daintree Rainforest of Queensland has been negatively impacted by human-led
 				deforestation meanwhile the average person doesn't even know Tree Roos exist. Being endangered is one thing, but
 				to couple that with being almost entirely unheard of makes the survival of these creatures all the more
-				difficult. With the conservation efforts of Rainforest Rescue, (hyperlink: https://www.rainforestrescue.org.au/)
-				the Daintree is slowly being restored & the animals that call it home are being protected.
+				difficult. With the conservation efforts of
+				<a href="https://www.rainforestrescue.org.au/" target="_blank" class="underline">Rainforest Rescue</a>, the
+				Daintree is slowly being restored & the animals that call it home are being protected.
 			</p>
 
 			<p class="pt-10 font-medium">
