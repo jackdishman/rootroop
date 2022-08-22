@@ -3,6 +3,7 @@ import Index from '../pages/Index.vue'
 import Home from '@/pages/Home.vue'
 import Partners from '@/pages/Partners.vue'
 import FAQ from '@/pages/FAQ.vue'
+import Philanthropy from '@/pages/Philanthropy.vue'
 
 const routes = [
 	{
@@ -28,6 +29,12 @@ const routes = [
 		name: 'FAQ',
 		component: FAQ,
 		meta: { title: 'FAQ - Roo Troop' },
+	},
+	{
+		path: '/philanthropy',
+		name: 'Philanthropy',
+		component: Philanthropy,
+		meta: { title: 'Philanthropy - Roo Troop' },
 	},
 ]
 

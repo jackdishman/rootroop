@@ -13,6 +13,9 @@ module.exports = {
 				sans: [`Poppins`, `sans-serif`],
 				serif: [`Poppins Serif`, `serif`],
 			},
+			width: {
+				548: `548px`,
+			},
 		},
 	},
 	variants: {
