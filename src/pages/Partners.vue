@@ -187,7 +187,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 
 			<!-- Alpha x -->
 			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/alphax.png`)" class="w-32 object-contain flex-shrink-0" />
+				<img :src="require(`@/assets/images/logos/gac.webp`)" class="w-32 object-contain flex-shrink-0" />
 				<div class="ml-16">
 					<h3 class="text-3xl font-semibold italic uppercase mb-3">ALPHA X</h3>
 					<RedUnderscore />
