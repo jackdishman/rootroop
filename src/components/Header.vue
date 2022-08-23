@@ -1,19 +1,8 @@
-<script lang="ts">
+<script setup lang="ts">
 import TextLogo from '@/components/TextLogo.vue'
 import HeaderDropdown from './HeaderDropdown.vue'
-export default {
-	name: 'TopHeader',
-	components: {
-		TextLogo,
-		HeaderDropdown,
-	},
-	data() {
-		return {
-			toggleRoosDropdown: false,
-		}
-	},
-	methods: {},
-}
+import router from '@/router/index'
+console.log(router.currentRoute.value.fullPath)
 </script>
 
 <template>
@@ -38,14 +27,34 @@ export default {
 					{ title: `TRAITS`, url: `/` },
 				]"
 			/>
-			<router-link to="/team" class="text-white header-link p-4">TEAM</router-link>
+			<router-link
+				to="/team"
+				:class="router.currentRoute.value.fullPath === `/team` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>TEAM</router-link
+			>
 			<a href="https://stake.rootroop.com" target="_blank" class="focus: outline-none text-white header-link p-4"
 				>STAKE</a
 			>
 			<router-link to="/" class="text-white header-link p-4">ROADMAP</router-link>
-			<router-link to="/links" class="text-white header-link p-4">OFFICIAL LINKS</router-link>
-			<router-link to="/faq" class="text-white header-link p-4">FAQ</router-link>
-			<router-link to="/partners" class="text-white header-link p-4">PARTNERS</router-link>
+			<router-link
+				to="/links"
+				:class="router.currentRoute.value.fullPath === `/links` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>OFFICIAL LINKS</router-link
+			>
+			<router-link
+				to="/faq"
+				:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>FAQ</router-link
+			>
+			<router-link
+				to="/partners"
+				:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>PARTNERS</router-link
+			>
 			<router-link to="/" class="text-white header-link p-4">JOBS</router-link>
 			<router-link to="/" class="text-white header-link p-4">SHOP</router-link>
 		</div>
