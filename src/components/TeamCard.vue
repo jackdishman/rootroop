@@ -19,7 +19,7 @@ defineProps({
 	},
 	twitterURL: {
 		type: String,
-		default: ``,
+		default: `https://twitter.com/RooTroopNFT`,
 	},
 })
 </script>

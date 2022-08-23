@@ -41,9 +41,11 @@ onMounted(() => {
 		<!-- Social links -->
 		<div class="flex items-center justify-center relative -mt-24 text-white">
 			<a href=""><InstagramLogo /></a>
-			<a href="" class="mx-2"><TwitterLogo /></a>
-			<a href="" class="mr-2"><DiscordLogo /></a>
-			<a href=""><OpenSeaLogo style="width: 24px; height: 24px" /></a>
+			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
+			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
+			<a href="https://opensea.io/collection/roo-troop" target="_blank"
+				><OpenSeaLogo style="width: 24px; height: 24px"
+			/></a>
 		</div>
 	</div>
 	<NewsBanner />

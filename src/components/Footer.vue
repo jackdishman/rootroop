@@ -27,7 +27,9 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 			</p>
 			<!-- Socials -->
 			<div class="text-white flex flex-row text-rooRed mt-5 xl:mb-0 mb-5 xl:justify-start justify-center">
-				<DiscordLogo class="w-6 h-6" /> <OpenSea class="w-6 h-6" /> <Twitter class="w-6 h-6" />
+				<a href="https://discord.com/invite/rootroop" target="_blank"> <DiscordLogo class="w-6 h-6" /> </a>
+				<a href="https://opensea.io/collection/roo-troop" target="_blank"><OpenSea class="w-6 h-6" /></a>
+				<a href="https://twitter.com/RooTroopNFT" target="_blank"><Twitter class="w-6 h-6" /></a>
 			</div>
 		</div>
 		<!-- Middle: Disclaimers -->
