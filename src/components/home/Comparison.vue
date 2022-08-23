@@ -85,9 +85,9 @@ const incubatorImages = ref<string[]>([
 	<h2 class="font-semibold text-3xl uppercase text-center text-rooBlack px-10 pt-10 pb-10 italic">
 		What's the difference?
 	</h2>
-	<div class="flex justify-center">
+	<div class="flex flex-col lg:flex-row justify-center">
 		<!-- Roos -->
-		<div class="mr-5 bg-rooBlack w-1/4">
+		<div class="mr-5 bg-rooBlack w-full lg:w-1/4">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -144,7 +144,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Joeys -->
-		<div class="mr-5 bg-rooBlack w-1/4">
+		<div class="mr-5 bg-rooBlack w-full lg:w-1/4">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -192,7 +192,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Incubators -->
-		<div class="mr-5 bg-rooBlack w-1/4">
+		<div class="mr-5 bg-rooBlack w-full lg:w-1/4">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
