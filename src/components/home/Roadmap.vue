@@ -10,7 +10,7 @@
 					<li class="text-rooRed text-sm mb-2">Roo Troop Mint</li>
 					<li class="text-rooRed text-sm mb-2">Fund Project Wallet</li>
 					<li class="text-rooRed text-sm mb-2">Super Roos</li>
-					<li class="text-rooRed text-sm mb-2">Protect the Troop (Philanthropy )</li>
+					<li class="text-rooRed text-sm mb-2">Donation #1</li>
 				</ul>
 			</div>
 			<!-- Stage 2 -->
@@ -46,6 +46,7 @@
 					<li class="text-white text-sm mb-2">Roo Merch</li>
 					<li class="text-white text-sm mb-2">[REDACTED] On-Chain Job marketplace</li>
 					<li class="text-white text-sm mb-2">Custom Roo Troop and Joey Mob NFT marketplace</li>
+					<li class="text-white text-sm mb-2">Donation #2</li>
 				</ul>
 			</div>
 			<!-- Stage 5 -->
