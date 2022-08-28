@@ -9,7 +9,8 @@
 			style="margin-top: 1px"
 		>
 			<div v-for="li in list" :key="li.title">
-				<router-link :to="`${li.url}`">{{ li.title }}</router-link>
+				<a v-if="li.url.startsWith(`http`)" :href="li.url">{{ li.title }}</a>
+				<router-link v-else :to="`${li.url}`">{{ li.title }}</router-link>
 			</div>
 		</div>
 	</div>

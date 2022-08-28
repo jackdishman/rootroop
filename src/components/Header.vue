@@ -2,7 +2,10 @@
 import TextLogo from '@/components/TextLogo.vue'
 import HeaderDropdown from './HeaderDropdown.vue'
 import router from '@/router/index'
-console.log(router.currentRoute.value.fullPath)
+
+function handleScroll() {
+	document.getElementById(router.currentRoute.value.hash.substring(1))?.scrollIntoView()
+}
 </script>
 
 <template>
@@ -16,7 +19,7 @@ console.log(router.currentRoute.value.fullPath)
 				:list="[
 					{ title: `BUY ROOS`, url: `https://opensea.io/collection/roo-troop` },
 					{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
-					{ title: `TRAITS`, url: `/` },
+					{ title: `TRAITS`, url: `/home#traits` },
 				]"
 			/>
 			<HeaderDropdown
@@ -36,7 +39,19 @@ console.log(router.currentRoute.value.fullPath)
 			<a href="https://stake.rootroop.com" target="_blank" class="focus: outline-none text-white header-link p-4"
 				>STAKE</a
 			>
-			<router-link to="/" class="text-white header-link p-4">ROADMAP</router-link>
+			<button v-if="router.currentRoute.value.name === `Home`" class="text-white header-link p-4" @click="handleScroll">
+				ROADMAP
+			</button>
+			<router-link
+				v-else
+				:to="{
+					path: '/home',
+					hash: '#roadmap',
+				}"
+				class="text-white header-link p-4"
+				>ROADMAP</router-link
+			>
+			<!-- <a href="#roadmap" class="text-white header-link p-4">ROADMAP</a> -->
 			<router-link
 				to="/links"
 				:class="router.currentRoute.value.fullPath === `/links` ? `text-rooRed` : `text-white`"

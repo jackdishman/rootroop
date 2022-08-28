@@ -14,6 +14,7 @@ import Roadmap from '@/components/home/Roadmap.vue'
 import JobMarketplace from '@/components/home/JobMarketplace.vue'
 import Team from '@/components/home/Team.vue'
 import Partners from '@/components/home/Partners.vue'
+import router from '@/router/index'
 
 const video = ref<HTMLVideoElement>()
 const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
@@ -29,6 +30,7 @@ onMounted(() => {
 	nextTick().then(() => {
 		resizeScreen()
 	})
+	document.getElementById(router.currentRoute.value.hash.substring(1))?.scrollIntoView()
 })
 </script>
 <template>
@@ -72,7 +74,9 @@ onMounted(() => {
 	<!-- Roos vs Joeys comparison -->
 	<Comparison />
 	<!-- roadmap -->
-	<Roadmap />
+	<div id="roadmap">
+		<Roadmap />
+	</div>
 	<!-- Job marketplace intro -->
 	<JobMarketplace />
 	<!-- Team -->
