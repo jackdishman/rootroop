@@ -61,7 +61,9 @@
 			</div>
 		</div>
 		<div class="flex justify-center w-full mt-10 mb-10">
-			<a href="#" class="uppercase text-white text-sm">Read the in-depth whitepaper for the roadmap here</a>
+			<a href="https://docs.rootroop.com/roo-labs/" target="_blank" class="uppercase text-white text-sm"
+				>Read the in-depth whitepaper for the roadmap here</a
+			>
 		</div>
 	</div>
 </template>

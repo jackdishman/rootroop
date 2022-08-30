@@ -59,6 +59,12 @@ function handleScroll() {
 				>OFFICIAL LINKS</router-link
 			>
 			<router-link
+				to="/philanthropy"
+				:class="router.currentRoute.value.fullPath === `/philanthropy` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>PHILANTHROPY</router-link
+			>
+			<router-link
 				to="/faq"
 				:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
 				class="header-link p-4"
