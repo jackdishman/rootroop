@@ -11,7 +11,9 @@ function handleScroll() {
 <template>
 	<div class="w-full bg-black flex flex-row justify-between items-center px-6">
 		<!-- Left side: Logo -->
-		<router-link to="/"> <TextLogo :large="false" /> </router-link>
+		<router-link to="/">
+			<TextLogo :large="false" />
+		</router-link>
 		<!-- Right side: links -->
 		<div class="flex flex-row text-sm">
 			<HeaderDropdown
@@ -76,7 +78,7 @@ function handleScroll() {
 				class="header-link p-4"
 				>PARTNERS</router-link
 			>
-			<router-link to="/" class="text-white header-link p-4">JOBS</router-link>
+			<router-link to="/jobs" class="text-white header-link p-4">JOBS</router-link>
 			<router-link to="/" class="text-white header-link p-4">SHOP</router-link>
 		</div>
 	</div>

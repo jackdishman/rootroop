@@ -10,4 +10,5 @@ import router from '@/router/index'
 	<div v-if="router.currentRoute.value.fullPath !== `/`"><Header class="z-20 fixed w-full" style="height: 50px" /></div>
 	<router-view />
 	<Footer v-if="router.currentRoute.value.fullPath !== `/`" />
+	<div id="popup"></div>
 </template>
