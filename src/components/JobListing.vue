@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import CloseIcon from '@/components/icons/CloseIcon.vue'
 
-const props = defineProps({
+defineProps({
 	title: {
 		type: String,
 		default: `Default title`,
@@ -93,7 +93,10 @@ const showDetails = ref<boolean>(false)
 						</div>
 					</div>
 
-					<CloseIcon class="flex-shrink-0 text-rooRed rounded-full border border-rooRed" @click="showDetails = false" />
+					<CloseIcon
+						class="cursor-pointer flex-shrink-0 text-rooRed rounded-full border border-rooRed"
+						@click="showDetails = false"
+					/>
 				</div>
 				<!-- details -->
 				<div>
