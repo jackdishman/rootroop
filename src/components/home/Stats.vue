@@ -1,27 +1,27 @@
 <template>
-	<div class="flex justify-center bg-rooBlack p-10">
+	<div class="flex justify-center bg-rooBlack py-10 lg:px-10">
 		<div class="w-full">
 			<h4 class="text-white font-bold text-center uppercase mb-5 text-sm">Our proud stats</h4>
 			<div class="grid grid-cols-4 divide-x divide-rooRed">
 				<div>
-					<h2 class="text-2xl text-rooRed text-center">5.5K</h2>
+					<h2 class="text-lg sm:text-2xl text-rooRed text-center">5.5K</h2>
 					<p class="text-white font-normal text-center uppercase text-xs">Items</p>
 				</div>
 				<div>
-					<h2 class="text-2xl text-rooRed text-center">2.3K</h2>
+					<h2 class="text-lg sm:text-2xl text-rooRed text-center">2.3K</h2>
 					<p class="text-white font-normal text-center uppercase text-xs">Owners</p>
 				</div>
 				<div>
 					<div class="flex justify-center">
 						<img :src="require(`@/assets/images/logos/eth.png`)" />
-						<h2 class="text-2xl text-rooRed text-center pr-12">874</h2>
+						<h2 class="text-lg sm:text-2xl text-rooRed text-center pr-12">874</h2>
 					</div>
 					<p class="text-white font-normal text-center uppercase text-xs">Total volume</p>
 				</div>
 				<div>
 					<div class="flex justify-center">
 						<img :src="require(`@/assets/images/logos/eth.png`)" />
-						<h2 class="text-2xl text-rooRed text-center pr-12">0.18</h2>
+						<h2 class="text-lg sm:text-2xl text-rooRed text-center pr-12">0.18</h2>
 					</div>
 					<p class="text-white font-normal text-center uppercase text-xs">Floor price</p>
 				</div>

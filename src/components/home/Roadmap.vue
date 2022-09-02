@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-rooBlack text-white py-5 mt-20 w-full flex flex-col justify-center">
+	<div class="bg-rooBlack text-white py-5 lg:mt-20 w-full flex flex-col justify-center">
 		<h2 class="text-3xl font-semibold text-center w-full pb-5 uppercase italic">Roadmap</h2>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full px-24">
 			<!-- Stage 1 -->
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 		<div class="flex justify-center w-full mt-10 mb-10">
-			<a href="https://docs.rootroop.com/roo-labs/" target="_blank" class="uppercase text-white text-sm"
+			<a href="https://docs.rootroop.com/roo-labs/" target="_blank" class="uppercase text-white text-sm text-center"
 				>Read the in-depth whitepaper for the roadmap here</a
 			>
 		</div>

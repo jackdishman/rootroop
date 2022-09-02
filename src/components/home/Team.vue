@@ -8,7 +8,7 @@ import TeamCard from '@/components/TeamCard.vue'
 		<div>
 			<h2 class="text-center text-3xl text-white uppercase italic">Team</h2>
 			<div class="flex justify-center mt-1"><RedUnderscore /></div>
-			<div class="grid grid-cols-3 gap-y-10 gap-x-12 mt-12">
+			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-12 mt-12">
 				<!-- Stone -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/stone.webp`)"

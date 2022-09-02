@@ -35,13 +35,13 @@ onMounted(() => {
 </script>
 <template>
 	<!-- Splash video, socials, logo -->
-	<div class="relative overflow-hidden" :style="`height: ` + videoHeight + `px`">
+	<div class="relative overflow-hidden pt-10" :style="`height: ` + videoHeight + `px`">
 		<video ref="video" autoplay muted loop class="absolute w-full">
 			<source src="https://rootroop.com/assets/video/rooWeb.mp4" type="video/mp4" />
 		</video>
 		<div class="flex items-center justify-center h-full relative z-10"><TextLogo :large="true" /></div>
 		<!-- Social links -->
-		<div class="flex items-center justify-center relative -mt-24 text-white">
+		<div class="flex items-center justify-center relative -mt-10 lg:-mt-24 text-white">
 			<a href=""><InstagramLogo /></a>
 			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
 			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
@@ -52,14 +52,16 @@ onMounted(() => {
 	</div>
 	<NewsBanner />
 	<!-- Mission and video -->
-	<div class="flex flex-row w-full items-center justify-around py-10">
-		<h4 class="italic w-1/3 text-rooBlack font-semibold font-poppins text-xl leading-9">
+	<div class="flex flex-col lg:flex-row w-full items-center justify-around py-10 px-4">
+		<h4
+			class="italic w-full text-center lg:text-left lg:w-1/3 text-rooBlack font-semibold font-poppins text-xl leading-9"
+		>
 			The <span class="uppercase text-rooRed font-bold">MISSION</span> of Roo Troop is to
 			<span class="uppercase text-rooRed font-bold">UNITE A COMMUNITY</span> that is eager to build in Web 3.0 and
 			successfully roll out the first <span class="uppercase text-rooRed font-bold">ON-CHAIN JOB MARKETPLACE</span>
 			, a platform that will disrupt the traditional job market.
 		</h4>
-		<div class="bg-rooRed w-1/3">
+		<div class="bg-rooRed w-full lg:w-1/3">
 			<video controls class="w-full border-4 border-rooRed">
 				<source :src="require(`/src/assets/video/rooWeb.mp4`)" type="video/mp4" />
 			</video>

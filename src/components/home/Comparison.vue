@@ -82,9 +82,7 @@ const incubatorImages = ref<string[]>([
 </script>
 
 <template>
-	<h2 class="font-semibold text-3xl uppercase text-center text-rooBlack px-10 pt-10 pb-10 italic">
-		What's the difference?
-	</h2>
+	<h2 class="font-semibold text-3xl uppercase text-center text-rooBlack px-10 py-10 italic">What's the difference?</h2>
 	<div class="flex flex-col lg:flex-row justify-center">
 		<!-- Roos -->
 		<div class="mr-5 bg-rooBlack w-full lg:w-1/4">
