@@ -76,7 +76,7 @@ const showDetails = ref<boolean>(false)
 		>
 			<!-- Inner card -->
 			<div
-				class="flex flex-col justify-center max-h-screen text-black p-10 w-full md:w-1/2 shadow-lg rounded-lg border-2 bg-white border-rooRed overflow-y-scroll"
+				class="flex flex-col justify-center max-h-screen text-white bg-black p-10 w-full md:w-1/2 shadow-lg rounded-lg border-2 border-rooRed overflow-y-scroll"
 			>
 				<!-- Top: Close icon and title -->
 				<div class="flex w-full justify-between pb-2">
@@ -94,7 +94,7 @@ const showDetails = ref<boolean>(false)
 					</div>
 
 					<CloseIcon
-						class="cursor-pointer flex-shrink-0 text-rooRed rounded-full border border-rooRed"
+						class="cursor-pointer flex-shrink-0 text-rooRed rounded-full border border-rooRed bg-white"
 						@click="showDetails = false"
 					/>
 				</div>
@@ -107,13 +107,18 @@ const showDetails = ref<boolean>(false)
 						<span class="font-semibold pr-2">Date created:</span>{{ creationDate.toLocaleDateString() }}
 					</h6>
 					<h6 class="pb-2"><span class="font-semibold pr-2">Description:</span>{{ description }}</h6>
+					<div>
+						<span class="font-semibold pr-2">Links:</span>
+						<a v-for="(key, value) in links" :key="key" :href="key" target="blank" class="mr-2 underline text-rooRed">{{
+							value
+						}}</a>
+					</div>
+
+					<h6 class="mt-4 pb-2 text-center">
+						<a :href="formUrl" class="font-semibold rounded-lg text-white bg-rooRed px-4 py-2">Apply</a>
+					</h6>
 				</div>
 				<!-- Links at bottom -->
-				<div>
-					<a v-for="(key, value) in links" :key="key" :href="key" target="blank" class="mr-2 underline text-rooRed">{{
-						value
-					}}</a>
-				</div>
 			</div>
 		</div>
 	</Teleport>
