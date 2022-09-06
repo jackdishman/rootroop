@@ -15,7 +15,6 @@ onBeforeMount(() => {
 		const rawJobs = JSON.parse(xhr.responseText)
 		// Convert strings to dates
 		for (const j in rawJobs) {
-			// console.log(rawJobs[j])
 			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
 		}
 		jobs.value = rawJobs

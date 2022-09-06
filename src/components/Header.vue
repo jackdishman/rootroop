@@ -6,7 +6,6 @@ import router from '@/router/index'
 import { ref } from 'vue'
 
 const showDropdown = ref<boolean>(false)
-console.log(router.currentRoute.value.path)
 function handleScroll() {
 	const container = document.getElementById(`roadmap`)
 	container?.scrollIntoView()
