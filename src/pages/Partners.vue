@@ -7,36 +7,6 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 	<SubpageHeader :title="`Partnerships`" />
 	<div class="flex justify-center">
 		<div class="mb-10">
-			<!-- eth aliens -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/eth_alien.webp`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">ethaliens</h3>
-					<RedUnderscore />
-					<p class="pt-5">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-						anim id est laborum.
-					</p>
-				</div>
-			</div>
-			<!-- Asteria labs -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/asteria_labs.webp`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">asteria labs</h3>
-					<RedUnderscore />
-					<p class="pt-5">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-						anim id est laborum.
-					</p>
-				</div>
-			</div>
 			<!-- GAC -->
 			<div class="flex flex-row px-32 mb-10">
 				<img :src="require(`@/assets/images/logos/gac.webp`)" class="w-32 object-contain flex-shrink-0" />
@@ -62,8 +32,9 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1516144514569699328?s=20&t=fBzJdxzxCLa2JglPcaKhBg"
 							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
 						>
-							Check out the official Twitter announcement here
+							Official Twitter Announcement
 						</a>
 					</p>
 				</div>
@@ -96,8 +67,9 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1517231705790107649?s=20&t=kO7rQC_5xfdWWgenJ-tW6g"
 							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
 						>
-							Check out the official Twitter announcement here
+							Official Twitter Announcement
 						</a>
 					</p>
 				</div>
@@ -121,8 +93,9 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1527078990103531520?s=20&t=8zNkZ5i8O1ZoQHHc-ku_9w"
 							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
 						>
-							Check out the official Twitter announcement here
+							Official Twitter Announcement
 						</a>
 					</p>
 				</div>
@@ -148,8 +121,9 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1532489842830938112?s=20&t=M2yxJRdjuCQ3cK8DY__p4Q"
 							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
 						>
-							Check out the official Twitter announcement here
+							Official Twitter Announcement
 						</a>
 					</p>
 				</div>
@@ -178,8 +152,9 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1533961977835290624?s=20&t=WysNNrhf4pQ3Kkl_jpoW-A"
 							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
 						>
-							Check out the official Twitter announcement here
+							Official Twitter Announcement
 						</a>
 					</p>
 				</div>
@@ -209,8 +184,9 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1549801322941009920?s=20&t=t4OtxkZyFnhiExvWPkGtag"
 							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
 						>
-							Check out the official Twitter announcement here
+							Official Twitter Announcement
 						</a>
 					</p>
 				</div>
@@ -239,8 +215,36 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1550148604546785281?s=20&t=o_FMNrh7KmZ5MJbrsq7zMg"
 							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
 						>
-							Check out the official Twitter announcement here
+							Official Twitter Announcement
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<!-- The Phoenixes -->
+			<div class="flex flex-row px-32 mb-10">
+				<img :src="require(`@/assets/images/logos/phoenixes.jpeg`)" class="w-32 object-contain flex-shrink-0" />
+				<div class="ml-16">
+					<h3 class="text-3xl font-semibold italic uppercase mb-3">THe Phoenixes</h3>
+					<RedUnderscore />
+					<p class="pt-5">
+						The Phoenixes are an NFT project by Habit Nest, an 8-figure web2 business with dozens of award winning
+						products focused on habit building who are now aiming to be the backbone of wellness in web3.
+					</p>
+					<p class="pt-5">
+						Roo Troop & Joey Mob holders will be able to participate in The Phoenixes-led gamified wellness experiences,
+						allowing our holders to earn rewards for engaging with activations // challenges, both in Discord and via
+						their web3-enabled app.
+					</p>
+					<p class="mt-2">
+						<a
+							href="https://twitter.com/RooTroopNFT/status/1564372383578099712?s=20&t=rg2il5TpN6-l2P20H2X3-Q"
+							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
+						>
+							Official Twitter Announcement
 						</a>
 					</p>
 				</div>

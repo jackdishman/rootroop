@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import TextLogo from '@/components/TextLogo.vue'
 import HeaderDropdown from './HeaderDropdown.vue'
 import CloseIcon from '@/components/icons/CloseIcon.vue'
 import HamburgerIcon from '@/components/icons/HamburgerMenu.vue'
@@ -17,7 +16,7 @@ function handleScroll() {
 	<div class="w-full bg-black flex flex-row justify-between items-center px-6">
 		<!-- Left side: Logo -->
 		<router-link to="/home">
-			<TextLogo :large="false" />
+			<div><img :src="require(`@/assets/images/overlay.png`)" style="height: 23px" /></div>
 		</router-link>
 		<!-- Desktop bar -->
 		<div class="text-sm hidden lg:flex-row lg:flex">
@@ -26,20 +25,25 @@ function handleScroll() {
 				:list="[
 					{ title: `BUY ROOS`, url: `https://opensea.io/collection/roo-troop` },
 					{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
-					{ title: `TRAITS`, url: `/home#traits` },
 				]"
+				:expandedText="false"
 			/>
 			<HeaderDropdown
 				:label="`JOEYS`"
 				:list="[
 					{ title: `BUY JOEYS`, url: `https://opensea.io/collection/joeymob` },
 					{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
-					{ title: `TRAITS`, url: `/` },
 				]"
+				:expandedText="false"
 			/>
-			<a href="https://stake.rootroop.com" target="_blank" class="focus: outline-none text-white header-link p-4"
-				>STAKE</a
-			>
+			<HeaderDropdown
+				:label="`STAKE`"
+				:list="[
+					{ title: `STAKING DASHBOARD`, url: `https://stake.rootroop.com/` },
+					{ title: `STAKING WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
+				]"
+				:expandedText="true"
+			/>
 			<button v-if="router.currentRoute.value.name === `Home`" class="text-white header-link p-4" @click="handleScroll">
 				ROADMAP
 			</button>
@@ -67,19 +71,19 @@ function handleScroll() {
 				>PHILANTHROPY</router-link
 			>
 			<router-link
-				to="/faq"
-				:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
-				class="header-link p-4"
-				>FAQ</router-link
-			>
-			<router-link
 				to="/partners"
 				:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
 				class="header-link p-4"
 				>PARTNERS</router-link
 			>
 			<router-link to="/jobs" class="text-white header-link p-4">JOBS</router-link>
-			<router-link to="/" class="text-white header-link p-4">SHOP</router-link>
+			<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
+			<router-link
+				to="/faq"
+				:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>FAQ</router-link
+			>
 		</div>
 		<!-- MOBILE SIDEBAR -->
 		<div class="lg:hidden w-full relative">
@@ -97,16 +101,16 @@ function handleScroll() {
 					:list="[
 						{ title: `BUY ROOS`, url: `https://opensea.io/collection/roo-troop` },
 						{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
-						{ title: `TRAITS`, url: `/home#traits` },
 					]"
+					:expandedText="false"
 				/>
 				<HeaderDropdown
 					:label="`JOEYS`"
 					:list="[
 						{ title: `BUY JOEYS`, url: `https://opensea.io/collection/joeymob` },
 						{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
-						{ title: `TRAITS`, url: `/` },
 					]"
+					:expandedText="false"
 				/>
 				<!-- <router-link
 					to="/team"
@@ -114,9 +118,14 @@ function handleScroll() {
 					class="header-link p-4"
 					>TEAM</router-link
 				> -->
-				<a href="https://stake.rootroop.com" target="_blank" class="focus: outline-none text-white header-link p-4"
-					>STAKE</a
-				>
+				<HeaderDropdown
+					:label="`STAKE`"
+					:list="[
+						{ title: `DASHBOARD`, url: `https://stake.rootroop.com/` },
+						{ title: `WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
+					]"
+					:expandedText="false"
+				/>
 				<button
 					v-if="router.currentRoute.value.name === `Home`"
 					class="text-white header-link p-4"
@@ -148,19 +157,19 @@ function handleScroll() {
 					>PHILANTHROPY</router-link
 				>
 				<router-link
-					to="/faq"
-					:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
-					class="header-link p-4"
-					>FAQ</router-link
-				>
-				<router-link
 					to="/partners"
 					:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
 					class="header-link p-4"
 					>PARTNERS</router-link
 				>
 				<router-link to="/jobs" class="text-white header-link p-4">JOBS</router-link>
-				<router-link to="/" class="text-white header-link p-4">SHOP</router-link>
+				<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
+				<router-link
+					to="/faq"
+					:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
+					class="header-link p-4"
+					>FAQ</router-link
+				>
 			</div>
 		</div>
 	</div>

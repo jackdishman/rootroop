@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onMounted, ref, nextTick } from 'vue'
-import TextLogo from '@/components/TextLogo.vue'
 import InstagramLogo from '@/components/icons/Instagram.vue'
 import TwitterLogo from '@/components/icons/Twitter.vue'
 import DiscordLogo from '@/components/icons/Discord.vue'
@@ -39,9 +38,9 @@ onMounted(() => {
 		<video ref="video" autoplay muted loop class="absolute w-full">
 			<source src="https://rootroop.com/assets/video/rooWeb.mp4" type="video/mp4" />
 		</video>
-		<div class="flex items-center justify-center h-full relative z-10"><TextLogo :large="true" /></div>
+		<!-- <div class="flex items-center justify-center h-full relative z-10"><TextLogo :large="true" /></div> -->
 		<!-- Social links -->
-		<div class="flex items-center justify-center relative -mt-10 lg:-mt-24 text-white">
+		<div class="flex items-end absolute justify-center text-white relative h-full pb-10">
 			<a href=""><InstagramLogo /></a>
 			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
 			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
@@ -58,8 +57,8 @@ onMounted(() => {
 		>
 			The <span class="uppercase text-rooRed font-bold">MISSION</span> of Roo Troop is to
 			<span class="uppercase text-rooRed font-bold">UNITE A COMMUNITY</span> that is eager to build in Web 3.0 and
-			successfully roll out the first <span class="uppercase text-rooRed font-bold">ON-CHAIN JOB MARKETPLACE</span>
-			, a platform that will disrupt the traditional job market.
+			successfully roll out the first <span class="uppercase text-rooRed font-bold">ON-CHAIN JOB MARKETPLACE,</span>
+			a platform that will disrupt the traditional job market.
 		</h4>
 		<div class="bg-rooRed w-full lg:w-1/3">
 			<video controls class="w-full border-4 border-rooRed">

@@ -5,12 +5,12 @@
 		</button>
 		<div
 			v-show="showDropdown"
-			class="z-10 absolute flex flex-col bg-black text-white opacity-90"
+			class="z-10 absolute flex flex-col bg-black text-white opacity-90 rounded-b pt-2"
+			:class="expandedText ? `w-44` : `w-full`"
 			style="margin-top: 1px"
 		>
-			<div v-for="li in list" :key="li.title">
-				<a v-if="li.url.startsWith(`http`)" :href="li.url">{{ li.title }}</a>
-				<router-link v-else :to="`${li.url}`">{{ li.title }}</router-link>
+			<div v-for="li in list" :key="li.title" class="w-full text-center font-semibold pb-2">
+				<a :href="li.url" target="_blank">{{ li.title }}</a>
 			</div>
 		</div>
 	</div>
@@ -23,6 +23,7 @@ import ChevronDown from './icons/ChevronDown.vue'
 defineProps<{
 	label: string
 	list: { title: string; url: string }[]
+	expandedText: boolean
 }>()
 
 const showDropdown = ref<boolean>(false)

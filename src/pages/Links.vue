@@ -4,12 +4,11 @@ import SubpageHeader from '@/components/SubpageHeader.vue'
 </script>
 <template>
 	<SubpageHeader :title="`Official Links`" />
-	<div class="flex justify-center">
-		<div class="w-full md:w-548 px-10">
-			<div v-for="l in linksMap" :key="l[0]" class="grid grid-cols-2 overflow-none mb-6">
+	<div class="w-full px-10 text-center">
+		<div v-for="l in linksMap" :key="l[0]" class="mb-6">
+			<a :href="l[1]" target="_blank" class="truncate font-bold text-center text-lg underline">
 				<h6>{{ l[0] }}</h6>
-				<a :href="l[1]" target="_blank" class="truncate"> {{ l[1] }} </a>
-			</div>
+			</a>
 		</div>
 	</div>
 </template>

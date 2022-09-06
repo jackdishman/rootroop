@@ -24,7 +24,15 @@ onBeforeMount(() => {
 })
 </script>
 <template>
-	<SubpageHeader :title="`Jobs`" />
+	<SubpageHeader :title="`Roo Troop Bounty Hub`" />
+	<div class="w-full flex justify-center">
+		<a
+			href="https://docs.rootroop.com/phase-two-so-you-like-utility/web3-pay-guide"
+			target="_blank"
+			class="text-rooRed text-lg italic underline text-center font-semibold uppercase"
+			>View our Pay guide</a
+		>
+	</div>
 	<div class="flex justify-center">
 		<div class="mt-10 grid gap-6 col-gap grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
 			<JobListing
