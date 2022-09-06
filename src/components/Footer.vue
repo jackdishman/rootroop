@@ -16,17 +16,14 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 }
 </script>
 <template>
-	<div class="bg-rooBlack lg:pt-10 lg:pl-20 flex justify-center xl:justify-start">
+	<div class="bg-rooBlack lg:pt-10 lg:px-20 flex justify-center xl:justify-start">
 		<TextLogo :large="true" class="w-32 h-20" />
 	</div>
 	<div class="bg-rooBlack xl:flex md:flex-row justify-center pb-10 lg:px-24">
 		<!-- Roo logo & socials -->
-		<div class="w-full lg:w-1/3 flex-shrink-0">
-			<p class="text-xs text-white italic leading-6 text-center xl:text-left">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula.
-			</p>
+		<div class="w-full xl:w-1/3 flex-shrink-0">
 			<!-- Socials -->
-			<div class="text-white flex flex-row text-rooRed mt-5 lg:mb-0 mb-5 xl:justify-start justify-center">
+			<div class="text-white flex flex-row text-rooRed pb-5 lg:mb-0 mb-5 xl:justify-start justify-center">
 				<a href="https://discord.com/invite/rootroop" target="_blank"> <DiscordLogo class="w-6 h-6" /> </a>
 				<a href="https://opensea.io/collection/roo-troop" target="_blank"><OpenSea class="w-6 h-6 mx-4" /></a>
 				<a href="https://twitter.com/RooTroopNFT" target="_blank"><Twitter class="w-6 h-6" /></a>
@@ -109,6 +106,6 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 		</div>
 	</div>
 	<div class="border-t-2 border-rooRed bg-black py-5">
-		<h6 class="text-white text-center font-normal text-xs">Roo Troop LLC 2021. All Rights Reserved.</h6>
+		<h6 class="text-white text-center font-normal text-xs">Roo Labs LLC 2021. All Rights Reserved.</h6>
 	</div>
 </template>

@@ -75,7 +75,7 @@ onMounted(() => {
 	<!-- Roos vs Joeys comparison -->
 	<Comparison />
 	<!-- roadmap -->
-	<div id="roadmap">
+	<div id="roadmap" style="padding-top: 24px">
 		<Roadmap />
 	</div>
 	<!-- Job marketplace intro -->

@@ -6,9 +6,10 @@ import router from '@/router/index'
 import { ref } from 'vue'
 
 const showDropdown = ref<boolean>(false)
-
+console.log(router.currentRoute.value.path)
 function handleScroll() {
-	document.getElementById(router.currentRoute.value.hash.substring(1))?.scrollIntoView()
+	const container = document.getElementById(`roadmap`)
+	container?.scrollIntoView()
 }
 </script>
 
@@ -36,15 +37,12 @@ function handleScroll() {
 				]"
 				:expandedText="false"
 			/>
-			<HeaderDropdown
-				:label="`STAKE`"
-				:list="[
-					{ title: `STAKING DASHBOARD`, url: `https://stake.rootroop.com/` },
-					{ title: `STAKING WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
-				]"
-				:expandedText="true"
-			/>
-			<button v-if="router.currentRoute.value.name === `Home`" class="text-white header-link p-4" @click="handleScroll">
+			<button
+				v-if="router.currentRoute.value.name === `Home`"
+				class="header-link p-4"
+				:class="router.currentRoute.value.fullPath === `/home#roadmap` ? `text-rooRed` : `text-white`"
+				@click="handleScroll"
+			>
 				ROADMAP
 			</button>
 			<router-link
@@ -53,16 +51,30 @@ function handleScroll() {
 					path: '/home',
 					hash: '#roadmap',
 				}"
-				class="text-white header-link p-4"
+				class="header-link p-4"
+				:class="router.currentRoute.value.fullPath === `/home#roadmap` ? `text-rooRed` : `text-white`"
 				>ROADMAP</router-link
 			>
-			<!-- <a href="#roadmap" class="text-white header-link p-4">ROADMAP</a> -->
+			<HeaderDropdown
+				:label="`STAKE`"
+				:list="[
+					{ title: `STAKING DASHBOARD`, url: `https://stake.rootroop.com/` },
+					{ title: `STAKING WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
+				]"
+				:expandedText="true"
+			/>
 			<router-link
-				to="/links"
-				:class="router.currentRoute.value.fullPath === `/links` ? `text-rooRed` : `text-white`"
+				to="/jobs"
+				:class="router.currentRoute.value.path === `/jobs` ? `text-rooRed` : `text-white`"
 				class="header-link p-4"
+				>JOBS</router-link
 			>
-				LINKS</router-link
+			<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
+			<router-link
+				to="/partners"
+				:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>PARTNERS</router-link
 			>
 			<router-link
 				to="/philanthropy"
@@ -71,13 +83,12 @@ function handleScroll() {
 				>PHILANTHROPY</router-link
 			>
 			<router-link
-				to="/partners"
-				:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
+				to="/links"
+				:class="router.currentRoute.value.fullPath === `/links` ? `text-rooRed` : `text-white`"
 				class="header-link p-4"
-				>PARTNERS</router-link
 			>
-			<router-link to="/jobs" class="text-white header-link p-4">JOBS</router-link>
-			<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
+				LINKS</router-link
+			>
 			<router-link
 				to="/faq"
 				:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
@@ -112,23 +123,10 @@ function handleScroll() {
 					]"
 					:expandedText="false"
 				/>
-				<!-- <router-link
-					to="/team"
-					:class="router.currentRoute.value.fullPath === `/team` ? `text-rooRed` : `text-white`"
-					class="header-link p-4"
-					>TEAM</router-link
-				> -->
-				<HeaderDropdown
-					:label="`STAKE`"
-					:list="[
-						{ title: `DASHBOARD`, url: `https://stake.rootroop.com/` },
-						{ title: `WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
-					]"
-					:expandedText="false"
-				/>
 				<button
 					v-if="router.currentRoute.value.name === `Home`"
-					class="text-white header-link p-4"
+					:class="router.currentRoute.value.fullPath === `/home#roadmap` ? `text-rooRed` : `text-white`"
+					class="header-link p-4"
 					@click="handleScroll"
 				>
 					ROADMAP
@@ -139,16 +137,30 @@ function handleScroll() {
 						path: '/home',
 						hash: '#roadmap',
 					}"
-					class="text-white header-link p-4"
+					:class="router.currentRoute.value.fullPath === `/home#roadmap` ? `text-rooRed` : `text-white`"
+					class="header-link p-4"
 					>ROADMAP</router-link
 				>
-				<!-- <a href="#roadmap" class="text-white header-link p-4">ROADMAP</a> -->
+				<HeaderDropdown
+					:label="`STAKE`"
+					:list="[
+						{ title: `DASHBOARD`, url: `https://stake.rootroop.com/` },
+						{ title: `WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
+					]"
+					:expandedText="false"
+				/>
 				<router-link
-					to="/links"
-					:class="router.currentRoute.value.fullPath === `/links` ? `text-rooRed` : `text-white`"
+					to="/jobs"
 					class="header-link p-4"
+					:class="router.currentRoute.value.path === `/jobs` ? `text-rooRed` : `text-white`"
+					>JOBS</router-link
 				>
-					LINKS</router-link
+				<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
+				<router-link
+					to="/partners"
+					:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
+					class="header-link p-4"
+					>PARTNERS</router-link
 				>
 				<router-link
 					to="/philanthropy"
@@ -157,13 +169,12 @@ function handleScroll() {
 					>PHILANTHROPY</router-link
 				>
 				<router-link
-					to="/partners"
-					:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
+					to="/links"
+					:class="router.currentRoute.value.fullPath === `/links` ? `text-rooRed` : `text-white`"
 					class="header-link p-4"
-					>PARTNERS</router-link
 				>
-				<router-link to="/jobs" class="text-white header-link p-4">JOBS</router-link>
-				<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
+					LINKS</router-link
+				>
 				<router-link
 					to="/faq"
 					:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"

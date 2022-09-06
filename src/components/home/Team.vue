@@ -49,14 +49,6 @@ import TeamCard from '@/components/TeamCard.vue'
 					:title="`Web Developer`"
 					:twitterURL="`https://twitter.com/hiddenlotustech`"
 				/>
-				<!-- Brad -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
-					:name="`Brad Hartzell`"
-					:screenName="`Brad`"
-					:title="`Meme prince`"
-					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
-				/>
 				<!-- Dish -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/dish.webp`)"
@@ -78,7 +70,7 @@ import TeamCard from '@/components/TeamCard.vue'
 					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
 					:name="`TOBBER`"
 					:screenName="`TOBBER`"
-					:title="`Meme prince`"
+					:title="`Meme Prince`"
 					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
 				/>
 				<!-- WK (Will Koester | Community Manager | https://twitter.com/WK_17_ ) -->
@@ -107,7 +99,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- El Chingon (Gio Hernandez-Parra [will get you pfp + socials] listed as Holder Relations) ->  -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:imgSrc="require(`@/assets/images/team/chingon.jpeg`)"
 					:name="`Gio Hernandez-Parra`"
 					:screenName="`El Chingon`"
 					:title="`Holder Relations`"
@@ -115,17 +107,9 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- NairoFee (Michael Mwangi [will get you pfp + socials] listed as Troop Analyst) ->  -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:imgSrc="require(`@/assets/images/team/nairo.jpeg`)"
 					:name="`Michael Mwangi`"
 					:screenName="`NairoFee`"
-					:title="`Troop Analyst`"
-					:twitterURL="`https://twitter.com/metacon68`"
-				/>
-				<!-- LooksLegit (Justin LeBlang [will get you pfp + socials] listed as Troop Spaces Leader) -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
-					:name="`Justin LeBlang`"
-					:screenName="`LooksLegit`"
 					:title="`Troop Analyst`"
 					:twitterURL="`https://twitter.com/metacon68`"
 				/>
