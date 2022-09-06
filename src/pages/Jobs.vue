@@ -8,7 +8,7 @@ const jobs = ref()
 onBeforeMount(() => {
 	// Fetch public jobs
 	const xhr = new XMLHttpRequest()
-	xhr.open('POST', 'http://api.rootroop.com/jobs.php')
+	xhr.open('POST', 'https://api.rootroop.com/jobs.php')
 	xhr.setRequestHeader('Accept', 'application/json')
 	xhr.setRequestHeader('Content-Type', 'application/json')
 	xhr.onload = () => {

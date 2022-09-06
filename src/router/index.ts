@@ -9,6 +9,12 @@ import Jobs from '@/pages/Jobs.vue'
 
 const routes = [
 	{
+		path: '*',
+		name: 'Index',
+		component: Index,
+		meta: { title: 'Roo Troop' },
+	},
+	{
 		path: '/',
 		name: 'Index',
 		component: Index,
