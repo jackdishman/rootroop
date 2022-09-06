@@ -85,7 +85,7 @@ const incubatorImages = ref<string[]>([
 	<h2 class="font-semibold text-3xl uppercase text-center text-rooBlack px-10 py-10 italic">What's the difference?</h2>
 	<div class="flex flex-col lg:flex-row justify-center">
 		<!-- Roos -->
-		<div class="mr-5 bg-rooBlack w-full lg:w-1/4">
+		<div class="bg-rooBlack w-full lg:w-1/3 relative pb-32">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -106,7 +106,7 @@ const incubatorImages = ref<string[]>([
 				</p>
 			</div> -->
 			<div class="flex justify-center">
-				<ul class="text-rooRed py-5 px-10 list-disc list-inside text-sm">
+				<ul class="text-rooRed py-5 px-10 list-disc list-outside text-sm">
 					<li>Genesis NFT in the Roo Troop ecosystem</li>
 					<li>First-tier access</li>
 					<li>Giveaways</li>
@@ -127,13 +127,13 @@ const incubatorImages = ref<string[]>([
 					<li>Free features within the on-chain job marketplace that will be monetized for others</li>
 				</ul>
 			</div>
-			<div class="flex justify-center mb-10">
-				<div class="w-36">
+			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
+				<div>
 					<a
 						href="https://opensea.io/collection/roo-troop?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[toggles][0]=BUY_NOW
 "
 						target="_blank"
-						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm"
+						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Buy Roos
@@ -141,7 +141,7 @@ const incubatorImages = ref<string[]>([
 					<a
 						href="https://stake.rootroop.com/"
 						target="_blank"
-						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm"
+						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Stake Roos
@@ -150,7 +150,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Joeys -->
-		<div class="mr-5 bg-rooBlack w-full lg:w-1/4">
+		<div class="bg-rooBlack w-full lg:w-1/3 border-x-8 relative">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -164,12 +164,8 @@ const incubatorImages = ref<string[]>([
 				</span>
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Joey</h5>
-			<!-- <div class="flex justify-center">
-				<p class="w-48 text-white text-xs text-normal leading-5">
-				</p>
-			</div> -->
 			<div class="flex justify-center">
-				<ul class="text-rooRed py-5 px-10 py-5 list-disc list-inside text-sm">
+				<ul class="text-rooRed py-5 px-10 py-5 list-disc list-outside text-sm">
 					<li>Companion NFT in the Roo Troop ecosystem</li>
 					<li>Second-tier access</li>
 					<li>Access to Mod Mob</li>
@@ -183,12 +179,12 @@ const incubatorImages = ref<string[]>([
 					<li>Added perks within the on-chain job marketplace when holding both Roos + Joeys</li>
 				</ul>
 			</div>
-			<div class="flex justify-center mb-10">
-				<div class="w-36">
+			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
+				<div>
 					<a
 						href="https://opensea.io/collection/joeymob?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[toggles][0]=BUY_NOW"
 						target="_blank"
-						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm"
+						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Buy joeys
@@ -196,7 +192,7 @@ const incubatorImages = ref<string[]>([
 					<a
 						href="https://stake.rootroop.com/"
 						target="_blank"
-						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm"
+						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Stake joeys
@@ -205,7 +201,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Incubators -->
-		<div class="mr-5 bg-rooBlack w-full lg:w-1/4">
+		<div class="bg-rooBlack w-full lg:w-1/3 relative">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -227,12 +223,12 @@ const incubatorImages = ref<string[]>([
 					instead of Joeys.
 				</p>
 			</div>
-			<div class="flex justify-center mb-10">
-				<div class="w-36">
+			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
+				<div>
 					<a
 						href="https://opensea.io/collection/joeymob?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[stringTraits][0][name]=Incubator&search[stringTraits][0][values][0]=Ash&search[stringTraits][0][values][1]=Sand&search[stringTraits][0][values][2]=Mocha&search[stringTraits][0][values][3]=Coal&search[stringTraits][0][values][4]=Coffee&search[stringTraits][0][values][5]=Purp&search[stringTraits][0][values][6]=Tomato&search[stringTraits][0][values][7]=Bubblegum&search[stringTraits][0][values][8]=Banana%20Split&search[stringTraits][0][values][9]=Berry&search[stringTraits][0][values][10]=Weed&search[stringTraits][0][values][11]=Trippy&search[stringTraits][0][values][12]=Irradiated&search[stringTraits][0][values][13]=Demon&search[stringTraits][0][values][14]=Arctic&search[stringTraits][0][values][15]=Golden&search[stringTraits][0][values][16]=Glitch&search[stringTraits][0][values][17]=Alien&search[stringTraits][0][values][18]=Angel&search[stringTraits][0][values][19]=Robo&search[stringTraits][0][values][20]=Lava&search[toggles][0]=BUY_NOW"
 						target="_blank"
-						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm"
+						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Buy Incubators
@@ -240,7 +236,7 @@ const incubatorImages = ref<string[]>([
 					<a
 						href="https://joey.rootroop.com/"
 						target="_blank"
-						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm"
+						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Stake Incubators
