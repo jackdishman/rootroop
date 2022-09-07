@@ -9,8 +9,9 @@
 		viewBox="0 0 150 150"
 		style="enable-background: new 0 0 150 150"
 		xml:space="preserve"
+		class="sidebar"
 	>
-		<g id="XMLID_240_">
+		<g id="XMLID_240_" class="sidebar">
 			<path
 				id="XMLID_241_"
 				d="M15,30h120c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.716,0,0,6.716,0,15S6.716,30,15,30z"
