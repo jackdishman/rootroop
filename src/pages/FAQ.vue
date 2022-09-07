@@ -100,12 +100,14 @@ const toggleDropdown = (d: number) => {
 				class="text-rooRed font-semibold text-lg italic mb-5 uppercase flex items-center"
 				@click="toggleDropdown(7)"
 			>
-				How do i claim a bountry?
+				How do i claim a bounty?
 				<span class="ml-2"><ChevronDown :style="activeDropdown === 7 ? `transform: rotate(180deg)` : ``" /></span>
 			</button>
 			<p v-if="activeDropdown === 7" class="font-normal mb-4">
-				All new bounties are posted on the Roo Troop Bounty Hub (hyperlink) and are viewable to Roo Troop holders as
-				well as all partner community holders for a one-week period of exclusivity before opening up to the public.
+				All new bounties are posted on the
+				<a href="https://jobs.rootroop.com/" target="_blank" class="underline">Roo Troop Bounty Hub</a>. and are
+				viewable to Roo Troop holders as well as all partner community holders for a one-week period of exclusivity
+				before opening up to the public.
 			</p>
 			<p v-if="activeDropdown === 7" class="font-normal mb-4">
 				Once you find a bounty that suits you, submit your information via the bounty application, where the employer

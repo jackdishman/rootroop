@@ -106,7 +106,7 @@ const incubatorImages = ref<string[]>([
 				</p>
 			</div> -->
 			<div class="flex justify-center">
-				<ul class="text-rooRed py-5 px-10 list-disc list-outside text-sm">
+				<ul class="text-white py-5 px-10 list-disc list-outside text-sm">
 					<li>Genesis NFT in the Roo Troop ecosystem</li>
 					<li>First-tier access</li>
 					<li>Giveaways</li>
@@ -130,8 +130,7 @@ const incubatorImages = ref<string[]>([
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
 				<div>
 					<a
-						href="https://opensea.io/collection/roo-troop?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[toggles][0]=BUY_NOW
-"
+						href="https://opensea.io/collection/roo-troop?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[toggles][0]=BUY_NOW"
 						target="_blank"
 						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
@@ -150,7 +149,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Joeys -->
-		<div class="bg-rooBlack w-full lg:w-1/3 border-x-8 relative">
+		<div class="bg-rooBlack w-full lg:w-1/3 border-x-8 relative pb-32">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -165,7 +164,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Joey</h5>
 			<div class="flex justify-center">
-				<ul class="text-rooRed py-5 px-10 py-5 list-disc list-outside text-sm">
+				<ul class="text-white py-5 px-10 py-5 list-disc list-outside text-sm">
 					<li>Companion NFT in the Roo Troop ecosystem</li>
 					<li>Second-tier access</li>
 					<li>Access to Mod Mob</li>
@@ -201,7 +200,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Incubators -->
-		<div class="bg-rooBlack w-full lg:w-1/3 relative">
+		<div class="bg-rooBlack w-full lg:w-1/3 relative pb-32">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
@@ -216,7 +215,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Incubators</h5>
 			<div class="flex justify-center">
-				<p class="py-5 px-10 text-white text-xs text-normal leading-5 py-5">
+				<p class="py-5 px-10 text-white text-sm text-normal leading-5 py-5">
 					The Joeybean Incubators need to be incubated (hyperlink incubation page) for 12 weeks in order to turn into
 					fully matured Joeys. Incubators come with almost all of the same utility as Joeys, except they cannot be
 					staked & there may be some perks upon the marketplace's full public launch for those holding Incubators
@@ -239,7 +238,7 @@ const incubatorImages = ref<string[]>([
 						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
-						Stake Incubators
+						Incubate Joeys
 					</a>
 				</div>
 			</div>

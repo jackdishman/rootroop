@@ -41,13 +41,13 @@ onMounted(() => {
 		<!-- <div class="flex items-center justify-center h-full relative z-10"><TextLogo :large="true" /></div> -->
 		<!-- Social links -->
 		<div class="flex items-end absolute justify-center text-white relative h-full pb-10">
-			<a href=""><InstagramLogo /></a>
-			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
-			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
 			<a href="https://opensea.io/collection/roo-troop" target="_blank"
 				><OpenSeaLogo style="width: 24px; height: 24px"
 			/></a>
+			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
+			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
 		</div>
+		<a href="https://instagram.com/rootroop" target="_blank"><InstagramLogo /></a>
 	</div>
 	<NewsBanner />
 	<!-- Mission and video -->

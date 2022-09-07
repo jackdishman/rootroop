@@ -9,8 +9,8 @@ defineProps({
 <template>
 	<div class="w-full relative flex items-center justify-center" style="padding-top: 50px">
 		<img :src="require(`@/assets/images/headerBG.webp`)" class="w-full" />
-		<div class="w-full absolute flex items-center h-full">
-			<h3 class="text-white text-3xl font-bold italic pl-32">{{ title }}</h3>
+		<div class="w-full absolute flex items-center justify-center lg:justify-start h-full">
+			<h3 class="text-white text-3xl font-bold italic text-center lg:text-left lg:pl-32">{{ title }}</h3>
 		</div>
 	</div>
 	<div

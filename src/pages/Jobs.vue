@@ -4,6 +4,12 @@ import SubpageHeader from '@/components/SubpageHeader.vue'
 import JobListing from '@/components/JobListing.vue'
 
 const jobs = ref()
+const searchInput = ref()
+
+const filterResults = () => {
+	const keyword = searchInput.value.value
+	console.log(keyword)
+}
 
 onBeforeMount(() => {
 	// Fetch public jobs
@@ -18,6 +24,7 @@ onBeforeMount(() => {
 			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
 		}
 		jobs.value = rawJobs
+		// console.log(jobs.value)
 	}
 	xhr.send()
 })
@@ -31,6 +38,9 @@ onBeforeMount(() => {
 			class="text-rooRed text-lg italic underline text-center font-semibold uppercase"
 			>View our Pay guide</a
 		>
+		<div>
+			<input ref="searchInput" type="text" class="border" @keyup.enter="filterResults" />
+		</div>
 	</div>
 	<div class="flex justify-center">
 		<div class="mt-10 grid gap-6 col-gap grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">

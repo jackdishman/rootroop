@@ -7,7 +7,7 @@
 			<!-- Stage 1 -->
 			<div class="border rounded-lg border-rooRed m-4 p-2">
 				<h5 class="text-white text-lg font-bold uppercase italic text-center border-b-2 border-rooRed">Phase One</h5>
-				<ul class="list-disc list-inside">
+				<ul class="list-disc list-list-outside pl-5">
 					<li class="text-rooRed text-sm my-2">Community Building</li>
 					<li class="text-rooRed text-sm mb-2">Roo Troop Mint</li>
 					<li class="text-rooRed text-sm mb-2">Fund Project Wallet</li>
@@ -18,7 +18,7 @@
 			<!-- Stage 2 -->
 			<div class="border rounded-lg border-rooRed m-4 p-2">
 				<h5 class="text-white text-lg font-bold uppercase italic text-center border-b-2 border-rooRed">Phase Two</h5>
-				<ul class="list-disc list-inside">
+				<ul class="list-disc list-list-outside pl-5">
 					<li class="text-rooRed text-sm my-2">Staking v1</li>
 					<li class="text-rooRed text-sm mb-2">Joey Mob Mint</li>
 					<li class="text-rooRed text-sm mb-2">Online Events</li>
@@ -30,7 +30,7 @@
 			<!-- Stage 3 -->
 			<div class="border rounded-lg border-rooRed m-4 p-2">
 				<h5 class="text-white text-lg font-bold uppercase italic text-center border-b-2 border-rooRed">Phase Three</h5>
-				<ul class="list-disc list-inside">
+				<ul class="list-disc list-list-outside pl-5">
 					<li class="text-rooRed text-sm my-2">Staking v2</li>
 					<li class="text-rooRed text-sm mb-2">$ROOLAH Shop</li>
 					<li class="text-rooRed text-sm mb-2">Roo Tech</li>
@@ -43,7 +43,7 @@
 			<!-- Stage 4 -->
 			<div class="border rounded-lg border-rooRed m-4 p-2">
 				<h5 class="text-white text-lg font-bold uppercase italic text-center border-b-2 border-rooRed">Phase Four</h5>
-				<ul class="list-disc list-inside">
+				<ul class="list-disc list-outside pl-5">
 					<li class="text-white text-sm my-2">$ROOLAH Shop Expansion</li>
 					<li class="text-white text-sm mb-2">Roo Merch</li>
 					<li class="text-white text-sm mb-2">[REDACTED] On-Chain Job marketplace</li>
@@ -54,7 +54,7 @@
 			<!-- Stage 5 -->
 			<div class="border rounded-lg border-rooRed m-4 p-2">
 				<h5 class="text-white text-lg font-bold uppercase italic text-center border-b-2 border-rooRed">Phase Five</h5>
-				<ul class="list-disc list-inside">
+				<ul class="list-disc list-list-outside pl-5">
 					<li class="text-white text-sm my-2">Roo Merch</li>
 					<li class="text-white text-sm my-2">Marketplace Token Airdrop</li>
 					<li class="text-white text-sm mb-2">Future Projects</li>
@@ -64,7 +64,10 @@
 			</div>
 		</div>
 		<div class="flex justify-center w-full mt-10 mb-10">
-			<a href="https://docs.rootroop.com/" target="_blank" class="uppercase text-white text-sm text-center"
+			<a
+				href="https://docs.rootroop.com/"
+				target="_blank"
+				class="uppercase text-white text-sm text-center underline px-4 py-2 border rounded-lg hover:font-semibold"
 				>CLICK HERE TO READ THE IN-DEPTH WHITEPAPER</a
 			>
 		</div>

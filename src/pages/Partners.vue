@@ -75,31 +75,6 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 				</div>
 			</div>
 
-			<!-- Dream Team -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/gac.webp`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">Dream Team</h3>
-					<RedUnderscore />
-					<p class="pt-5">
-						Dream Team is a private community focused on bringing top-tier whitelist spots & alpha calls to their
-						members.
-					</p>
-					<ul class="list-disc list-inside mt-2">
-						<li>- Roo Troop holders receive 2x WL entries within the Dream Team Discord</li>
-						<li>- Roo Troop & Joey Mob holders receive Dream Team alpha & degen calls within the Roo Troop Discord</li>
-					</ul>
-					<p class="mt-2">
-						<a
-							href="https://twitter.com/RooTroopNFT/status/1527078990103531520?s=20&t=8zNkZ5i8O1ZoQHHc-ku_9w"
-							target="_blank"
-							class="text-rooRed font-semibold italic underline uppercase"
-						>
-							Official Twitter Announcement
-						</a>
-					</p>
-				</div>
-			</div>
 			<!-- BearX -->
 			<div class="flex flex-row px-32 mb-10">
 				<img :src="require(`@/assets/images/logos/bear-x.png`)" class="w-32 object-contain flex-shrink-0" />
@@ -162,7 +137,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 
 			<!-- Alpha x -->
 			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/gac.webp`)" class="w-32 object-contain flex-shrink-0" />
+				<img :src="require(`@/assets/images/logos/alphax.png`)" class="w-32 object-contain flex-shrink-0" />
 				<div class="ml-16">
 					<h3 class="text-3xl font-semibold italic uppercase mb-3">ALPHA X</h3>
 					<RedUnderscore />

@@ -15,10 +15,6 @@ defineProps({
 		type: String,
 		default: `http://mpmco.com/wp-content/uploads/2018/02/placeholder.jpg`,
 	},
-	workRequired: {
-		type: Array<string>,
-		default: [],
-	},
 	description: {
 		type: String,
 		default: `Default description`,

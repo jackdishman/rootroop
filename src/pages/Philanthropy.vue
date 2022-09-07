@@ -4,7 +4,7 @@ import SubpageHeader from '@/components/SubpageHeader.vue'
 <template>
 	<SubpageHeader :title="`Philanthropy`" />
 	<div class="flex justify-center">
-		<div class="w-full md:w-548 px-10">
+		<div class="w-full px-10 lg:px-32">
 			<h3 class="text-3xl font-semibold italic uppercase text-center">Rainforest Rescue</h3>
 			<p class="pt-10 font-medium">
 				We have ambitious goals to provide value to every Roo Troop holder, and we also have these same feelings about
@@ -38,12 +38,12 @@ import SubpageHeader from '@/components/SubpageHeader.vue'
 					Roo Labs donated 10eth ($30k) to Rainforest Rescue</a
 				>. These funds were used to purchase Lot 19 in the Daintree Rainforest to preserve the habitat. For the first
 				time, there is now an unbroken corridor from the lowest point of elevation all the way up to the highest for
-				Tree Kangaroos to safely travel through, find mates & for Joeys to expand their territory
+				Tree Kangaroos to safely travel through, find mates & for Joeys to expand their territory.
 			</p>
 			<!-- Video -->
 			<iframe
-				width="560"
-				height="315"
+				width="100%"
+				height="450"
 				src="https://www.youtube.com/embed/hqe01nfEUZ4"
 				title="YouTube video player"
 				frameborder="0"
@@ -53,11 +53,11 @@ import SubpageHeader from '@/components/SubpageHeader.vue'
 
 			<p class="py-10 font-medium">Rooty Roo!</p>
 			<!-- bottom roos -->
-			<div class="flex flex-row justify-center">
-				<img src="@/assets/images/philanthropy/roo1.png" />
-				<img src="@/assets/images/philanthropy/roo2.png" />
-				<img src="@/assets/images/philanthropy/roo3.png" />
-				<img src="@/assets/images/philanthropy/roo4.png" />
+			<div class="flex flex-row justify-center max-w-full">
+				<img src="@/assets/images/philanthropy/roo1.png" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img src="@/assets/images/philanthropy/roo2.png" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img src="@/assets/images/philanthropy/roo3.png" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img src="@/assets/images/philanthropy/roo4.png" class="w-24 h-24 lg:w-48 lg:h-48" />
 			</div>
 		</div>
 	</div>
