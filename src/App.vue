@@ -12,3 +12,10 @@ import router from '@/router/index'
 	<Footer v-if="router.currentRoute.value.fullPath !== `/`" />
 	<div id="popup"></div>
 </template>
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+</style>

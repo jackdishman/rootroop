@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { onMounted, ref, nextTick } from 'vue'
+import { onMounted } from 'vue'
 import InstagramLogo from '@/components/icons/Instagram.vue'
 import TwitterLogo from '@/components/icons/Twitter.vue'
 import DiscordLogo from '@/components/icons/Discord.vue'
-import OpenSeaLogo from '@/components/icons/OpenSea.vue'
+import OpenseaLogo from '@/components/icons/OpenSea.vue'
 import NewsBanner from '@/components/home/Banner.vue'
 import RooCarousel from '@/components/home/RooCarousel.vue'
 import RooTraits from '@/components/home/RooTraits.vue'
@@ -15,39 +15,31 @@ import Team from '@/components/home/Team.vue'
 import Partners from '@/components/home/Partners.vue'
 import router from '@/router/index'
 
-const video = ref<HTMLVideoElement>()
-const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
-
-function resizeScreen() {
-	videoHeight.value = video.value ? video.value?.clientHeight : 0
-}
-
 onMounted(() => {
-	window.addEventListener(`resize`, (e) => {
-		resizeScreen()
-	})
-	nextTick().then(() => {
-		resizeScreen()
-	})
 	document.getElementById(router.currentRoute.value.hash.substring(1))?.scrollIntoView()
 })
 </script>
 <template>
 	<!-- Splash video, socials, logo -->
-	<div class="relative overflow-hidden pt-10" :style="`height: ` + videoHeight + `px`">
-		<video ref="video" autoplay muted loop class="absolute w-full">
-			<source src="https://rootroop.com/assets/video/rooWeb.mp4" type="video/mp4" />
-		</video>
-		<!-- <div class="flex items-center justify-center h-full relative z-10"><TextLogo :large="true" /></div> -->
+	<div class="relative overflow-hidden pt-10 w-full">
+		<img
+			alt="Roo background image"
+			:src="require(`@/assets/images/roo-bg.webp`)"
+			class="absolute h-96 w-full object-cover"
+		/>
+		<!-- Logo -->
+		<div class="absolute h-fit w-full flex items-center justify-center mt-24">
+			<img :src="require(`@/assets/images/overlay.png`)" />
+		</div>
 		<!-- Social links -->
-		<div class="flex items-end absolute justify-center text-white relative h-full pb-10">
+		<div class="flex items-end absolute justify-center text-white relative h-96 pb-10">
 			<a href="https://opensea.io/collection/roo-troop" target="_blank"
-				><OpenSeaLogo style="width: 24px; height: 24px"
+				><OpenseaLogo style="width: 24px; height: 24px"
 			/></a>
 			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
 			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
+			<a href="https://instagram.com/rootroop" target="_blank"><InstagramLogo /></a>
 		</div>
-		<a href="https://instagram.com/rootroop" target="_blank"><InstagramLogo /></a>
 	</div>
 	<NewsBanner />
 	<!-- Mission and video -->

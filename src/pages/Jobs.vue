@@ -23,12 +23,14 @@ const filteredJobs = ref<Array<IJob>>([])
 
 const filterResults = () => {
 	const keyword = searchInput.value
+	if (keyword.length < 3) {
+		return
+	}
 	console.log(keyword)
 	filteredJobs.value = []
 	filteredJobs.value = jobs.value.filter((job) => {
 		return (
 			job.title.toLowerCase().includes(keyword.toLowerCase()) ||
-			// job.description.toLowerCase().includes(keyword.toLowerCase()) ||
 			job.workRequired.toString().toLowerCase().includes(keyword.toLowerCase())
 		)
 	})
