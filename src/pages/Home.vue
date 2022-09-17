@@ -25,14 +25,14 @@ onMounted(() => {
 		<img
 			alt="Roo background image"
 			:src="require(`@/assets/images/roo-bg.webp`)"
-			class="absolute h-96 w-full object-cover"
+			class="absolute h-72 lg:h-96 w-full object-cover"
 		/>
 		<!-- Logo -->
-		<div class="absolute h-fit w-full flex items-center justify-center mt-24">
-			<img :src="require(`@/assets/images/overlay.png`)" />
+		<div class="absolute h-fit w-full flex items-center justify-center mt-12 lg:mt-24">
+			<img :src="require(`@/assets/images/rootroop.png`)" class="w-3/4 lg:w-1/2 pt-12" />
 		</div>
 		<!-- Social links -->
-		<div class="flex items-end absolute justify-center text-white relative h-96 pb-10">
+		<div class="flex items-end absolute justify-center text-white relative h-72 lg:h-96 pb-10">
 			<a href="https://opensea.io/collection/roo-troop" target="_blank"
 				><OpenseaLogo style="width: 24px; height: 24px"
 			/></a>

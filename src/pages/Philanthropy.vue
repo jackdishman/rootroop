@@ -54,10 +54,10 @@ import SubpageHeader from '@/components/SubpageHeader.vue'
 			<p class="py-10 font-medium">Rooty Roo!</p>
 			<!-- bottom roos -->
 			<div class="flex flex-row justify-center max-w-full">
-				<img src="@/assets/images/philanthropy/roo1.png" class="w-24 h-24 lg:w-48 lg:h-48" />
-				<img src="@/assets/images/philanthropy/roo2.png" class="w-24 h-24 lg:w-48 lg:h-48" />
 				<img src="@/assets/images/philanthropy/roo3.png" class="w-24 h-24 lg:w-48 lg:h-48" />
 				<img src="@/assets/images/philanthropy/roo4.png" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img src="@/assets/images/philanthropy/roo1.png" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img src="@/assets/images/philanthropy/roo2.png" class="w-24 h-24 lg:w-48 lg:h-48" />
 			</div>
 		</div>
 	</div>

@@ -226,7 +226,4 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 		</div>
 	</div>
-	<div class="flex justify-center">
-		<img :src="require(`@/assets/images/combo_logo.webp`)" alt="Logo" />
-	</div>
 </template>

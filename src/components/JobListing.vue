@@ -50,7 +50,7 @@ const showDetails = ref<boolean>(false)
 
 <template>
 	<div class="w-48">
-		<div class="">
+		<div @click="showDetails = true">
 			<img
 				:src="imageUrl"
 				:alt="title"
@@ -58,8 +58,10 @@ const showDetails = ref<boolean>(false)
 				class="w-full h-48 rounded-lg mb-4"
 			/>
 		</div>
-		<h6><span class="font-semibold pr-2">Role:</span>{{ workRequired.join(`, `).toString() }}</h6>
-		<h6 class="my-2"><span class="font-semibold pr-2">Project:</span>{{ title }}</h6>
+		<h6 @click="showDetails = true">
+			<span class="font-semibold pr-2">Role:</span>{{ workRequired.join(`, `).toString() }}
+		</h6>
+		<h6 class="my-2" @click="showDetails = true"><span class="font-semibold pr-2">Project:</span>{{ title }}</h6>
 		<button class="text-rooRed font-semibold italic uppercase text-sm" @click="showDetails = true">
 			Find out More >
 		</button>
@@ -89,10 +91,12 @@ const showDetails = ref<boolean>(false)
 						</div>
 					</div>
 
-					<CloseIcon
-						class="cursor-pointer flex-shrink-0 text-rooRed rounded-full border border-rooRed bg-white"
+					<div
+						class="cursor-pointer flex-shrink-0 text-rooRed rounded-full border border-rooRed bg-white w-10 h-10 flex justify-center items-center"
 						@click="showDetails = false"
-					/>
+					>
+						<CloseIcon />
+					</div>
 				</div>
 				<!-- details -->
 				<div>
@@ -111,7 +115,7 @@ const showDetails = ref<boolean>(false)
 					</div>
 
 					<h6 class="mt-4 pb-2 text-center">
-						<a :href="formUrl" class="font-semibold rounded-lg text-white bg-rooRed px-4 py-2">Apply</a>
+						<a :href="formUrl" target="_blank" class="font-semibold rounded-lg text-white bg-rooRed px-4 py-2">Apply</a>
 					</h6>
 				</div>
 				<!-- Links at bottom -->

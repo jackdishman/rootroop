@@ -61,9 +61,11 @@ onBeforeMount(() => {
 		<a
 			href="https://docs.rootroop.com/phase-two-so-you-like-utility/web3-pay-guide"
 			target="_blank"
-			class="text-rooRed text-lg italic underline text-center font-semibold uppercase pb-4"
-			>View our Pay guide</a
+			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
 		>
+			Pay guide</a
+		>
+		<!-- Search input -->
 		<div class="h-12 flex">
 			<input
 				v-model="searchInput"
@@ -79,6 +81,13 @@ onBeforeMount(() => {
 				<SearchIcon class="w-4 h-4" />
 			</button>
 		</div>
+
+		<a
+			href="https://jobs.rootroop.com/"
+			target="_blank"
+			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
+			>Login</a
+		>
 	</div>
 	<div class="flex justify-center mb-10">
 		<div
