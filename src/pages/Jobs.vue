@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { onBeforeMount, ref } from 'vue'
+
 import SubpageHeader from '@/components/SubpageHeader.vue'
 import JobListing from '@/components/JobListing.vue'
 import SearchIcon from '@/components/icons/SearchIcon.vue'
+
+import { ethers } from 'ethers'
 
 interface IJob {
 	title: string
@@ -35,6 +38,14 @@ const filterResults = () => {
 		)
 	})
 	console.log(keyword, filteredJobs.value)
+}
+
+const initWallet = async () => {
+	const provider = new ethers.providers.Web3Provider(window.ethereum)
+	await provider.send('eth_requestAccounts', [])
+	const signer = provider.getSigner()
+	console.log(signer)
+	signer.signMessage('Hello World')
 }
 
 onBeforeMount(() => {
@@ -82,12 +93,14 @@ onBeforeMount(() => {
 			</button>
 		</div>
 
-		<a
+		<button
 			href="https://jobs.rootroop.com/"
 			target="_blank"
 			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
-			>Login</a
+			@click="initWallet"
 		>
+			Login
+		</button>
 	</div>
 	<div class="flex justify-center mb-10">
 		<div
