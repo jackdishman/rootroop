@@ -18,11 +18,8 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</p>
 			<div class="flex flex-col lg:flex-row">
 				<div>
-					<a
-						href="https://forms.gle/uL1hgbvu8nEUZHJdA"
-						target="_blank"
-						class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"
-						>SEARCH FOR JOBS</a
+					<router-link to="/jobs" class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"
+						>SEARCH FOR JOBS</router-link
 					>
 				</div>
 				<div class="lg:ml-6 mt-6 lg:mt-0">
