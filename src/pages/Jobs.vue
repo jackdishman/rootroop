@@ -65,18 +65,19 @@ function fetchMessage() {
 }
 
 async function signMessage(msg) {
+	console.log(process.env.VUE_APP_INFURA_KEY)
 	const providerOptions = {
 		walletlink: {
 			package: CoinbaseWalletSDK, // Required
 			options: {
 				appName: 'Web 3 Modal Demo', // Required
-				infuraId: process.env.INFURA_KEY, // Required unless you provide a JSON RPC url; see `rpc` below
+				infuraId: process.env.VUE_APP_INFURA_KEY, // Required unless you provide a JSON RPC url; see `rpc` below
 			},
 		},
 		walletconnect: {
 			package: WalletConnect, // required
 			options: {
-				infuraId: process.env.INFURA_KEY, // required
+				infuraId: process.env.VUE_APP_INFURA_KEY, // required
 			},
 		},
 	}
