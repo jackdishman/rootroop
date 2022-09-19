@@ -7,6 +7,9 @@ import SearchIcon from '@/components/icons/SearchIcon.vue'
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
 
 import { ethers } from 'ethers'
+import Web3Modal from 'web3modal'
+import WalletConnect from '@walletconnect/web3-provider'
+import CoinbaseWalletSDK from '@coinbase/wallet-sdk'
 
 interface IJob {
 	title: string
@@ -25,6 +28,7 @@ const jobs = ref<Array<IJob>>([])
 const searchInput = ref<string>(``)
 const filteredJobs = ref<Array<IJob>>([])
 const isLoading = ref<boolean>(true)
+const loggedIn = ref<boolean>(false)
 
 const filterResults = () => {
 	const keyword = searchInput.value
@@ -61,7 +65,31 @@ function fetchMessage() {
 }
 
 async function signMessage(msg) {
-	const provider = new ethers.providers.Web3Provider(window.ethereum)
+	const providerOptions = {
+		walletlink: {
+			package: CoinbaseWalletSDK, // Required
+			options: {
+				appName: 'Web 3 Modal Demo', // Required
+				infuraId: process.env.INFURA_KEY, // Required unless you provide a JSON RPC url; see `rpc` below
+			},
+		},
+		walletconnect: {
+			package: WalletConnect, // required
+			options: {
+				infuraId: process.env.INFURA_KEY, // required
+			},
+		},
+	}
+
+	const web3Modal = new Web3Modal({
+		network: 'mainnet', // optional
+		cacheProvider: true, // optional
+		providerOptions, // required
+	})
+	const instance = await web3Modal.connect()
+	const provider = new ethers.providers.Web3Provider(instance)
+	// const signer = provider.getSigner()
+	// const provider = new ethers.providers.Web3Provider(window.ethereum)
 	await provider.send('eth_requestAccounts', [])
 	const signer = provider.getSigner()
 	signer.signMessage(msg).then((token) => {
@@ -85,6 +113,7 @@ function fetchPrivateJobs(token) {
 		}
 		jobs.value = rawJobs
 		isLoading.value = false
+		loggedIn.value = true
 	}
 	xhr.send(JSON.stringify(params))
 }
@@ -135,6 +164,7 @@ onBeforeMount(() => {
 		</div>
 
 		<button
+			v-if="!loggedIn"
 			href="https://jobs.rootroop.com/"
 			target="_blank"
 			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
@@ -142,6 +172,7 @@ onBeforeMount(() => {
 		>
 			Login
 		</button>
+		<h5 v-else class="text-lg text-rooRed font-semibold text-center uppercase px-4 py-2">Verified</h5>
 	</div>
 	<!-- When jobs are loading -->
 	<div v-show="isLoading" class="flex py-24 justify-center"><LoadingSpinner /></div>

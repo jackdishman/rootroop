@@ -10,14 +10,18 @@
 		"format": "prettier .  --write"
 	},
 	"dependencies": {
+		"@coinbase/wallet-sdk": "^3.5.2",
+		"@walletconnect/web3-provider": "^1.8.0",
 		"core-js": "^3.22.8",
 		"ethers": "^5.7.1",
+		"node-polyfill-webpack-plugin": "^2.0.1",
 		"pinia": "^2.0.14",
 		"pinia-plugin-persistedstate": "^1.6.1",
 		"util": "^0.12.4",
 		"vue": "^3.2.36",
 		"vue-router": "^4.0.15",
-		"vue3-carousel": "^0.1.40"
+		"vue3-carousel": "^0.1.40",
+		"web3modal": "^1.9.9"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.5",
