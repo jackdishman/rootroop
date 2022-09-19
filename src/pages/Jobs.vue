@@ -7,6 +7,9 @@ import SearchIcon from '@/components/icons/SearchIcon.vue'
 import LoadingSpinner from '@/components/LoadingSpinner.vue'
 
 import { ethers } from 'ethers'
+import Web3Modal from 'web3modal'
+import WalletConnect from '@walletconnect/web3-provider'
+import CoinbaseWalletSDK from '@coinbase/wallet-sdk'
 
 interface IJob {
 	title: string
@@ -61,7 +64,31 @@ function fetchMessage() {
 }
 
 async function signMessage(msg) {
-	const provider = new ethers.providers.Web3Provider(window.ethereum)
+	const providerOptions = {
+		walletlink: {
+			package: CoinbaseWalletSDK, // Required
+			options: {
+				appName: 'Web 3 Modal Demo', // Required
+				infuraId: process.env.INFURA_KEY, // Required unless you provide a JSON RPC url; see `rpc` below
+			},
+		},
+		walletconnect: {
+			package: WalletConnect, // required
+			options: {
+				infuraId: process.env.INFURA_KEY, // required
+			},
+		},
+	}
+
+	const web3Modal = new Web3Modal({
+		network: 'mainnet', // optional
+		cacheProvider: true, // optional
+		providerOptions, // required
+	})
+	const instance = await web3Modal.connect()
+	const provider = new ethers.providers.Web3Provider(instance)
+	// const signer = provider.getSigner()
+	// const provider = new ethers.providers.Web3Provider(window.ethereum)
 	await provider.send('eth_requestAccounts', [])
 	const signer = provider.getSigner()
 	signer.signMessage(msg).then((token) => {
