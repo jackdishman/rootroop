@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeMount, ref } from 'vue'
+import { onBeforeMount, ref, watch } from 'vue'
 
 import SubpageHeader from '@/components/SubpageHeader.vue'
 import JobListing from '@/components/JobListing.vue'
@@ -29,7 +29,6 @@ const filterResults = () => {
 	if (keyword.length < 3) {
 		return
 	}
-	console.log(keyword)
 	filteredJobs.value = []
 	filteredJobs.value = jobs.value.filter((job) => {
 		return (
@@ -37,15 +36,52 @@ const filterResults = () => {
 			job.workRequired.toString().toLowerCase().includes(keyword.toLowerCase())
 		)
 	})
-	console.log(keyword, filteredJobs.value)
 }
 
-const initWallet = async () => {
+const message = ref<string>(``)
+const messageToken = ref<string>(``)
+
+watch(message, async (msg) => {
+	signMessage(msg)
+})
+
+function fetchMessage() {
+	const xhr = new XMLHttpRequest()
+	xhr.open('GET', 'https://api.rootroop.com/jobs.php')
+	xhr.setRequestHeader('Accept', 'application/json')
+	xhr.setRequestHeader('Content-Type', 'application/json')
+	xhr.onload = () => {
+		const res = JSON.parse(xhr.responseText)
+		message.value = res.message
+		messageToken.value = res.token
+	}
+	xhr.send()
+}
+
+async function signMessage(msg) {
 	const provider = new ethers.providers.Web3Provider(window.ethereum)
 	await provider.send('eth_requestAccounts', [])
 	const signer = provider.getSigner()
-	console.log(signer)
-	signer.signMessage('Hello World')
+	signer.signMessage(msg).then((token) => {
+		fetchPrivateJobs(token)
+	})
+}
+
+function fetchPrivateJobs(token) {
+	const params = { signableMessageToken: messageToken.value, signature: token }
+	const xhr = new XMLHttpRequest()
+	xhr.open('POST', 'https://api.rootroop.com/jobs.php')
+	xhr.setRequestHeader('Accept', 'application/json')
+	xhr.setRequestHeader('Content-Type', 'application/json')
+	xhr.onload = () => {
+		const rawJobs = JSON.parse(xhr.responseText)
+		// Convert strings to dates
+		for (const j in rawJobs) {
+			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
+		}
+		jobs.value = rawJobs
+	}
+	xhr.send(JSON.stringify(params))
 }
 
 onBeforeMount(() => {
@@ -61,7 +97,6 @@ onBeforeMount(() => {
 			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
 		}
 		jobs.value = rawJobs
-		// console.log(jobs.value)
 	}
 	xhr.send()
 })
@@ -97,7 +132,7 @@ onBeforeMount(() => {
 			href="https://jobs.rootroop.com/"
 			target="_blank"
 			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
-			@click="initWallet"
+			@click="fetchMessage"
 		>
 			Login
 		</button>
