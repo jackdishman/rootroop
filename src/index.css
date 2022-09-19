@@ -104,3 +104,7 @@
     font-style: italic;
   }
 }
+
+button.carousel__prev, button.carousel__next {
+	background-color: #dc3545;
+}
