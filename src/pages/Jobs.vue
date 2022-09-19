@@ -4,6 +4,7 @@ import { onBeforeMount, ref, watch } from 'vue'
 import SubpageHeader from '@/components/SubpageHeader.vue'
 import JobListing from '@/components/JobListing.vue'
 import SearchIcon from '@/components/icons/SearchIcon.vue'
+import LoadingSpinner from '@/components/LoadingSpinner.vue'
 
 import { ethers } from 'ethers'
 
@@ -23,6 +24,7 @@ interface IJob {
 const jobs = ref<Array<IJob>>([])
 const searchInput = ref<string>(``)
 const filteredJobs = ref<Array<IJob>>([])
+const isLoading = ref<boolean>(true)
 
 const filterResults = () => {
 	const keyword = searchInput.value
@@ -68,6 +70,8 @@ async function signMessage(msg) {
 }
 
 function fetchPrivateJobs(token) {
+	isLoading.value = true
+
 	const params = { signableMessageToken: messageToken.value, signature: token }
 	const xhr = new XMLHttpRequest()
 	xhr.open('POST', 'https://api.rootroop.com/jobs.php')
@@ -80,6 +84,7 @@ function fetchPrivateJobs(token) {
 			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
 		}
 		jobs.value = rawJobs
+		isLoading.value = false
 	}
 	xhr.send(JSON.stringify(params))
 }
@@ -97,6 +102,7 @@ onBeforeMount(() => {
 			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
 		}
 		jobs.value = rawJobs
+		isLoading.value = false
 	}
 	xhr.send()
 })
@@ -137,7 +143,9 @@ onBeforeMount(() => {
 			Login
 		</button>
 	</div>
-	<div class="flex justify-center mb-10">
+	<!-- When jobs are loading -->
+	<div v-show="isLoading" class="flex py-24 justify-center"><LoadingSpinner /></div>
+	<div v-show="!isLoading" class="flex justify-center mb-10">
 		<div
 			v-if="searchInput.length === 0"
 			class="mt-10 grid gap-6 col-gap grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
