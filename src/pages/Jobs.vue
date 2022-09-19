@@ -28,6 +28,7 @@ const jobs = ref<Array<IJob>>([])
 const searchInput = ref<string>(``)
 const filteredJobs = ref<Array<IJob>>([])
 const isLoading = ref<boolean>(true)
+const loggedIn = ref<boolean>(false)
 
 const filterResults = () => {
 	const keyword = searchInput.value
@@ -112,6 +113,7 @@ function fetchPrivateJobs(token) {
 		}
 		jobs.value = rawJobs
 		isLoading.value = false
+		loggedIn.value = true
 	}
 	xhr.send(JSON.stringify(params))
 }
@@ -162,6 +164,7 @@ onBeforeMount(() => {
 		</div>
 
 		<button
+			v-if="!loggedIn"
 			href="https://jobs.rootroop.com/"
 			target="_blank"
 			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
@@ -169,6 +172,7 @@ onBeforeMount(() => {
 		>
 			Login
 		</button>
+		<h5 v-else class="text-lg text-rooRed font-semibold text-center uppercase px-4 py-2">Verified</h5>
 	</div>
 	<!-- When jobs are loading -->
 	<div v-show="isLoading" class="flex py-24 justify-center"><LoadingSpinner /></div>
