@@ -38,14 +38,14 @@ onBeforeMount(() => {
 				</div>
 				<div>
 					<div class="flex justify-center">
-						<img :src="require(`@/assets/images/logos/eth.png`)" />
+						<img :src="require(`@/assets/images/logos/eth.png`)" class="-mr-4 lg:-mr-2" />
 						<h2 class="text-lg sm:text-2xl text-rooRed text-center pr-12">{{ Math.round(totalVolume) }}</h2>
 					</div>
 					<p class="text-white font-normal text-center uppercase text-xs">Total volume</p>
 				</div>
 				<div>
 					<div class="flex justify-center">
-						<img :src="require(`@/assets/images/logos/eth.png`)" />
+						<img :src="require(`@/assets/images/logos/eth.png`)" class="-mr-4 lg:-mr-2" />
 						<h2 class="text-lg sm:text-2xl text-rooRed text-center pr-12">{{ floorPrice }}</h2>
 					</div>
 					<p class="text-white font-normal text-center uppercase text-xs">Floor price</p>

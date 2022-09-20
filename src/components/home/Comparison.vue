@@ -149,7 +149,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 		</div>
 		<!-- Joeys -->
-		<div class="bg-rooBlack w-full lg:w-1/3 border-x-8 relative pb-32">
+		<div class="bg-rooBlack w-full lg:w-1/3 lg:border-x-8 relative pb-32">
 			<div class="flex justify-center mx-10 mt-10 mb-5">
 				<span class="w-48 h-48 bg-rooRed">
 					<Carousel :items-to-show="1">
