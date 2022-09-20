@@ -139,16 +139,16 @@ onBeforeMount(() => {
 </script>
 <template>
 	<SubpageHeader :title="`Roo Troop Bounty Hub`" />
-	<div class="w-full flex flex-col items-center lg:flex-row justify-around">
+	<div class="w-full flex flex-col items-center lg:flex-row justify-around order-1">
 		<a
 			href="https://docs.rootroop.com/phase-two-so-you-like-utility/web3-pay-guide"
 			target="_blank"
-			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
+			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-36"
 		>
 			Pay guide</a
 		>
 		<!-- Search input -->
-		<div class="h-12 flex">
+		<div class="h-12 flex order-last lg:order-2">
 			<input
 				v-model="searchInput"
 				type="text"
@@ -168,7 +168,7 @@ onBeforeMount(() => {
 			v-if="!loggedIn"
 			href="https://jobs.rootroop.com/"
 			target="_blank"
-			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2"
+			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 order-2 lg:order-last w-36 my-5"
 			@click="fetchMessage"
 		>
 			Login
