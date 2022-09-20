@@ -31,7 +31,7 @@ defineProps({
 		</div>
 		<h3 class="font-medium text-white text-lg italic">{{ screenName }}</h3>
 		<h6 class="font-semibold text-sm italic text-white">{{ name }}</h6>
-		<h6 class="font-semibold text-sm italic text-rooRed">{{ title }}</h6>
+		<h6 class="font-semibold text-sm italic text-rooRed text-center">{{ title }}</h6>
 		<a v-if="twitterURL !== ''" :href="twitterURL" target="_blank" class="pt-2 text-white">
 			<TwitterIcon />
 		</a>

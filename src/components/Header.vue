@@ -20,7 +20,11 @@ const showDropdown = ref<boolean>(false)
 				:id="`0`"
 				:label="`ROOS`"
 				:list="[
-					{ title: `BUY ROOS`, url: `https://opensea.io/collection/roo-troop` },
+					{
+						title: `BUY ROOS (Origin)`,
+						url: `https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes`,
+					},
+					{ title: `BUY ROOS (OpenSea)`, url: `https://opensea.io/collection/roo-troop` },
 					{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 				]"
 				:expandedText="false"
@@ -29,8 +33,12 @@ const showDropdown = ref<boolean>(false)
 				:id="`1`"
 				:label="`JOEYS`"
 				:list="[
-					{ title: `BUY JOEYS`, url: `https://opensea.io/collection/joeymob` },
-					{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
+					{
+						title: `BUY JOEYS (Origin)`,
+						url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
+					},
+					{ title: `BUY JOEYS (OpenSea)`, url: `https://opensea.io/collection/joeymob` },
+					{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 				]"
 				:expandedText="false"
 			/>
@@ -95,13 +103,17 @@ const showDropdown = ref<boolean>(false)
 			<div :class="showDropdown ? `block` : `hidden`" class="flex flex-row">
 				<div class="fixed top-0 bottom-0 left-0 right-0" @click.self="showDropdown = false"></div>
 				<div
-					class="flex flex-col text-sm block lg:hidden absolute top-0 right-0 items-center mt-10 rounded-b-lg border-b border-rooRed border-l bg-black -mr-8"
+					class="flex flex-col text-sm block lg:hidden absolute top-0 right-0 items-center mt-10 rounded-b-lg border-b border-rooRed border-l bg-black -mr-8 w-48"
 				>
 					<HeaderDropdown
 						:id="`4`"
 						:label="`ROOS`"
 						:list="[
-							{ title: `BUY ROOS`, url: `https://opensea.io/collection/roo-troop` },
+							{
+								title: `BUY ROOS (Origin)`,
+								url: `https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes`,
+							},
+							{ title: `BUY ROOS (OpenSea)`, url: `https://opensea.io/collection/roo-troop` },
 							{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 						]"
 						:expandedText="false"
@@ -110,7 +122,11 @@ const showDropdown = ref<boolean>(false)
 						:id="`5`"
 						:label="`JOEYS`"
 						:list="[
-							{ title: `BUY JOEYS`, url: `https://opensea.io/collection/joeymob` },
+							{
+								title: `BUY JOEYS (Origin)`,
+								url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
+							},
+							{ title: `BUY JOEYS (OpenSea)`, url: `https://opensea.io/collection/joeymob` },
 							{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 						]"
 						:expandedText="false"

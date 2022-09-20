@@ -117,6 +117,14 @@ import TeamCard from '@/components/TeamCard.vue'
 					:title="`Troop Analyst`"
 					:twitterURL="`https://twitter.com/metacon68`"
 				/>
+				<!-- Sam G -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/sam.png`)"
+					:name="`Sam G`"
+					:screenName="`SamGMan`"
+					:title="`Project Manager & Support Lead`"
+					:twitterURL="`https://twitter.com/smgstryker`"
+				/>
 			</div>
 		</div>
 	</div>

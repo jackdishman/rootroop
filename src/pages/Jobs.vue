@@ -71,13 +71,13 @@ async function signMessage(msg) {
 			package: CoinbaseWalletSDK, // Required
 			options: {
 				appName: 'Web 3 Modal Demo', // Required
-				infuraId: process.env.VUE_APP_INFURA_KEY, // Required unless you provide a JSON RPC url; see `rpc` below
+				infuraId: `e33b2d2eaead40f19e92ed11b7f4653b`, // Required unless you provide a JSON RPC url; see `rpc` below
 			},
 		},
 		walletconnect: {
 			package: WalletConnect, // required
 			options: {
-				infuraId: process.env.VUE_APP_INFURA_KEY, // required
+				infuraId: `e33b2d2eaead40f19e92ed11b7f4653b`, // required
 			},
 		},
 	}
