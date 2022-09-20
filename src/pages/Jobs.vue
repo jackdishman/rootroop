@@ -65,7 +65,6 @@ function fetchMessage() {
 }
 
 async function signMessage(msg) {
-	console.log(process.env.VUE_APP_INFURA_KEY)
 	const providerOptions = {
 		walletlink: {
 			package: CoinbaseWalletSDK, // Required
@@ -91,7 +90,7 @@ async function signMessage(msg) {
 	const provider = new ethers.providers.Web3Provider(instance)
 	// const signer = provider.getSigner()
 	// const provider = new ethers.providers.Web3Provider(window.ethereum)
-	await provider.send('eth_requestAccounts', [])
+	// await provider.send('eth_requestAccounts', [])
 	const signer = provider.getSigner()
 	signer.signMessage(msg).then((token) => {
 		fetchPrivateJobs(token)

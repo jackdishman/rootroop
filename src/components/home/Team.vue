@@ -96,7 +96,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				<!-- Metacon (Kevin Schellman | Social Media Manager | https://twitter.com/metacon68 | attached pfp below)  -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/metacon.webp`)"
-					:name="`Kevin Schellman`"
+					:name="`Kevin Shellman`"
 					:screenName="`Metacon`"
 					:title="`Social Media Manager`"
 					:twitterURL="`https://twitter.com/metacon68`"
