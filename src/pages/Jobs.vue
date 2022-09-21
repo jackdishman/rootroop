@@ -106,6 +106,11 @@ function fetchPrivateJobs(token) {
 	xhr.setRequestHeader('Accept', 'application/json')
 	xhr.setRequestHeader('Content-Type', 'application/json')
 	xhr.onload = () => {
+		if (xhr.status !== 200) {
+			alert(xhr.status + `: ` + xhr.responseText)
+			isLoading.value = false
+			return
+		}
 		const rawJobs = JSON.parse(xhr.responseText)
 		// Convert strings to dates
 		for (const j in rawJobs) {
