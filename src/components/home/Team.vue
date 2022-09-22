@@ -8,10 +8,9 @@ import TeamCard from '@/components/TeamCard.vue'
 		<div>
 			<h2 class="text-center text-3xl text-white uppercase italic">Team</h2>
 			<div class="flex justify-center mt-1"><RedUnderscore /></div>
-			<div class="flex flex-col sm:flex-row items-center justify-around mt-12">
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
 				<!-- Stone -->
 				<TeamCard
-					class="lg:ml-20 xl:ml-12"
 					:imgSrc="require(`@/assets/images/team/stone.webp`)"
 					:name="`Morgan Stone`"
 					:screenName="`STØNE`"
@@ -28,15 +27,12 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- ITSOKTOCRY -->
 				<TeamCard
-					class="lg:mr-20 xl:mr-12"
 					:imgSrc="require(`@/assets/images/team/itsoktocry.webp`)"
 					:name="`Gwen Stacy`"
 					:screenName="`ITSOKTOCRY`"
 					:title="`Artist`"
 					:twitterURL="`https://twitter.com/itsokdontbesad`"
 				/>
-			</div>
-			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
 				<!-- YUNGGOD -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/yunggod.webp`)"
@@ -45,6 +41,8 @@ import TeamCard from '@/components/TeamCard.vue'
 					:title="`Discord Developer`"
 					:twitterURL="`https://twitter.com/hiddenlotustech`"
 				/>
+			</div>
+			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
 				<!-- HiddenLotus -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/hiddenlotus.webp`)"
@@ -76,6 +74,14 @@ import TeamCard from '@/components/TeamCard.vue'
 					:screenName="`TOBBER`"
 					:title="`Meme Prince`"
 					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
+				/>
+				<!-- Sam G -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/sam.png`)"
+					:name="`Sam G.`"
+					:screenName="`SamGMan`"
+					:title="`Project Manager & Support Lead`"
+					:twitterURL="`https://twitter.com/smgstryker`"
 				/>
 				<!-- WK (Will Koester | Community Manager | https://twitter.com/WK_17_ ) -->
 				<TeamCard
@@ -116,14 +122,6 @@ import TeamCard from '@/components/TeamCard.vue'
 					:screenName="`NairoFee`"
 					:title="`Troop Analyst`"
 					:twitterURL="`https://twitter.com/metacon68`"
-				/>
-				<!-- Sam G -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/sam.png`)"
-					:name="`Sam G`"
-					:screenName="`SamGMan`"
-					:title="`Project Manager & Support Lead`"
-					:twitterURL="`https://twitter.com/smgstryker`"
 				/>
 			</div>
 		</div>

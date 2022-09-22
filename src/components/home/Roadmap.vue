@@ -44,10 +44,10 @@
 			<div class="border rounded-lg border-rooRed m-4 p-2">
 				<h5 class="text-white text-lg font-bold uppercase italic text-center border-b-2 border-rooRed">Phase Four</h5>
 				<ul class="list-disc list-outside pl-5">
-					<li class="text-white text-sm my-2">$ROOLAH Shop Expansion</li>
+					<li class="text-rooRed text-sm my-2">Custom Roo Troop and Joey Mob NFT marketplace</li>
+					<li class="text-white text-sm mb-2">$ROOLAH Shop Expansion</li>
 					<li class="text-white text-sm mb-2">Roo Merch</li>
 					<li class="text-white text-sm mb-2">[REDACTED] On-Chain Job marketplace</li>
-					<li class="text-white text-sm mb-2">Custom Roo Troop and Joey Mob NFT marketplace</li>
 					<li class="text-white text-sm">Donation #2</li>
 				</ul>
 			</div>
