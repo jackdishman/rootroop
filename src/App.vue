@@ -15,7 +15,7 @@ import router from '@/router/index'
 		<router-view />
 		<Footer v-if="router.currentRoute.value.fullPath !== `/`" />
 		<!-- Audio player -->
-		<div v-if="router.currentRoute.value.fullPath !== `/`" class="fixed bottom-0 z-10 w-full p-5">
+		<div v-if="router.currentRoute.value.fullPath !== `/`" class="fixed bottom-0 z-10 w-full">
 			<!-- <audio controls class="w-full h-10">
 				<source :src="require(`@/assets/audio/jungle.mp3`)" type="audio/mpeg" />
 			</audio> -->

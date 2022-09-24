@@ -55,11 +55,11 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="audio-player">
+	<div class="audio-player px-5">
 		<audio ref="audioElement" :src="require(`@/assets/audio/jungle.mp3`)" type="audio/mpeg"></audio>
 		<div class="controls">
-			<button ref="player-button" class="player-button" @click="toggleAudio">
-				<!-- Play button -->
+			<!-- Play / pause button -->
+			<button ref="player-button" class="player-button mb-5" @click="toggleAudio">
 				<svg v-if="!isPlaying" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#dc3545">
 					<path
 						fill-rule="evenodd"
@@ -75,8 +75,9 @@ onMounted(() => {
 					/>
 				</svg>
 			</button>
-			<input ref="timeline" type="range" class="timeline" max="100" value="0" />
-			<button class="sound-button" @click="toggleVolume">
+			<input ref="timeline" type="range" class="timeline rounded-t-lg" max="100" value="0" />
+			<!-- Volume button -->
+			<button class="sound-button mb-5" @click="toggleVolume">
 				<svg v-if="isMuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#dc3545">
 					<path
 						fill-rule="evenodd"
@@ -117,7 +118,7 @@ onMounted(() => {
 .controls {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: end;
 	width: 100%;
 	margin-top: 10px;
 }
@@ -136,7 +137,7 @@ onMounted(() => {
 	width: calc(100% - (var(--player-button-width) + var(--sound-button-width) + var(--space)));
 	height: 0.5em;
 	background-color: #e5e5e5;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	background-size: 0% 100%;
 	background-image: linear-gradient(#dc3545, #dc3545);
 	background-repeat: no-repeat;
