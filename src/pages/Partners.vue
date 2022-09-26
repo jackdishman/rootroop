@@ -224,6 +224,31 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 					</p>
 				</div>
 			</div>
+
+			<!-- Origin Protocol -->
+			<div class="flex flex-row px-32 mb-10">
+				<img :src="require(`@/assets/images/logos/origins.png`)" class="w-32 object-contain flex-shrink-0" />
+				<div class="ml-16">
+					<h3 class="text-3xl font-semibold italic uppercase mb-3">Origin Protocol</h3>
+					<RedUnderscore />
+					<p class="pt-5">
+						Origin Protocol's mission is to bring non-fungible tokens and decentralized finance to the masses.
+					</p>
+					<p class="pt-5">
+						They have developed the Roo Troop & Joey Mob NFT Marketplace for our community, an in-house storefront where
+						traders can buy & sell our collections' NFTs with lower fees than traditional NFT marketplaces.
+					</p>
+					<p class="mt-2">
+						<a
+							href="https://twitter.com/RooTroopNFT/status/1572741090113126401?s=20&t=K8nHYa7lw-d-_xrdQ0tmzw"
+							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
+						>
+							OFFICIAL TWITTER ANNOUNCEMENT
+						</a>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>

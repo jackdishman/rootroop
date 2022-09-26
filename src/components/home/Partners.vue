@@ -9,6 +9,7 @@
 				<div class="p-5 w-24 lg:w-48"><img :src="require(`@/assets/images/logos/degen-pass.png`)" /></div>
 				<div class="p-5 w-24 lg:w-48"><img :src="require(`@/assets/images/logos/zenecademy.png`)" /></div>
 				<div class="p-5 w-24 lg:w-48"><img :src="require(`@/assets/images/logos/phoenixes.jpeg`)" /></div>
+				<div class="p-5 w-24 lg:w-48"><img :src="require(`@/assets/images/logos/origins.png`)" /></div>
 			</div>
 		</div>
 	</div>

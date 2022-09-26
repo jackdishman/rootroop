@@ -34,6 +34,13 @@ const changeTimelinePosition = () => {
 	}
 	const percentagePosition = (100 * audioElement.value.currentTime) / audioElement.value.duration
 	timeline.value.style.backgroundSize = `${percentagePosition}% 100%`
+	// Reset on end
+	if (percentagePosition === 100) {
+		audioElement.value.currentTime = 0
+		timeline.value.style.backgroundSize = `0%`
+		audioElement.value?.pause()
+		isPlaying.value = false
+	}
 }
 const changeSeek = () => {
 	if (!timeline.value || !audioElement.value) {
@@ -55,9 +62,9 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="audio-player px-5">
+	<div class="audio-player w-full">
 		<audio ref="audioElement" :src="require(`@/assets/audio/jungle.mp3`)" type="audio/mpeg"></audio>
-		<div class="controls">
+		<div class="controls flex justify-between px-5 -mb-4">
 			<!-- Play / pause button -->
 			<button ref="player-button" class="player-button mb-5" @click="toggleAudio">
 				<svg v-if="!isPlaying" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#dc3545">
@@ -75,7 +82,6 @@ onMounted(() => {
 					/>
 				</svg>
 			</button>
-			<input ref="timeline" type="range" class="timeline rounded-t-lg" max="100" value="0" />
 			<!-- Volume button -->
 			<button class="sound-button mb-5" @click="toggleVolume">
 				<svg v-if="isMuted" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#dc3545">
@@ -93,6 +99,9 @@ onMounted(() => {
 					/>
 				</svg>
 			</button>
+		</div>
+		<div class="w-full px-2">
+			<input ref="timeline" type="range" class="timeline w-full rounded-lg" max="100" value="0" />
 		</div>
 	</div>
 </template>
@@ -120,7 +129,6 @@ onMounted(() => {
 	flex-direction: row;
 	align-items: end;
 	width: 100%;
-	margin-top: 10px;
 }
 
 .player-button {
@@ -134,7 +142,7 @@ onMounted(() => {
 
 .timeline {
 	-webkit-appearance: none;
-	width: calc(100% - (var(--player-button-width) + var(--sound-button-width) + var(--space)));
+	/* width: calc(100% - (var(--player-button-width) + var(--sound-button-width) + var(--space))); */
 	height: 0.5em;
 	background-color: #e5e5e5;
 	/* border-radius: 5px; */
