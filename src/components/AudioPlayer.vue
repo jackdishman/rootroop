@@ -127,7 +127,7 @@ onMounted(() => {
 .controls {
 	display: flex;
 	flex-direction: row;
-	align-items: end;
+	align-items: flex-end;
 	width: 100%;
 }
 

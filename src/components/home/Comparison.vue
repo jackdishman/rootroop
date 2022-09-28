@@ -216,10 +216,11 @@ const incubatorImages = ref<string[]>([
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Incubators</h5>
 			<div class="flex justify-center">
 				<p class="py-5 px-10 text-white text-sm text-normal leading-5 py-5">
-					The Joeybean Incubators need to be incubated (hyperlink incubation page) for 12 weeks in order to turn into
-					fully matured Joeys. Incubators come with almost all of the same utility as Joeys, except they cannot be
-					staked & there may be some perks upon the marketplace's full public launch for those holding Incubators
-					instead of Joeys.
+					The Joeybean Incubators need to be
+					<a href="https://joey.rootroop.com" target="_blank" class="underline">incubated</a> for 12 weeks in order to
+					turn into fully matured Joeys. Incubators come with almost all of the same utility as Joeys, except they
+					cannot be staked & there may be some perks upon the marketplace's full public launch for those holding
+					Incubators instead of Joeys.
 				</p>
 			</div>
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
