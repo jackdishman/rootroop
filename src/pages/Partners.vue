@@ -8,11 +8,13 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 	<div class="flex justify-center">
 		<div class="mb-10">
 			<!-- GAC -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/gac.webp`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">gac</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img :src="require(`@/assets/images/logos/gac.webp`)" class="w-32 object-contain flex-shrink-0 self-center" />
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">gac</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						Gaming Ape Club (GAC) is an NFT project building the first survival realm metaverse available for members of
 						the community to play and earn GAC XP.
@@ -28,7 +30,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							$ROOLAH directly through these events
 						</li>
 					</ul>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1516144514569699328?s=20&t=fBzJdxzxCLa2JglPcaKhBg"
 							target="_blank"
@@ -41,11 +43,16 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 
 			<!-- Sappy Seals -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/sappy_seals.webp`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">Sappy Seals</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img
+					:src="require(`@/assets/images/logos/sappy_seals.webp`)"
+					class="w-32 object-contain flex-shrink-0 self-center"
+				/>
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">Sappy Seals</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						Sappy Seals is an NFT project creating a lifestyle brand and marketing powerhouse to disrupt the Web2 and
 						Web3 space. They have successfully launched multiple projects by leveraging in-house meme creators, artists,
@@ -63,7 +70,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<li>Access to graphics studio for consults/graphics when available</li>
 						<li>Graphic Content/Promo Materials/Lore including Roos in Sappy Seal branding</li>
 					</ul>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1517231705790107649?s=20&t=kO7rQC_5xfdWWgenJ-tW6g"
 							target="_blank"
@@ -76,11 +83,13 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 
 			<!-- BearX -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/bear-x.png`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">Bear X</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img :src="require(`@/assets/images/logos/bear-x.png`)" class="w-32 object-contain flex-shrink-0 self-center" />
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">Bear X</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						BearX is a tech-packed project that has been around for a long time & has successfully launched several
 						collections. They are developing "Bear World" which is to be an immersive, p2e metaverse experience.
@@ -92,7 +101,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<li>BearX hiring and expansion will be done exclusively through the Roo Troop Bounty Hub</li>
 						<li>BearX will build out a separate Roo Troop world + p2e mechanics for our own metaverse entry</li>
 					</ul>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1532489842830938112?s=20&t=M2yxJRdjuCQ3cK8DY__p4Q"
 							target="_blank"
@@ -105,11 +114,16 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 
 			<!-- degen pass -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/degen-pass.png`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">DEGEN PASS</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img
+					:src="require(`@/assets/images/logos/degen-pass.png`)"
+					class="w-32 object-contain flex-shrink-0 self-center"
+				/>
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">DEGEN PASS</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						Degen Pass is a top-tier investor group that has not only brought their community amazing calls, but they've
 						also developed some innovative & proprietary trading bots.
@@ -123,7 +137,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							traders an edge
 						</li>
 					</ul>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1533961977835290624?s=20&t=WysNNrhf4pQ3Kkl_jpoW-A"
 							target="_blank"
@@ -136,11 +150,13 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 
 			<!-- Alpha x -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/alphax.png`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">ALPHA X</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img :src="require(`@/assets/images/logos/alphax.png`)" class="w-32 object-contain flex-shrink-0 self-center" />
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">ALPHA X</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						Alpha X is a group focusing on teaching people how to navigate the NFT space, profit while staying safe, and
 						how to invest and trade without gambling the chair you're sitting on.
@@ -155,7 +171,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							traders an edge
 						</li>
 					</ul>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1549801322941009920?s=20&t=t4OtxkZyFnhiExvWPkGtag"
 							target="_blank"
@@ -168,11 +184,16 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 
 			<!-- ZENACADEMY -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/zenecademy.png`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">ZENACADEMY</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img
+					:src="require(`@/assets/images/logos/zenecademy.png`)"
+					class="w-32 object-contain flex-shrink-0 self-center"
+				/>
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">ZENACADEMY</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						ZenAcademy is a community with a passion for education and learning that is grounded in logic & reason. In a
 						space as speculative as web3, they take a holistic approach to the learning process. They're here to teach
@@ -186,7 +207,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							20% discount by connecting their wallets holding the allowed tokens: https://nasacademy.com/zeneca
 						</li>
 					</ul>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1550148604546785281?s=20&t=o_FMNrh7KmZ5MJbrsq7zMg"
 							target="_blank"
@@ -199,11 +220,16 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 
 			<!-- The Phoenixes -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/phoenixes.jpeg`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">THe Phoenixes</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img
+					:src="require(`@/assets/images/logos/phoenixes.jpeg`)"
+					class="w-32 object-contain flex-shrink-0 self-center"
+				/>
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">THe Phoenixes</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						The Phoenixes are an NFT project by Habit Nest, an 8-figure web2 business with dozens of award winning
 						products focused on habit building who are now aiming to be the backbone of wellness in web3.
@@ -213,7 +239,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						allowing our holders to earn rewards for engaging with activations // challenges, both in Discord and via
 						their web3-enabled app.
 					</p>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1564372383578099712?s=20&t=rg2il5TpN6-l2P20H2X3-Q"
 							target="_blank"
@@ -226,11 +252,16 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			</div>
 
 			<!-- Origin Protocol -->
-			<div class="flex flex-row px-32 mb-10">
-				<img :src="require(`@/assets/images/logos/origins.png`)" class="w-32 object-contain flex-shrink-0" />
-				<div class="ml-16">
-					<h3 class="text-3xl font-semibold italic uppercase mb-3">Origin Protocol</h3>
-					<RedUnderscore />
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img
+					:src="require(`@/assets/images/logos/origins.png`)"
+					class="w-32 object-contain flex-shrink-0 self-center"
+				/>
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">Origin Protocol</h3>
+						<RedUnderscore />
+					</div>
 					<p class="pt-5">
 						Origin Protocol's mission is to bring non-fungible tokens and decentralized finance to the masses.
 					</p>
@@ -238,7 +269,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						They have developed the Roo Troop & Joey Mob NFT Marketplace for our community, an in-house storefront where
 						traders can buy & sell our collections' NFTs with lower fees than traditional NFT marketplaces.
 					</p>
-					<p class="mt-2">
+					<p class="mt-2 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1572741090113126401?s=20&t=K8nHYa7lw-d-_xrdQ0tmzw"
 							target="_blank"

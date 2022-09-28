@@ -98,7 +98,7 @@ const incubatorImages = ref<string[]>([
 					</Carousel>
 				</span>
 			</div>
-			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Roo</h5>
+			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Roos</h5>
 			<!-- <div class="flex justify-center">
 				<p class="w-48 text-white text-xs text-normal leading-5">
 					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
@@ -130,7 +130,7 @@ const incubatorImages = ref<string[]>([
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
 				<div>
 					<a
-						href="https://opensea.io/collection/roo-troop?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[toggles][0]=BUY_NOW"
+						href="https://buy.rootroop.com/marketplace/roo-troop?traits=zzBuy+Now%3AYes"
 						target="_blank"
 						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
@@ -162,7 +162,7 @@ const incubatorImages = ref<string[]>([
 					</Carousel>
 				</span>
 			</div>
-			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Joey</h5>
+			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Joeys</h5>
 			<div class="flex justify-center">
 				<ul class="text-white py-5 px-10 py-5 list-disc list-outside text-sm">
 					<li>Companion NFT in the Roo Troop ecosystem</li>
@@ -181,7 +181,7 @@ const incubatorImages = ref<string[]>([
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
 				<div>
 					<a
-						href="https://opensea.io/collection/joeymob?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[toggles][0]=BUY_NOW"
+						href="https://buy.rootroop.com/marketplace/joeymob?traits=zzBuy+Now%3AYes"
 						target="_blank"
 						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
