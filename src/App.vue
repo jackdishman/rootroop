@@ -8,19 +8,12 @@ import router from '@/router/index'
 </script>
 
 <template>
-	<main class="m-0 h-screen overflow-x-hidden p-0 font-poppins">
-		<div v-if="router.currentRoute.value.fullPath !== `/`">
-			<Header class="z-20 fixed w-full" style="height: 50px" />
-		</div>
-		<router-view />
+	<main class="m-0 overflow-x-hidden p-0 font-poppins">
+		<Header v-if="router.currentRoute.value.fullPath !== `/`" class="z-20 fixed w-full" style="height: 50px" />
+		<router-view class="w-full" style="padding-top: 50px" />
 		<Footer v-if="router.currentRoute.value.fullPath !== `/`" />
 		<!-- Audio player -->
-		<div v-if="router.currentRoute.value.fullPath !== `/`" class="fixed bottom-0 z-10 w-full">
-			<!-- <audio controls class="w-full h-10">
-				<source :src="require(`@/assets/audio/jungle.mp3`)" type="audio/mpeg" />
-			</audio> -->
-			<AudioPlayer />
-		</div>
+		<AudioPlayer v-if="router.currentRoute.value.fullPath !== `/`" class="fixed bottom-0 z-10 w-full" />
 		<div id="popup"></div>
 	</main>
 </template>

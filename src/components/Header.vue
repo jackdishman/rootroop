@@ -3,9 +3,13 @@ import HeaderDropdown from './HeaderDropdown.vue'
 import CloseIcon from '@/components/icons/CloseIcon.vue'
 import HamburgerIcon from '@/components/icons/HamburgerMenu.vue'
 import router from '@/router/index'
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 
 const showDropdown = ref<boolean>(false)
+
+watch(router.currentRoute, () => {
+	showDropdown.value = false
+})
 </script>
 
 <template>
