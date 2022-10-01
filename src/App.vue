@@ -5,6 +5,11 @@ import Header from './components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import AudioPlayer from './components/AudioPlayer.vue'
 import router from '@/router/index'
+import { watch } from 'vue'
+
+watch(router.currentRoute, () => {
+	window.scrollTo(0, 0)
+})
 </script>
 
 <template>
