@@ -39,7 +39,7 @@ import TeamCard from '@/components/TeamCard.vue'
 					:name="`William Bordeau`"
 					:screenName="`YUNGGOD`"
 					:title="`Discord Developer`"
-					:twitterURL="`https://twitter.com/hiddenlotustech`"
+					:twitterURL="`https://mobile.twitter.com/yunggodNFT`"
 				/>
 			</div>
 			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
@@ -113,7 +113,7 @@ import TeamCard from '@/components/TeamCard.vue'
 					:name="`Gio Hernandez-Parra`"
 					:screenName="`El Chingon`"
 					:title="`Holder Relations`"
-					:twitterURL="`https://twitter.com/metacon68`"
+					:twitterURL="`https://twitter.com/gio3272`"
 				/>
 				<!-- NairoFee (Michael Mwangi [will get you pfp + socials] listed as Troop Analyst) ->  -->
 				<TeamCard
@@ -121,7 +121,7 @@ import TeamCard from '@/components/TeamCard.vue'
 					:name="`Michael Mwangi`"
 					:screenName="`NairoFee`"
 					:title="`Troop Analyst`"
-					:twitterURL="`https://twitter.com/metacon68`"
+					:twitterURL="`https://twitter.com/NairoFee`"
 				/>
 			</div>
 		</div>
