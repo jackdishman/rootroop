@@ -55,7 +55,6 @@
 			<div class="border rounded-lg border-rooRed m-4 p-2">
 				<h5 class="text-white text-lg font-bold uppercase italic text-center border-b-2 border-rooRed">Phase Five</h5>
 				<ul class="list-disc list-list-outside pl-5">
-					<li class="text-white text-sm my-2">Roo Merch</li>
 					<li class="text-white text-sm my-2">Marketplace Token Airdrop</li>
 					<li class="text-white text-sm mb-2">Future Projects</li>
 					<li class="text-white text-sm mb-2">Ongoing R&D</li>

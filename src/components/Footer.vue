@@ -41,11 +41,15 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 					<ChevronDown />
 				</button>
 				<div v-show="activeDropdown === `terms`" class="text-white text-xs leading-6">
-					You Own Your NFT: By connecting your Ethereum wallet and minting a Roo Troop NFT with our smart contract, you
-					gain full and complete ownership of your NFT. Limitations of Liability for Gas, Failed Transactions, and other
-					Bugs. You agree to not hold Roo Troop accountable for any losses you may incur as a consequence of minting
-					your Roo Troop NFT. These potential losses include any gas fees for failed transactions, and any excessive gas
-					fees during the minting process.
+					You Own Your NFT: By connecting your Ethereum wallet and minting a Roo Troop NFT or Joey Mob NFT with our
+					smart contract or purchasing a Roo Troop NFT or Joey Mob NFT on a third-party marketplace, you gain full and
+					complete ownership of your NFT.
+					<span class="mt-2"
+						>Limitations of Liability for Gas, Failed Transactions, and other Bugs: You agree to not hold Roo Labs
+						accountable for any losses you may incur as a consequence of minting or purchasing your Roo Troop NFT or
+						Joey Mob NFT. These potential losses include any gas fees for failed transactions, and any excessive gas
+						fees during the minting or purchasing processes.
+					</span>
 				</div>
 				<!-- NFTs Are Not Intended as Investments -->
 				<button
@@ -58,9 +62,10 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 				</button>
 				<div v-show="activeDropdown === `investments`" class="text-white text-xs leading-6">
 					NFTs serve exclusively as Non-Fungible Tokens for you to collect. They are not intended for any investment
-					purposes. We make absolutely no promise or guarantee that these NFTs will hold any particular value once
-					minted on our website. You are responsible for any tax liability which may arise from minting or reselling
-					your Roo Troop NFT(s).
+					purposes. We make absolutely no promise or guarantee that Roo Troop NFTs, Joey Mob NFTs or the tokens
+					associated with either will hold any particular value once minted on our website or purchased on a third-party
+					marketplace or exchange. You are responsible for any tax liability which may arise from minting or reselling
+					your Roo Troop NFT(s) and Joey Mob NFT(s).
 				</div>
 			</div>
 			<!-- More disclaimers -->
@@ -101,8 +106,8 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 					<ChevronDown class="text-white" />
 				</button>
 				<div v-show="activeDropdown === `jurisdiction`" class="text-white text-xs leading-6">
-					In the event that a legal dispute arises from anything related to Roo Troop, you agree to bring the case to
-					binding arbitration according to appropriate Federal guidelines.
+					You agree that for purposes of any legal dispute, you will be subject to the jurisdiction of the United States
+					and that any legal proceeding will be brought in the United States.
 				</div>
 			</div>
 		</div>

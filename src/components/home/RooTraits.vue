@@ -13,17 +13,17 @@ function activateTrait(trait: string) {
 <template>
 	<div class="flex flex-col sm:flex-row justify-center bg-rooBlack p-10 items-center">
 		<!-- Mobile header -->
-		<h2 class="uppercase text-white italic font-semibold text-3xl sm:hidden mb-5">Every Roo is unique</h2>
+		<h2 class="uppercase text-white italic font-semibold text-3xl text-center sm:hidden mb-5">Every Roo is unique</h2>
 		<!-- Left side: Image -->
-		<div class="bg-rooRed p-1 mr-4">
+		<div class="bg-rooRed p-1 sm:mr-4">
 			<img :src="require(`@/assets/images/traits/${activeTrait}.png`)" class="w-64 h-64 bg-white" />
 		</div>
 		<!-- Right side: traits -->
 		<div class="ml-6">
 			<h2 class="uppercase text-white italic font-semibold text-3xl hidden sm:block">Every Roo is unique</h2>
 			<!-- ____ traits -->
-			<div class="flex items-end my-4">
-				<RedUnderscore class="mb-3 mr-3" />
+			<div class="flex flex-col-reverse sm:flex-row items-center sm:items-end my-4">
+				<RedUnderscore class="mb-3 sm:mr-3" />
 				<h3 class="text-white text-lg font-bold italic">Traits</h3>
 			</div>
 			<!-- Trait selector -->

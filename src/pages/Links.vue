@@ -27,12 +27,12 @@ const joeys = ref<string[]>([
 </script>
 <template>
 	<SubpageHeader :title="`Official Links`" />
-	<div class="w-full px-10 text-center flex flex-row justify-center sm:justify-between">
+	<div class="w-full sm:px-10 text-center flex flex-row justify-between">
 		<!-- Roos on left -->
-		<div class="hidden sm:block bg-rooRed p-4 rounded-lg mb-10">
-			<img v-for="r in roos" :key="r" :src="r" alt="roo image" class="w-24 h-24 my-2" />
+		<div class="bg-rooRed p-4 rounded-lg mb-10">
+			<img v-for="r in roos" :key="r" :src="r" alt="roo image" class="w-12 h-12 sm:w-24 sm:h-24 my-4 sm:my-2" />
 		</div>
-		<div class="sm:pt-6">
+		<div class="sm:pt-6 mb-10">
 			<a
 				v-for="l in linksMap"
 				:key="l[0]"
@@ -44,8 +44,8 @@ const joeys = ref<string[]>([
 			</a>
 		</div>
 		<!-- Joeys on right -->
-		<div class="hidden sm:block bg-rooRed p-4 rounded-lg mb-10">
-			<img v-for="r in joeys" :key="r" :src="r" alt="joey image" class="w-24 h-24 my-2" />
+		<div class="bg-rooRed p-4 rounded-lg mb-10">
+			<img v-for="r in joeys" :key="r" :src="r" alt="joey image" class="w-12 h-12 sm:w-24 sm:h-24 my-4 sm:my-2" />
 		</div>
 	</div>
 </template>

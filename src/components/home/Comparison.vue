@@ -100,12 +100,12 @@ const incubatorImages = ref<string[]>([
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Roos</h5>
 			<!-- <div class="flex justify-center">
-				<p class="w-48 text-white text-xs text-normal leading-5">
-					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-				</p>
-			</div> -->
-			<div class="flex justify-center">
+					<p class="w-48 text-white text-xs text-normal leading-5">
+						Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+						Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+					</p>
+				</div> -->
+			<div class="flex justify-center pb-10 lg:pb-0">
 				<ul class="text-white py-5 px-10 list-disc list-outside text-sm">
 					<li>Genesis NFT in the Roo Troop ecosystem</li>
 					<li>First-tier access</li>
@@ -163,7 +163,7 @@ const incubatorImages = ref<string[]>([
 				</span>
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Joeys</h5>
-			<div class="flex justify-center">
+			<div class="flex justify-center pb-10 lg:pb-0">
 				<ul class="text-white py-5 px-10 py-5 list-disc list-outside text-sm">
 					<li>Companion NFT in the Roo Troop ecosystem</li>
 					<li>Second-tier access</li>
@@ -214,7 +214,7 @@ const incubatorImages = ref<string[]>([
 				</span>
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Incubators</h5>
-			<div class="flex justify-center">
+			<div class="flex justify-center pb-10 lg:pb-0">
 				<p class="py-5 px-10 text-white text-sm text-normal leading-5 py-5">
 					The Joeybean Incubators need to be
 					<a href="https://joey.rootroop.com" target="_blank" class="underline">incubated</a> for 12 weeks in order to

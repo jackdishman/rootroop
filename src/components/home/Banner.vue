@@ -10,11 +10,11 @@
 				<div class="ticker">
 					<div class="ticker__item">
 						<p class="text-uppercase text-white font-bold italic">
-							<span class="pr-5">NEWS:</span>JOEYBEANS SOLD OUT!<span class="pr-5 pl-1">BUY ON OPENSEA</span
-							><span class="pr-10">CHECK OUT THE NEW ROO TROOP BOUNTY HUB AND $ROOLAH SHOP!</span
-							><span class="pr-10"
-								>STØNE & JON WILL BE HOSTING A PANEL AT NFT NYC ON HOW TO MAKE WEB3 JOBS ACCESSIBLE.</span
-							>
+							<span class="pr-5">NEWS:</span>NEW WEBSITE LAUNCHED IN TANDEM WITH AN UPDATED BOUNTY HUB & $ROOLAH
+							SHOP<span class="pr-5 pl-1"
+								>ROO TROOP PARTNERS WITH ORIGIN PROTOCOL TO LAUNCH AN IN-HOUSE NFT MARKETPLACE WITH LESS TRADING FEES
+								THAN OPENSEA</span
+							><span class="pr-10">MAKE SURE TO CHECK OUT OUR GITBOOK FOUND UNDER THE ROADMAP SECTION</span>
 						</p>
 					</div>
 				</div>

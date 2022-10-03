@@ -16,6 +16,15 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 				While that is in development, we've been using the Roo Troop Bounty Hub to post several hundred job listings and
 				we've successfully placed over 100 members of the community in paid roles.
 			</p>
+			<!-- Mobile images -->
+			<div class="flex justify-center">
+				<div class="relative h-96 w-64 md:hidden">
+					<img :src="require(`@/assets/images/jobs/image1.webp`)" class="absolute top-0 w-48 left-0" />
+					<img :src="require(`@/assets/images/jobs/image2.webp`)" class="absolute top-16 w-48 left-5" />
+					<img :src="require(`@/assets/images/jobs/image3.webp`)" class="absolute top-32 w-48 left-10" />
+					<img :src="require(`@/assets/images/jobs/image4.webp`)" class="absolute top-48 w-48 left-14" />
+				</div>
+			</div>
 			<div class="flex flex-col lg:flex-row items-center lg:items-start">
 				<div>
 					<router-link to="/jobs" class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"

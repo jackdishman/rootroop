@@ -143,7 +143,13 @@ onBeforeMount(() => {
 </script>
 <template>
 	<SubpageHeader :title="`Roo Troop Bounty Hub`" />
-	<div class="w-full flex flex-col items-center lg:flex-row justify-around order-1">
+	<div class="w-full flex flex-col items-center lg:flex-row justify-around">
+		<a
+			href="https://forms.gle/uL1hgbvu8nEUZHJdA"
+			target="_blank"
+			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-48 my-5"
+			>POST JOBS (FREE)</a
+		>
 		<a
 			href="https://docs.rootroop.com/phase-two-so-you-like-utility/web3-pay-guide"
 			target="_blank"
@@ -152,7 +158,7 @@ onBeforeMount(() => {
 			Pay guide</a
 		>
 		<!-- Search input -->
-		<div class="h-12 flex order-last lg:order-2">
+		<div class="h-12 flex order-last">
 			<input
 				v-model="searchInput"
 				type="text"
@@ -177,7 +183,6 @@ onBeforeMount(() => {
 		>
 			Login
 		</button>
-		<h5 v-else class="text-lg text-rooRed font-semibold text-center uppercase px-4 py-2">Verified</h5>
 	</div>
 	<!-- When jobs are loading -->
 	<div v-show="isLoading" class="flex py-24 justify-center"><LoadingSpinner /></div>

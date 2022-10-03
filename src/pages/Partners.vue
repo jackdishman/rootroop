@@ -203,8 +203,9 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<li>Roo Troop & Joey Mob holders have an exclusive role in the ZA Discord</li>
 						<li>Every new ZenAcademy course will allot at least 10 free passes to Roo Troop/Joey Mob holders</li>
 						<li>
-							Roo Troop & Joey Mob holders can now access any course from ZenAcademy on the NasAcademy platform with a
-							20% discount by connecting their wallets holding the allowed tokens: https://nasacademy.com/zeneca
+							Roo Troop & Joey Mob holders can now access any course from ZenAcademy on the
+							<a href="https://nasacademy.com/zeneca" target="_blank" class="underline">NasAcademy platform</a> with a
+							20% discount by connecting their wallets holding the allowed tokens.
 						</li>
 					</ul>
 					<p class="mt-2 text-center md:text-left">
