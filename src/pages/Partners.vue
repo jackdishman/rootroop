@@ -30,7 +30,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							$ROOLAH directly through these events
 						</li>
 					</ul>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1516144514569699328?s=20&t=fBzJdxzxCLa2JglPcaKhBg"
 							target="_blank"
@@ -70,7 +70,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<li>Access to graphics studio for consults/graphics when available</li>
 						<li>Graphic Content/Promo Materials/Lore including Roos in Sappy Seal branding</li>
 					</ul>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1517231705790107649?s=20&t=kO7rQC_5xfdWWgenJ-tW6g"
 							target="_blank"
@@ -101,7 +101,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						<li>BearX hiring and expansion will be done exclusively through the Roo Troop Bounty Hub</li>
 						<li>BearX will build out a separate Roo Troop world + p2e mechanics for our own metaverse entry</li>
 					</ul>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1532489842830938112?s=20&t=M2yxJRdjuCQ3cK8DY__p4Q"
 							target="_blank"
@@ -137,7 +137,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							traders an edge
 						</li>
 					</ul>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1533961977835290624?s=20&t=WysNNrhf4pQ3Kkl_jpoW-A"
 							target="_blank"
@@ -171,7 +171,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							traders an edge
 						</li>
 					</ul>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1549801322941009920?s=20&t=t4OtxkZyFnhiExvWPkGtag"
 							target="_blank"
@@ -208,7 +208,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 							20% discount by connecting their wallets holding the allowed tokens.
 						</li>
 					</ul>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1550148604546785281?s=20&t=o_FMNrh7KmZ5MJbrsq7zMg"
 							target="_blank"
@@ -240,7 +240,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						allowing our holders to earn rewards for engaging with activations // challenges, both in Discord and via
 						their web3-enabled app.
 					</p>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1564372383578099712?s=20&t=rg2il5TpN6-l2P20H2X3-Q"
 							target="_blank"
@@ -270,7 +270,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						They have developed the Roo Troop & Joey Mob NFT Marketplace for our community, an in-house storefront where
 						traders can buy & sell our collections' NFTs with lower fees than traditional NFT marketplaces.
 					</p>
-					<p class="mt-2 text-center md:text-left">
+					<p class="mt-10 text-center md:text-left">
 						<a
 							href="https://twitter.com/RooTroopNFT/status/1572741090113126401?s=20&t=K8nHYa7lw-d-_xrdQ0tmzw"
 							target="_blank"
