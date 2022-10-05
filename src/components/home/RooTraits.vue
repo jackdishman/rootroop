@@ -26,11 +26,23 @@ function activateTrait(trait: string) {
 				<RedUnderscore class="mb-3 sm:mr-3" />
 				<h3 class="text-white text-lg font-bold italic">Traits</h3>
 			</div>
-			<!-- Trait selector -->
-			<div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
+			<!-- Desktop Trait selector -->
+			<div class="hidden sm:grid grid-cols-3 gap-2">
 				<div v-for="t in traits" :key="t" class="flex items-center">
 					<button
 						class="rounded-lg w-full px-6 py-2 font-semibold uppercase text-xs"
+						:class="t === activeTrait ? `text-white border border-rooRed` : `inactiveButton`"
+						@click="activateTrait(t)"
+					>
+						{{ t }}
+					</button>
+				</div>
+			</div>
+			<!-- Mobile Trait selector -->
+			<div class="flex flex-row flex-wrap justify-center sm:hidden gap-2 items-center">
+				<div v-for="t in traits" :key="t" class="flex items-center">
+					<button
+						class="rounded-lg w-32 px-6 py-2 font-semibold uppercase text-xs"
 						:class="t === activeTrait ? `text-white border border-rooRed` : `inactiveButton`"
 						@click="activateTrait(t)"
 					>

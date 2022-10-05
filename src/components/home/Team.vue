@@ -83,14 +83,6 @@ import TeamCard from '@/components/TeamCard.vue'
 					:title="`Project Manager & Support Lead`"
 					:twitterURL="`https://twitter.com/smgstryker`"
 				/>
-				<!-- WK (Will Koester | Community Manager | https://twitter.com/WK_17_ ) -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/wk.webp`)"
-					:name="`Will Koester`"
-					:screenName="`WK`"
-					:title="`Community Manager`"
-					:twitterURL="`https://twitter.com/WK_17_`"
-				/>
 				<!-- Dfc2west (Don Clewley | Bounty Hub Manager | https://twitter.com/Dfc2west ) ->  -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/dfc.webp`)"

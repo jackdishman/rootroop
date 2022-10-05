@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onBeforeMount, ref } from 'vue'
+import EthereumIcon from '../icons/EthereumIcon.vue'
 
 const floorPrice = ref<number>(-1)
 const ownersCount = ref<number>(-1)
@@ -25,33 +26,30 @@ onBeforeMount(() => {
 </script>
 <template>
 	<div class="flex justify-center bg-rooBlack py-10 lg:px-10">
-		<div class="w-480 sm:w-760">
-			<h4 class="text-white font-bold text-center uppercase mb-5 text-sm">
-				<span class="border-b-2 border-rooRed sm:border-b-0 px-4 pb-2">Our proud stats</span>
-			</h4>
-			<!-- <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-3 sm:divide-x divide-rooRed"> -->
-			<div class="flex flex-col sm:flex-row">
-				<div class="sm:pr-8 mt-2 sm:border-r border-rooRed">
+		<div class="w-full">
+			<h4 class="text-white font-bold text-center uppercase mb-5 text-sm">Our proud stats</h4>
+			<div class="flex flex-row justify-center">
+				<div class="pr-4 border-r border-rooRed">
 					<h2 class="text-lg sm:text-2xl text-rooRed text-center">{{ count }}</h2>
 					<p class="text-white font-normal text-center uppercase text-xs">Items</p>
 				</div>
-				<div class="sm:px-8 mt-4 sm:border-r border-rooRed">
+				<div class="px-4 border-r border-rooRed">
 					<h2 class="text-lg sm:text-2xl text-rooRed text-center">{{ ownersCount }}</h2>
 					<p class="text-white font-normal text-center uppercase text-xs">Owners</p>
 				</div>
-				<div class="sm:px-8 mt-4 sm:border-r border-rooRed">
-					<div class="flex justify-center -ml-4">
-						<img :src="require(`@/assets/images/logos/eth.png`)" />
+				<div class="px-4 border-r border-rooRed">
+					<div class="flex items-center justify-center">
+						<EthereumIcon class="w-4 h-4" />
 						<h2 class="text-lg sm:text-2xl text-rooRed text-center">{{ Math.round(totalVolume) }}</h2>
 					</div>
 					<p class="text-white font-normal text-center uppercase text-xs">Total volume</p>
 				</div>
-				<div class="sm:pl-8 mt-4">
-					<div class="flex justify-center -ml-4">
-						<img :src="require(`@/assets/images/logos/eth.png`)" class="" />
-						<h2 class="text-lg sm:text-2xl text-rooRed">{{ floorPrice }}</h2>
+				<div class="pl-4">
+					<div class="flex items-center justify-center">
+						<EthereumIcon class="w-4 h-4" />
+						<h2 class="text-lg sm:text-2xl text-rooRed text-center">{{ floorPrice }}</h2>
 					</div>
-					<p class="text-white font-normal text-center sm:text-right uppercase text-xs">Floor price</p>
+					<p class="text-white font-normal uppercase text-xs">Floor price</p>
 				</div>
 			</div>
 		</div>

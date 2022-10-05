@@ -10,11 +10,12 @@
 				<div class="ticker">
 					<div class="ticker__item">
 						<p class="text-uppercase text-white font-bold italic">
-							<span class="pr-5">NEWS:</span>NEW WEBSITE LAUNCHED IN TANDEM WITH AN UPDATED BOUNTY HUB & $ROOLAH
-							SHOP<span class="pr-5 pl-1"
+							<span class="pr-5">NEWS: </span>
+							<span class="pr-10">NEW WEBSITE LAUNCHED IN TANDEM WITH AN UPDATED BOUNTY HUB & $ROOLAH SHOP</span>
+							<span class="pr-10 pl-1"
 								>ROO TROOP PARTNERS WITH ORIGIN PROTOCOL TO LAUNCH AN IN-HOUSE NFT MARKETPLACE WITH LESS TRADING FEES
 								THAN OPENSEA</span
-							><span class="pr-10">MAKE SURE TO CHECK OUT OUR GITBOOK FOUND UNDER THE ROADMAP SECTION</span>
+							><span class="">MAKE SURE TO CHECK OUT OUR GITBOOK FOUND UNDER THE ROADMAP SECTION</span>
 						</p>
 					</div>
 				</div>
@@ -62,7 +63,7 @@
 	width: 100%;
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.9);
-	padding-left: 100%;
+	padding-left: 100vw;
 	box-sizing: content-box;
 }
 .ticker-wrap .ticker {
