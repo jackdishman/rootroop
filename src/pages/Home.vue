@@ -53,7 +53,7 @@ onMounted(() => {
 			a platform that will disrupt the traditional job market.
 		</h4>
 		<div class="bg-rooRed w-full lg:w-1/3">
-			<video autoplay muted loop playsinline controls class="w-full border-4 border-rooRed">
+			<video playsinline controls class="w-full border-4 border-rooRed">
 				<source :src="require(`/src/assets/video/rooWeb.mp4`)" type="video/mp4" />
 			</video>
 		</div>

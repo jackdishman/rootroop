@@ -47,9 +47,9 @@ onBeforeMount(() => {
 				<div class="pl-4">
 					<div class="flex items-center justify-center">
 						<EthereumIcon class="w-4 h-4" />
-						<h2 class="text-lg sm:text-2xl text-rooRed text-center">{{ floorPrice }}</h2>
+						<h2 class="text-lg sm:text-2xl text-rooRed text-center">{{ floorPrice.toFixed(2) }}</h2>
 					</div>
-					<p class="text-white font-normal uppercase text-xs">Floor price</p>
+					<p class="text-white font-normal text-center uppercase text-xs">Floor price</p>
 				</div>
 			</div>
 		</div>

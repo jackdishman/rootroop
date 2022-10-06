@@ -144,12 +144,15 @@ onBeforeMount(() => {
 <template>
 	<SubpageHeader :title="`Roo Troop Bounty Hub`" />
 	<div class="w-full flex flex-col items-center lg:flex-row justify-around">
-		<a
-			href="https://forms.gle/uL1hgbvu8nEUZHJdA"
+		<button
+			v-if="!loggedIn"
+			href="https://jobs.rootroop.com/"
 			target="_blank"
-			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-48 my-5"
-			>POST JOBS (FREE)</a
+			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 lg:order-last w-36 mb-5 lg:mt-5"
+			@click="fetchMessage"
 		>
+			Login
+		</button>
 		<a
 			href="https://docs.rootroop.com/phase-two-so-you-like-utility/web3-pay-guide"
 			target="_blank"
@@ -157,8 +160,14 @@ onBeforeMount(() => {
 		>
 			Pay guide</a
 		>
+		<a
+			href="https://forms.gle/uL1hgbvu8nEUZHJdA"
+			target="_blank"
+			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-48 my-5"
+			>POST JOBS (FREE)</a
+		>
 		<!-- Search input -->
-		<div class="h-12 flex order-last">
+		<div class="h-12 flex order-last lg:order-3">
 			<input
 				v-model="searchInput"
 				type="text"
@@ -173,16 +182,6 @@ onBeforeMount(() => {
 				<SearchIcon class="w-4 h-4" />
 			</button>
 		</div>
-
-		<button
-			v-if="!loggedIn"
-			href="https://jobs.rootroop.com/"
-			target="_blank"
-			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 order-2 lg:order-last w-36 my-5"
-			@click="fetchMessage"
-		>
-			Login
-		</button>
 	</div>
 	<!-- When jobs are loading -->
 	<div v-show="isLoading" class="flex py-24 justify-center"><LoadingSpinner /></div>
