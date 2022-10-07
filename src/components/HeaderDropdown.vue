@@ -1,3 +1,4 @@
+<!-- eslint-disable @typescript-eslint/ban-ts-comment -->
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import ChevronDown from './icons/ChevronDown.vue'
@@ -31,6 +32,7 @@ onMounted(() => {
 			return
 		}
 		// If clicking another component
+		// @ts-ignore
 		if (!e.target?.classList.contains(props.id)) {
 			showDropdown.value = false
 		}
@@ -39,6 +41,37 @@ onMounted(() => {
 
 const handleDropdown = () => {
 	showDropdown.value = !showDropdown.value
+}
+
+const tokenAddress = '0xbB6eeb74377d7eE402AdAEcb88D7Cf9494AA2814'
+const tokenSymbol = '$ROOLAH'
+const tokenDecimals = 18
+const tokenImage = `https://test.rootroop.com/img/RooLogo.f36f6304.png`
+
+async function addToken() {
+	try {
+		// wasAdded is a boolean. Like any RPC method, an error may be thrown.
+		const wasAdded = await window.ethereum.request({
+			method: 'wallet_watchAsset',
+			params: {
+				type: 'ERC20', // Initially only supports ERC20, but eventually more!
+				options: {
+					address: tokenAddress, // The address that the token is at.
+					symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+					decimals: tokenDecimals, // The number of decimals in the token
+					image: tokenImage, // A string url of the token logo
+				},
+			},
+		})
+
+		if (wasAdded) {
+			console.log('Thanks for your interest!')
+		} else {
+			console.log('Your loss!')
+		}
+	} catch (error) {
+		console.log(error)
+	}
 }
 </script>
 
@@ -58,8 +91,9 @@ const handleDropdown = () => {
 			style="margin-top: 1px"
 		>
 			<div v-for="li in list" :key="li.title" class="w-full text-center italic pb-2 text-sm">
-				<a v-if="li.title !== `ROADMAP`" :href="li.url" target="_blank">{{ li.title }}</a>
-				<button v-else @click="handleRoadmap">{{ li.title }}</button>
+				<button v-if="li.title === `ROADMAP`" @click="handleRoadmap">{{ li.title }}</button>
+				<button v-else-if="li.url === `roolah`" @click="addToken()">{{ li.title }}</button>
+				<a v-else :href="li.url" target="_blank">{{ li.title }}</a>
 			</div>
 		</div>
 	</div>

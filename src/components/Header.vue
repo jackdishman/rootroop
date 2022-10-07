@@ -61,6 +61,7 @@ watch(router.currentRoute, () => {
 				:list="[
 					{ title: `STAKING DASHBOARD`, url: `https://stake.rootroop.com/` },
 					{ title: `STAKING WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
+					{ title: `METAMASK $ROOLAH`, url: `roolah` },
 				]"
 				:expandedText="true"
 			/>
@@ -131,7 +132,7 @@ watch(router.currentRoute, () => {
 								url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
 							},
 							{ title: `BUY JOEYS (OpenSea)`, url: `https://opensea.io/collection/joeymob` },
-							{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
+							{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
 						]"
 						:expandedText="false"
 					/>
@@ -150,6 +151,7 @@ watch(router.currentRoute, () => {
 						:list="[
 							{ title: `DASHBOARD`, url: `https://stake.rootroop.com/` },
 							{ title: `WHITEPAPER`, url: `https://docs.rootroop.com/phase-three-more-perks/staking-v2` },
+							{ title: `METAMASK $ROOLAH`, url: `roolah` },
 						]"
 						:expandedText="false"
 					/>

@@ -153,25 +153,27 @@ onBeforeMount(() => {
 		>
 			Login
 		</button>
-		<a
-			href="https://docs.rootroop.com/phase-two-so-you-like-utility/web3-pay-guide"
-			target="_blank"
-			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-36"
-		>
-			Pay guide</a
-		>
-		<a
-			href="https://forms.gle/uL1hgbvu8nEUZHJdA"
-			target="_blank"
-			class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-48 my-5"
-			>POST JOBS (FREE)</a
-		>
+		<div class="flex flex-col lg:flex-row items-center">
+			<a
+				href="https://docs.rootroop.com/phase-two-so-you-like-utility/web3-pay-guide"
+				target="_blank"
+				class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-36 my-5 lg:mr-5"
+			>
+				Pay guide</a
+			>
+			<a
+				href="https://forms.gle/uL1hgbvu8nEUZHJdA"
+				target="_blank"
+				class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-48 my-5"
+				>POST JOBS (FREE)</a
+			>
+		</div>
 		<!-- Search input -->
-		<div class="h-12 flex order-last lg:order-3">
+		<div class="h-12 flex order-last lg:order-3 my-5">
 			<input
 				v-model="searchInput"
 				type="text"
-				class="px-4 py-2 border-2 border-black focus:border-rooRed focus:outline-none rounded-lg h-full pr-4"
+				class="px-4 py-2 border-2 border-black focus:border-rooRed focus:outline-none rounded-lg h-full pr-4 lg:w-64"
 				placeholder="Search"
 				@keyup="filterResults"
 			/>
