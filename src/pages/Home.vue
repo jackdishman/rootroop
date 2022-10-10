@@ -63,10 +63,17 @@ onMounted(() => {
 			successfully roll out the first <span class="uppercase text-rooRed font-bold">ON-CHAIN JOB MARKETPLACE,</span>
 			a platform that will disrupt the traditional job market.
 		</h4>
-		<div class="bg-rooRed w-full lg:w-1/3">
-			<video playsinline controls class="w-full border-4 border-rooRed">
-				<source :src="require(`/src/assets/video/rooWeb.mp4`)" type="video/mp4" />
-			</video>
+		<div class="bg-rooRed w-full lg:w-1/3 mt-4 lg:mt-0">
+			<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube-nocookie.com/embed/kw_cP2JuASM"
+				title="YouTube video player"
+				frameborder="0"
+				class="w-full border-4 border-rooRed"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
 		</div>
 	</div>
 	<!-- Roo carousel -->
