@@ -42,7 +42,7 @@ watch(router.currentRoute, () => {
 						url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
 					},
 					{ title: `BUY JOEYS (OpenSea)`, url: `https://opensea.io/collection/joeymob` },
-					{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
+					{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
 				]"
 				:expandedText="false"
 			/>

@@ -46,7 +46,7 @@ const handleDropdown = () => {
 const tokenAddress = '0xbB6eeb74377d7eE402AdAEcb88D7Cf9494AA2814'
 const tokenSymbol = '$ROOLAH'
 const tokenDecimals = 18
-const tokenImage = `https://test.rootroop.com/img/RooLogo.f36f6304.png`
+const tokenImage = `https://test.rootroop.com/img/roolah.648d0af3.png`
 
 async function addToken() {
 	try {

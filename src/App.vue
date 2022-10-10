@@ -6,6 +6,18 @@ import Footer from '@/components/Footer.vue'
 import AudioPlayer from './components/AudioPlayer.vue'
 import router from '@/router/index'
 import { watch } from 'vue'
+import { useHead } from '@vueuse/head'
+
+useHead({
+	// Can be static or computed
+	title: () => `Roo Troop`,
+	meta: [
+		{
+			name: `description`,
+			content: () => `Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem`,
+		},
+	],
+})
 
 watch(router.currentRoute, () => {
 	window.scrollTo(0, 0)
