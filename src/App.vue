@@ -14,7 +14,12 @@ useHead({
 	meta: [
 		{
 			name: `description`,
-			content: () => `Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem`,
+			content: `Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem`,
+		},
+		{
+			property: 'og:locale:alternate',
+			content: 'zh',
+			key: 'zh',
 		},
 	],
 })

@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import SubpageHeader from '@/components/SubpageHeader.vue'
 import ChevronDown from '@/components/icons/ChevronDown.vue'
+import { Head } from '@vueuse/head'
 
 const activeDropdown = ref<number>(-1)
 const toggleDropdown = (d: number) => {
@@ -13,6 +14,16 @@ const toggleDropdown = (d: number) => {
 }
 </script>
 <template>
+	<Head>
+		<meta property="og:image" content="https://test.rootroop.com/img/embed.744adbbd.png" />
+		<meta property="og:title" content="Roo Troop - FAQ" />
+		<meta
+			property="og:description"
+			content="Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem"
+		/>
+		<meta property="og:image:width" content="3440" />
+		<meta property="og:image:height" content="1222" />
+	</Head>
 	<SubpageHeader :title="`FAQs`" />
 	<div class="bg-white flex justify-center">
 		<div class="w-full px-20 lg:w-2/3">

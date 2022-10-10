@@ -2,6 +2,7 @@
 import { linksMap } from '@/links'
 import SubpageHeader from '@/components/SubpageHeader.vue'
 import { ref } from 'vue'
+import { Head } from '@vueuse/head'
 
 const roos = ref<string[]>([
 	require(`@/assets/images/slider/2358.webp`),
@@ -26,6 +27,16 @@ const joeys = ref<string[]>([
 ])
 </script>
 <template>
+	<Head>
+		<meta property="og:image" content="https://test.rootroop.com/img/embed.744adbbd.png" />
+		<meta property="og:title" content="Roo Troop - Links" />
+		<meta
+			property="og:description"
+			content="Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem"
+		/>
+		<meta property="og:image:width" content="3440" />
+		<meta property="og:image:height" content="1222" />
+	</Head>
 	<SubpageHeader :title="`Official Links`" />
 	<div class="w-full sm:px-10 text-center flex flex-row justify-between">
 		<!-- Roos on left -->

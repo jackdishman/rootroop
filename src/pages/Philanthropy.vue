@@ -1,7 +1,19 @@
 <script setup lang="ts">
 import SubpageHeader from '@/components/SubpageHeader.vue'
+import { Head } from '@vueuse/head'
 </script>
+
 <template>
+	<Head>
+		<meta property="og:image" content="https://test.rootroop.com/img/embed.744adbbd.png" />
+		<meta property="og:title" content="Roo Troop - Philanthropy" />
+		<meta
+			property="og:description"
+			content="Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem"
+		/>
+		<meta property="og:image:width" content="3440" />
+		<meta property="og:image:height" content="1222" />
+	</Head>
 	<SubpageHeader :title="`Philanthropy`" />
 	<div class="flex justify-center">
 		<div class="w-full px-10 lg:px-32">

@@ -14,12 +14,23 @@ import JobMarketplace from '@/components/home/JobMarketplace.vue'
 import Team from '@/components/home/Team.vue'
 import Partners from '@/components/home/Partners.vue'
 import router from '@/router/index'
+import { Head } from '@vueuse/head'
 
 onMounted(() => {
 	document.getElementById(router.currentRoute.value.hash.substring(1))?.scrollIntoView()
 })
 </script>
 <template>
+	<Head>
+		<meta property="og:image" content="https://test.rootroop.com/img/embed.744adbbd.png" />
+		<meta property="og:title" content="Roo Troop - Home" />
+		<meta
+			property="og:description"
+			content="Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem"
+		/>
+		<meta property="og:image:width" content="3440" />
+		<meta property="og:image:height" content="1222" />
+	</Head>
 	<!-- Splash video, socials, logo -->
 	<div class="relative overflow-hidden pt-10 w-full">
 		<img

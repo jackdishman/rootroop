@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref, nextTick } from 'vue'
+import { Head } from '@vueuse/head'
 const video = ref<HTMLVideoElement>()
 const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
 
@@ -17,6 +18,16 @@ onMounted(() => {
 })
 </script>
 <template>
+	<Head>
+		<meta property="og:image" content="https://test.rootroop.com/img/embed.744adbbd.png" />
+		<meta property="og:title" content="Roo Troop" />
+		<meta
+			property="og:description"
+			content="Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem"
+		/>
+		<meta property="og:image:width" content="3440" />
+		<meta property="og:image:height" content="1222" />
+	</Head>
 	<div class="relative flex items-center justify-center h-screen overflow-hidden bg-black">
 		<video
 			ref="video"

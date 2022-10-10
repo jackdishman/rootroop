@@ -10,6 +10,7 @@ import { ethers } from 'ethers'
 import Web3Modal from 'web3modal'
 import WalletConnect from '@walletconnect/web3-provider'
 import CoinbaseWalletSDK from '@coinbase/wallet-sdk'
+import { Head } from '@vueuse/head'
 
 interface IJob {
 	title: string
@@ -142,6 +143,16 @@ onBeforeMount(() => {
 })
 </script>
 <template>
+	<Head>
+		<meta property="og:image" content="https://test.rootroop.com/img/embed.744adbbd.png" />
+		<meta property="og:title" content="Roo Troop - Jobs" />
+		<meta
+			property="og:description"
+			content="Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem"
+		/>
+		<meta property="og:image:width" content="3440" />
+		<meta property="og:image:height" content="1222" />
+	</Head>
 	<SubpageHeader :title="`Roo Troop Bounty Hub`" />
 	<div class="w-full flex flex-col items-center lg:flex-row justify-around">
 		<button
