@@ -296,7 +296,7 @@ import { Head } from '@vueuse/head'
 			<!-- BUBBLES -->
 			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
 				<img
-					:src="require(`@/assets/images/logos/bubbles.jpeg`)"
+					:src="require(`@/assets/images/logos/bubbles.png`)"
 					class="w-32 object-contain flex-shrink-0 self-center"
 				/>
 				<div class="md:ml-16">
