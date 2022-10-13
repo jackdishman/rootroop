@@ -45,12 +45,14 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 
 ## Notes on building
-Add the following to *index.html* HEAD tag:
+
+1. Run `yarn build` and the compiled files will be in the /dist folder. 
+2. Add the following to *index.html* HEAD tag:
 ```
 	<meta property="og:url" content="https://rootroop.com/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://rootroop.com/img/embed.744adbbd.png" />
-	<meta property="og:image:secure_url" content="https://rootroop.com/img/embed.744adbbd.png" />
+	<meta property="og:image" content="https://rootroop.com/embed.png" />
+	<meta property="og:image:secure_url" content="https://rootroop.com/embed.png" />
 	<meta
 		property="og:image:alt"
 		content="Bringing Awareness to Tree Kangaroos & Developing Innovative Technology for the Web3 Ecosystem"
