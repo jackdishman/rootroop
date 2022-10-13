@@ -27,13 +27,13 @@ module.exports = defineConfig({
 	pluginOptions: {
 		sitemap: {
 			urls: [
-				'https://test.rootroop.com/',
-				'https://test.rootroop.com/home',
-				'https://test.rootroop.com/partners',
-				'https://test.rootroop.com/faq',
-				'https://test.rootroop.com/philanthropy',
-				'https://test.rootroop.com/links',
-				'https://test.rootroop.com/jobs',
+				'https://rootroop.com/',
+				'https://rootroop.com/home',
+				'https://rootroop.com/partners',
+				'https://rootroop.com/faq',
+				'https://rootroop.com/philanthropy',
+				'https://rootroop.com/links',
+				'https://rootroop.com/jobs',
 			],
 		},
 	},
