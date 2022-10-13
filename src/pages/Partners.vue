@@ -292,6 +292,42 @@ import { Head } from '@vueuse/head'
 					</p>
 				</div>
 			</div>
+
+			<!-- BUBBLES -->
+			<div class="flex flex-col md:flex-row px-24 md:px-32 mb-10">
+				<img
+					:src="require(`@/assets/images/logos/bubbles.jpeg`)"
+					class="w-32 object-contain flex-shrink-0 self-center"
+				/>
+				<div class="md:ml-16">
+					<div class="flex flex-col items-center md:items-start">
+						<h3 class="text-3xl font-semibold italic uppercase my-3">BUBBLES</h3>
+						<RedUnderscore />
+					</div>
+					<p class="pt-5">
+						Bubbles makes it easier for holders to keep up to date with announcements by compiling watchlisted
+						collections in a single dashboard view.
+					</p>
+					<p class="pt-5">All Roo Troop & Joey Mob holders can now:</p>
+					<ul class="list-disc list-inside mt-2">
+						<li>Set communities & projects you care about on your watchlist</li>
+						<li>
+							Enjoy important updates from all platforms (such as Discord & Twitter) on your personal dashboard in one
+							place
+						</li>
+						<li>Receive daily recaps via email</li>
+					</ul>
+					<p class="mt-10 text-center md:text-left">
+						<a
+							href="https://twitter.com/RooTroopNFT/status/1580302313780318209?s=20&t=hZBHrPyQyVK9ei5We0gE4A"
+							target="_blank"
+							class="text-rooRed font-semibold italic underline uppercase"
+						>
+							OFFICIAL TWITTER ANNOUNCEMENT
+						</a>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>

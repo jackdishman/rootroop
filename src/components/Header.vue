@@ -43,6 +43,7 @@ watch(router.currentRoute, () => {
 					},
 					{ title: `BUY JOEYS (OpenSea)`, url: `https://opensea.io/collection/joeymob` },
 					{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
+					{ title: `INCUBATE JOEYS`, url: `https://joey.rootroop.com/` },
 				]"
 				:expandedText="false"
 			/>
@@ -133,6 +134,7 @@ watch(router.currentRoute, () => {
 							},
 							{ title: `BUY JOEYS (OpenSea)`, url: `https://opensea.io/collection/joeymob` },
 							{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
+							{ title: `INCUBATE JOEYS`, url: `https://joey.rootroop.com/` },
 						]"
 						:expandedText="false"
 					/>
