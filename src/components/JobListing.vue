@@ -86,7 +86,7 @@ const showDetails = ref<boolean>(false)
 							class="h-24 w-24 rounded-lg"
 						/>
 						<div class="ml-4">
-							<h2 class="text-black font-semibold text-xl">{{ title }}</h2>
+							<h2 class="font-semibold text-xl">{{ title }}</h2>
 							<h6 class="text-lg italic">{{ workRequired.join(`, `).toString() }}</h6>
 						</div>
 					</div>

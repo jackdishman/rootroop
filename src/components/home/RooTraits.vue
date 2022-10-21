@@ -19,7 +19,7 @@ function activateTrait(trait: string) {
 			<img :src="require(`@/assets/images/traits/${activeTrait}.png`)" class="w-64 h-64 bg-white" />
 		</div>
 		<!-- Right side: traits -->
-		<div class="ml-6">
+		<div class="sm:ml-6">
 			<h2 class="uppercase text-white italic font-semibold text-3xl hidden sm:block">Every Roo is unique</h2>
 			<!-- ____ traits -->
 			<div class="flex flex-col-reverse sm:flex-row items-center sm:items-end my-4">
