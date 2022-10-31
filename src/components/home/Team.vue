@@ -115,6 +115,22 @@ import TeamCard from '@/components/TeamCard.vue'
 					:title="`Troop Analyst`"
 					:twitterURL="`https://twitter.com/NairoFee`"
 				/>
+				<!-- Ballistic -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/ballistic.webp`)"
+					:name="`Cullen Metz`"
+					:screenName="`Ballistic`"
+					:title="`Community Manager`"
+					:twitterURL="`https://twitter.com/Ballistic406`"
+				/>
+				<!-- Brandy -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/brandy.webp`)"
+					:name="`Brandy Sanders`"
+					:screenName="`Brandy`"
+					:title="`Assistant Community Manager`"
+					:twitterURL="`https://twitter.com/plzstopnowty`"
+				/>
 			</div>
 		</div>
 	</div>
