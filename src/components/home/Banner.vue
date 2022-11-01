@@ -11,10 +11,8 @@
 					<div class="ticker__item">
 						<p class="text-uppercase text-white font-bold italic">
 							<span class="pr-5">NEWS: </span>
-							<span class="pr-10">NEW WEBSITE LAUNCHED IN TANDEM WITH AN UPDATED BOUNTY HUB & $ROOLAH SHOP</span>
-							<span class="pr-10 pl-1"
-								>ROO TROOP PARTNERS WITH ORIGIN PROTOCOL TO LAUNCH AN IN-HOUSE NFT MARKETPLACE WITH LESS TRADING FEES
-								THAN OPENSEA</span
+							<span class="pr-10">HOLDERS CAN NOW LIST AND BUY SERVICES, PRODUCTS & NFTS ON THE $ROOLAH SHOP</span>
+							<span class="pr-10 pl-1">NEW TEAM MEMBERS ANNOUNCED, SCROLL DOWN TO LEARN MORE</span
 							><span class="">MAKE SURE TO CHECK OUT OUR GITBOOK FOUND UNDER THE ROADMAP SECTION</span>
 						</p>
 					</div>

@@ -8,7 +8,7 @@ import TeamCard from '@/components/TeamCard.vue'
 		<div>
 			<h2 class="text-center text-3xl text-white uppercase italic">Team</h2>
 			<div class="flex justify-center mt-1"><RedUnderscore /></div>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
+			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
 				<!-- Stone -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/stone.webp`)"
@@ -41,8 +41,14 @@ import TeamCard from '@/components/TeamCard.vue'
 					:title="`Discord Developer`"
 					:twitterURL="`https://mobile.twitter.com/yunggodNFT`"
 				/>
-			</div>
-			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
+				<!-- Sam G -->
+				<TeamCard
+					:imgSrc="require(`@/assets/images/team/sam.png`)"
+					:name="`Sam G.`"
+					:screenName="`SamGMan`"
+					:title="`Project Manager & Support Lead`"
+					:twitterURL="`https://twitter.com/smgstryker`"
+				/>
 				<!-- HiddenLotus -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/hiddenlotus.webp`)"
@@ -74,14 +80,6 @@ import TeamCard from '@/components/TeamCard.vue'
 					:screenName="`TOBBER`"
 					:title="`Meme Prince`"
 					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
-				/>
-				<!-- Sam G -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/sam.png`)"
-					:name="`Sam G.`"
-					:screenName="`SamGMan`"
-					:title="`Project Manager & Support Lead`"
-					:twitterURL="`https://twitter.com/smgstryker`"
 				/>
 				<!-- Dfc2west (Don Clewley | Bounty Hub Manager | https://twitter.com/Dfc2west ) ->  -->
 				<TeamCard

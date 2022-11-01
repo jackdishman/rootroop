@@ -67,7 +67,7 @@ onMounted(() => {
 			<iframe
 				width="560"
 				height="315"
-				src="https://www.youtube-nocookie.com/embed/kw_cP2JuASM"
+				src="https://www.youtube-nocookie.com/embed/_CCJQqrMmjQ"
 				title="YouTube video player"
 				frameborder="0"
 				class="w-full border-4 border-rooRed"
@@ -76,22 +76,22 @@ onMounted(() => {
 			></iframe>
 		</div>
 	</div>
+	<!-- roadmap -->
+	<div id="roadmap" style="padding-top: 24px" class="bg-rooBlack">
+		<Roadmap />
+	</div>
+	<!-- Roos vs Joeys comparison -->
+	<Comparison />
+	<!-- Job marketplace intro -->
+	<JobMarketplace />
 	<!-- Roo carousel -->
 	<RooCarousel />
 	<!-- Every roo is unique -->
 	<RooTraits />
 	<!-- Our proud stats -->
 	<Stats />
-	<!-- Roos vs Joeys comparison -->
-	<Comparison />
-	<!-- roadmap -->
-	<div id="roadmap" style="padding-top: 24px">
-		<Roadmap />
-	</div>
-	<!-- Job marketplace intro -->
-	<JobMarketplace />
-	<!-- Team -->
-	<Team />
 	<!-- Partners -->
 	<Partners />
+	<!-- Team -->
+	<Team />
 </template>
