@@ -115,7 +115,7 @@ function fetchPrivateJobs(token) {
 		const rawJobs = JSON.parse(xhr.responseText)
 		// Convert strings to dates
 		for (const j in rawJobs) {
-			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
+			rawJobs[j].creationDate = new Date(rawJobs[j].creationDate)
 		}
 		jobs.value = rawJobs
 		isLoading.value = false
@@ -134,7 +134,7 @@ onBeforeMount(() => {
 		const rawJobs = JSON.parse(xhr.responseText)
 		// Convert strings to dates
 		for (const j in rawJobs) {
-			rawJobs.creationDate = new Date(rawJobs[j].creationDate)
+			rawJobs[j].creationDate = new Date(rawJobs[j].creationDate)
 		}
 		jobs.value = rawJobs
 		isLoading.value = false
@@ -215,6 +215,7 @@ onBeforeMount(() => {
 				:budget="j.budget"
 				:links="j.links"
 				:formUrl="j.formUrl"
+				:creationDate="j.creationDate"
 			/>
 		</div>
 		<div
@@ -233,6 +234,7 @@ onBeforeMount(() => {
 				:budget="j.budget"
 				:links="j.links"
 				:formUrl="j.formUrl"
+				:creationDate="j.creationDate"
 			/>
 		</div>
 	</div>
