@@ -82,8 +82,8 @@ import { Head } from '@vueuse/head'
 			</p>
 
 			<p class="pt-10 font-medium">
-				This donation came directly from the Roo Troop community's support, as we allocated 50% of each sale towards
-				this initiative.
+				This donation came directly from the Roo Troop community's support, as we allocated 50% of each Super Roo sale
+				towards this initiative.
 			</p>
 
 			<p class="pt-10 font-medium">
