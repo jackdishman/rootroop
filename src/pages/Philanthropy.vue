@@ -15,6 +15,7 @@ import { Head } from '@vueuse/head'
 		<meta property="og:image:height" content="1222" />
 	</Head>
 	<SubpageHeader :title="`Philanthropy`" />
+	<!-- Donation #1 -->
 	<div class="flex justify-center">
 		<div class="w-full px-10 lg:px-32">
 			<h3 class="text-3xl font-semibold italic uppercase text-center">Rainforest Rescue</h3>
@@ -57,6 +58,46 @@ import { Head } from '@vueuse/head'
 				width="100%"
 				height="450"
 				src="https://www.youtube.com/embed/hqe01nfEUZ4"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</div>
+	</div>
+
+	<!-- Donation #2 -->
+	<div class="flex justify-center mt-12">
+		<div class="w-full px-10 lg:px-32">
+			<h3 class="text-3xl font-semibold italic uppercase text-center">Ballarat Wildlife Park & Kombai</h3>
+			<p class="pt-10 font-medium">
+				In December of 2022,
+				<a
+					href="https://twitter.com/RooTroopNFT/status/1600609052152958976?s=20&t=krFtZ79j9DWTElVJnY3bLg"
+					target="_blank"
+					class="underline text-rooRed font-semibold"
+				>
+					Roo Labs donated another 1.795eth ($3,100) to Ballarat Wildlife Park.
+				</a>
+			</p>
+
+			<p class="pt-10 font-medium">
+				This donation came directly from the Roo Troop community's support, as we allocated 50% of each sale towards
+				this initiative.
+			</p>
+
+			<p class="pt-10 font-medium">
+				The money from this donation will be used for enrichment items & enclosure updates for Kombai.
+			</p>
+
+			<p class="py-10 font-medium">
+				Learn more about how YOU can play a part in Tree Roo conservation below from Kombai's handler, Cass.
+			</p>
+			<!-- Video -->
+			<iframe
+				width="100%"
+				height="450"
+				src="https://www.youtube.com/embed/e2RF8totMP0"
 				title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
