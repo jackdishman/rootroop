@@ -46,9 +46,9 @@
 				<ul class="list-disc list-outside pl-5">
 					<li class="text-rooRed text-sm my-2">Custom Roo Troop and Joey Mob NFT Marketplace</li>
 					<li class="text-rooRed text-sm mb-2">$ROOLAH Shop Expansion</li>
+					<li class="text-rooRed text-sm mb-2">Donation #2</li>
 					<li class="text-white text-sm mb-2">Roo Merch</li>
-					<li class="text-white text-sm mb-2">[ROODACTED] On-Chain Job Marketplace</li>
-					<li class="text-white text-sm">Donation #2</li>
+					<li class="text-white text-sm">[ROODACTED] On-Chain Job Marketplace</li>
 				</ul>
 			</div>
 			<!-- Stage 5 -->
