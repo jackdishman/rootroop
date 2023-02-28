@@ -114,10 +114,9 @@ watch(router.currentRoute, () => {
 						:label="`ROOS`"
 						:list="[
 							{
-								title: `BUY ROOS (Origin)`,
+								title: `BUY ROOS`,
 								url: `https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes`,
 							},
-							{ title: `BUY ROOS (OpenSea)`, url: `https://opensea.io/collection/roo-troop` },
 							{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 						]"
 						:expandedText="false"
@@ -127,10 +126,9 @@ watch(router.currentRoute, () => {
 						:label="`JOEYS`"
 						:list="[
 							{
-								title: `BUY JOEYS (Origin)`,
+								title: `BUY JOEYS`,
 								url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
 							},
-							{ title: `BUY JOEYS (OpenSea)`, url: `https://opensea.io/collection/joeymob` },
 							{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
 							{ title: `INCUBATE JOEYS`, url: `https://joey.rootroop.com/` },
 						]"

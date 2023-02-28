@@ -1,8 +1,6 @@
 export const linksMap = new Map([
 	[`Twitter`, `https://twitter.com/RooTroopNFT`],
 	[`Discord`, `https://discord.com/invite/rootroop`],
-	[`OpenSea (Roo Troop)`, `https://opensea.io/collection/roo-troop`],
-	[`OpenSea (Joey Mob)`, `https://opensea.io/collection/joeymob`],
 	[`YouTube`, `https://www.youtube.com/channel/UCN_qTVuSoJwVwssklBM8KSQ`],
 	[`Roo Tech`, `https://discord.gg/QMSGkZBF36`],
 	[`Rarity Tools`, `https://rarity.tools/roo-troop`],

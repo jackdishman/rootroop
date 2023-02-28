@@ -3,7 +3,6 @@ import { onMounted } from 'vue'
 import InstagramLogo from '@/components/icons/Instagram.vue'
 import TwitterLogo from '@/components/icons/Twitter.vue'
 import DiscordLogo from '@/components/icons/Discord.vue'
-import OpenseaLogo from '@/components/icons/OpenSea.vue'
 import NewsBanner from '@/components/home/Banner.vue'
 import RooCarousel from '@/components/home/RooCarousel.vue'
 import RooTraits from '@/components/home/RooTraits.vue'
@@ -44,9 +43,6 @@ onMounted(() => {
 		</div>
 		<!-- Social links -->
 		<div class="flex items-end absolute justify-center text-white relative h-72 lg:h-96 pb-10">
-			<a href="https://opensea.io/collection/roo-troop" target="_blank"
-				><OpenseaLogo style="width: 24px; height: 24px"
-			/></a>
 			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
 			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
 			<a href="https://instagram.com/rootroop" target="_blank"><InstagramLogo /></a>

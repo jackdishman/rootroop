@@ -226,7 +226,8 @@ const incubatorImages = ref<string[]>([
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
 				<div>
 					<a
-						href="https://opensea.io/collection/joeymob?search[sortAscending]=true&search[sortBy]=UNIT_PRICE&search[stringTraits][0][name]=Incubator&search[stringTraits][0][values][0]=Ash&search[stringTraits][0][values][1]=Sand&search[stringTraits][0][values][2]=Mocha&search[stringTraits][0][values][3]=Coal&search[stringTraits][0][values][4]=Coffee&search[stringTraits][0][values][5]=Purp&search[stringTraits][0][values][6]=Tomato&search[stringTraits][0][values][7]=Bubblegum&search[stringTraits][0][values][8]=Banana%20Split&search[stringTraits][0][values][9]=Berry&search[stringTraits][0][values][10]=Weed&search[stringTraits][0][values][11]=Trippy&search[stringTraits][0][values][12]=Irradiated&search[stringTraits][0][values][13]=Demon&search[stringTraits][0][values][14]=Arctic&search[stringTraits][0][values][15]=Golden&search[stringTraits][0][values][16]=Glitch&search[stringTraits][0][values][17]=Alien&search[stringTraits][0][values][18]=Angel&search[stringTraits][0][values][19]=Robo&search[stringTraits][0][values][20]=Lava&search[toggles][0]=BUY_NOW"
+						href="https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes
+"
 						target="_blank"
 						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"

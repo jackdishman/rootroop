@@ -3,7 +3,6 @@ import TextLogo from '@/components/TextLogo.vue'
 import { ref } from 'vue'
 import ChevronDown from './icons/ChevronDown.vue'
 import DiscordLogo from './icons/Discord.vue'
-import OpenSea from './icons/OpenSea.vue'
 import Twitter from './icons/Twitter.vue'
 
 const activeDropdown = ref<null | `jurisdiction` | `terms` | `investments` | `waiver` | `arbitration`>()
@@ -26,7 +25,6 @@ function setActiveDropdown(active: `jurisdiction` | `terms` | `investments` | `w
 				<!-- Socials -->
 				<div class="text-white flex flex-row text-rooRed pb-5 lg:mb-0 mb-5 xl:justify-start justify-center">
 					<a href="https://discord.com/invite/rootroop" target="_blank"> <DiscordLogo class="w-6 h-6" /> </a>
-					<a href="https://opensea.io/collection/roo-troop" target="_blank"><OpenSea class="w-6 h-6 mx-4" /></a>
 					<a href="https://twitter.com/RooTroopNFT" target="_blank"><Twitter class="w-6 h-6" /></a>
 				</div>
 			</div>
