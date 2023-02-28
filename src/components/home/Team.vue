@@ -75,7 +75,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- TOBBER -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/tobber.webp`)"
+					:imgSrc="require(`@/assets/images/team/Tobber.webp`)"
 					:name="`TOBBER`"
 					:screenName="`TOBBER`"
 					:title="`Meme Prince`"
@@ -112,14 +112,6 @@ import TeamCard from '@/components/TeamCard.vue'
 					:screenName="`NairoFee`"
 					:title="`Troop Analyst`"
 					:twitterURL="`https://twitter.com/NairoFee`"
-				/>
-				<!-- Ballistic -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/ballistic.webp`)"
-					:name="`Cullen Metz`"
-					:screenName="`Ballistic`"
-					:title="`Community Manager`"
-					:twitterURL="`https://twitter.com/Ballistic406`"
 				/>
 				<!-- Brandy -->
 				<TeamCard
