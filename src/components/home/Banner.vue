@@ -11,11 +11,11 @@
 					<div class="ticker__item">
 						<p class="text-uppercase text-white font-bold italic">
 							<span class="pr-5">NEWS: </span>
-							<span class="pr-10">HOLDERS CAN NOW LIST AND BUY SERVICES, PRODUCTS & NFTS ON THE $ROOLAH SHOP</span>
-							<span class="pr-10 pl-1">NEW TEAM MEMBERS ANNOUNCED, SCROLL DOWN TO LEARN MORE</span>
-							<span class="pr-10 pl-1">MAKE SURE TO CHECK OUT OUR GITBOOK FOUND UNDER THE ROADMAP SECTION </span>
 							<span class="pr-10 pl-1">ROO TROOP & JOEY MOB TO RE-LAUNCH AND TRADE SOLELY ON BUY.ROOTROOP.COM </span>
-							<span class="">ROO TROOP INTEGRATION ON NEW DAWN TRAIT SWAPPING MARKETPLACE COMING SOON </span>
+							<span class="pr-10 pl-1">ROO TROOP INTEGRATION ON NEW DAWN TRAIT SWAPPING MARKETPLACE COMING SOON </span>
+							<span class="pr-10 pl-1">HOLDERS CAN NOW LIST AND BUY SERVICES, PRODUCTS & NFTS ON THE $ROOLAH SHOP</span>
+							<span class="pr-10 pl-1">NEW TEAM MEMBERS ANNOUNCED, SCROLL DOWN TO LEARN MORE</span>
+							<span class="">MAKE SURE TO CHECK OUT OUR GITBOOK FOUND UNDER THE ROADMAP SECTION </span>
 						</p>
 					</div>
 				</div>

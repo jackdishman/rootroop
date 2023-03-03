@@ -118,7 +118,7 @@ import TeamCard from '@/components/TeamCard.vue'
 					:imgSrc="require(`@/assets/images/team/brandy.webp`)"
 					:name="`Brandy Sanders`"
 					:screenName="`Brandy`"
-					:title="`Assistant Community Manager`"
+					:title="`Community Manager`"
 					:twitterURL="`https://twitter.com/plzstopnowty`"
 				/>
 			</div>
