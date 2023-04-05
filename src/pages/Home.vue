@@ -34,31 +34,66 @@ onMounted(() => {
 	<div class="relative overflow-hidden pt-10 w-full">
 		<img
 			alt="Roo background image"
-			:src="require(`@/assets/images/roo-bg.webp`)"
+			:src="require(`@/assets/images/bg.png`)"
 			class="absolute h-72 lg:h-96 w-full object-cover"
 		/>
 		<!-- Logo -->
-		<div class="absolute h-fit w-full flex items-center justify-center mt-12 lg:mt-24">
-			<img :src="require(`@/assets/images/rootroop.png`)" class="w-64 pt-12" />
+		<div class="absolute h-fit w-full flex items-center justify-center">
+			<img :src="require(`@/assets/images/logo.png`)" class="object-contain h-64 sm:h-48 lg:h-72" />
 		</div>
 		<!-- Social links -->
-		<div class="flex items-end absolute justify-center text-white relative h-72 lg:h-96 pb-10">
-			<a href="https://twitter.com/RooTroopNFT" target="_blank" class="mx-2"><TwitterLogo /></a>
-			<a href="https://discord.com/invite/rootroop" target="_blank" class="mr-2"><DiscordLogo /></a>
-			<a href="https://instagram.com/rootroop" target="_blank"><InstagramLogo /></a>
+		<div class="flex items-end justify-center sm:justify-between text-white relative h-72 lg:h-96 pb-10">
+			<img
+				:src="require(`@/assets/images/roo1.png`)"
+				class="w-48 hidden sm:block -mb-16"
+				style="transform: scaleX(-1) rotate(-4deg)"
+			/>
+			<div>
+				<div class="mb-4 sm:mb-8">
+					<a
+						href="https://buy.rootroop.com/marketplace/roo-troop?traits=zzBuy+Now%3AYes"
+						target="_blank"
+						class="uppercase text-white text-sm font-semibold rounded-lg bg-gray-600 border border-white px-4 py-2 mr-5"
+					>
+						Buy Roos
+					</a>
+					<a
+						href="https://buy.rootroop.com/marketplace/joeymob?traits=zzBuy+Now%3AYes"
+						target="_blank"
+						class="uppercase text-white text-sm font-semibold rounded-lg bg-gray-600 border border-white px-4 py-2"
+					>
+						Buy joeys
+					</a>
+				</div>
+				<div class="flex justify-center">
+					<a href="https://twitter.com/RooTroopNFT" target="_blank"><TwitterLogo /></a>
+					<a href="https://discord.com/invite/rootroop" target="_blank" class="mx-2"><DiscordLogo /></a>
+					<a href="https://instagram.com/rootroop" target="_blank"><InstagramLogo /></a>
+				</div>
+			</div>
+			<img
+				:src="require(`@/assets/images/roo2.png`)"
+				class="w-48 hidden sm:block -mb-16"
+				style="transform: rotate(-4deg)"
+			/>
 		</div>
 	</div>
-	<NewsBanner />
+	<NewsBanner class="-mt-1" />
 	<!-- Mission and video -->
 	<div class="flex flex-col lg:flex-row w-full items-center justify-around py-10 px-4">
-		<h4
-			class="italic w-full text-center lg:text-left lg:w-1/3 text-rooBlack font-semibold font-poppins text-xl leading-9"
+		<div
+			class="italic w-full text-center lg:w-1/3 lg:text-left text-rooBlack font-semibold font-poppins text-xl leading-9"
 		>
 			The <span class="uppercase text-rooRed font-bold">MISSION</span> of Roo Troop is to
 			<span class="uppercase text-rooRed font-bold">UNITE A COMMUNITY</span> that is eager to build in Web 3.0 and
 			successfully roll out the first <span class="uppercase text-rooRed font-bold">ON-CHAIN JOB MARKETPLACE,</span>
 			a platform that will disrupt the traditional job market.
-		</h4>
+			<div class="mb-5 text-2xl uppercase pt-5">
+				<a href="https://seekr.io/" target="_blank" class="underline text-rooRed italic font-semibold"
+					>Join the Seekr waitlist</a
+				>
+			</div>
+		</div>
 		<div class="bg-rooRed w-full lg:w-1/3 mt-4 lg:mt-0">
 			<iframe
 				width="560"

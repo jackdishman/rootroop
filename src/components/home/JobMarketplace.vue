@@ -16,13 +16,13 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 				While that is in development, we've been using the Roo Troop Bounty Hub to post several hundred job listings and
 				we've successfully placed over 100 members of the community in paid roles.
 			</p>
-			<div class="flex flex-col lg:flex-row items-center lg:items-start">
+			<div class="flex flex-col xl:flex-row items-center xl:items-start">
 				<div>
 					<router-link to="/jobs" class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"
 						>SEARCH FOR JOBS</router-link
 					>
 				</div>
-				<div class="lg:ml-6 mt-6 lg:mt-0">
+				<div class="xl:ml-6 mt-6 xl:mt-0">
 					<a
 						href="https://forms.gle/uL1hgbvu8nEUZHJdA"
 						target="_blank"
@@ -30,6 +30,19 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						>POST JOBS (FREE)</a
 					>
 				</div>
+				<div class="xl:ml-6 mt-6 xl:mt-0">
+					<a
+						href="https://forms.gle/L8zQx6LtbimjWWQs5"
+						target="_blank"
+						class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"
+						>EMPOWER YOUR COMMUNITY</a
+					>
+				</div>
+			</div>
+			<div class="mt-10 text-xl">
+				<a href="https://seekr.io/" target="_blank" class="underline text-rooRed italic font-semibold uppercase"
+					>Join the Seekr waitlist</a
+				>
 			</div>
 		</div>
 		<!-- Right side: floating images -->
