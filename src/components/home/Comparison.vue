@@ -164,7 +164,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Joeys</h5>
 			<div class="flex justify-center pb-10 lg:pb-0">
-				<ul class="text-white py-5 px-10 py-5 list-disc list-outside text-sm">
+				<ul class="text-white px-10 py-5 list-disc list-outside text-sm">
 					<li>Companion NFT in the Roo Troop ecosystem</li>
 					<li>Second-tier access</li>
 					<li>Access to Mod Mob</li>

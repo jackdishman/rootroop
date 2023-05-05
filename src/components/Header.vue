@@ -54,7 +54,7 @@ watch(router.currentRoute, () => {
 				]"
 				:expandedText="false"
 			/>
-			<HeaderDropdown
+			<!-- <HeaderDropdown
 				:id="`3`"
 				:label="`STAKE`"
 				:list="[
@@ -63,7 +63,7 @@ watch(router.currentRoute, () => {
 					{ title: `METAMASK $ROOLAH`, url: `roolah` },
 				]"
 				:expandedText="true"
-			/>
+			/> -->
 			<router-link
 				to="/jobs"
 				:class="router.currentRoute.value.path === `/jobs` ? `text-rooRed` : `text-white`"
@@ -143,7 +143,7 @@ watch(router.currentRoute, () => {
 						]"
 						:expandedText="false"
 					/>
-					<HeaderDropdown
+					<!-- <HeaderDropdown
 						:id="`7`"
 						:label="`STAKE`"
 						:list="[
@@ -152,7 +152,7 @@ watch(router.currentRoute, () => {
 							{ title: `METAMASK $ROOLAH`, url: `roolah` },
 						]"
 						:expandedText="false"
-					/>
+					/> -->
 					<router-link
 						to="/jobs"
 						class="header-link p-4"

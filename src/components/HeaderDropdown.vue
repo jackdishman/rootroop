@@ -79,7 +79,7 @@ async function addToken() {
 	<div class="relative">
 		<button
 			:class="id"
-			class="flex text-white text-center flex justify-center font-semibold header-link px-4 focus:outline-none my-4 w-full"
+			class="flex text-white text-center justify-center font-semibold header-link px-4 focus:outline-none my-4 w-full"
 			@click="handleDropdown"
 		>
 			{{ label }}<ChevronDown :class="id" class="ml-2" :style="showDropdown ? `transform: rotate(180deg)` : ``" />
