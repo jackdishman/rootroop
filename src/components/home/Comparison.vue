@@ -137,14 +137,14 @@ const incubatorImages = ref<string[]>([
 					>
 						Buy Roos
 					</a>
-					<a
+					<!-- <a
 						href="https://stake.rootroop.com/"
 						target="_blank"
 						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Stake Roos
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
@@ -188,14 +188,14 @@ const incubatorImages = ref<string[]>([
 					>
 						Buy joeys
 					</a>
-					<a
+					<!-- <a
 						href="https://stake.rootroop.com/"
 						target="_blank"
 						class="w-full block mt-5 uppercase border border-rooRed bg-rooBlack text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
 					>
 						Stake joeys
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
@@ -215,7 +215,7 @@ const incubatorImages = ref<string[]>([
 			</div>
 			<h5 class="text-white text-center font-semibold text-xl mb-5 italic">Incubators</h5>
 			<div class="flex justify-center pb-10 lg:pb-0">
-				<p class="py-5 px-10 text-white text-sm text-normal leading-5 py-5">
+				<p class="py-5 px-10 text-white text-sm text-normal leading-5">
 					The Joeybean Incubators need to be
 					<a href="https://joey.rootroop.com" target="_blank" class="underline">incubated</a> for 12 weeks in order to
 					turn into fully matured Joeys. Incubators come with almost all of the same utility as Joeys, except they

@@ -9,7 +9,7 @@ export const linksMap = new Map([
 	[`Bounty Hub`, `https://jobs.rootroop.com/`],
 	// [`Staking`, `https://stake.rootroop.com/`],
 	[`NFTx Vault`, `https://nftx.io/vault/0x2034437801b62ede275210f76e2d4e77d0198bff/stake/`],
-	[`$ROO`, `https://app.sushi.com/swap?outputCurrency=ETH&inputCurrency=0x2034437801b62ede275210f76e2d4e77d0198bff`],
-	[`$ROO Contract`, `https://etherscan.io/token/0x2034437801b62ede275210f76e2d4e77d0198bff`],
+	// [`$ROO`, `https://app.sushi.com/swap?outputCurrency=ETH&inputCurrency=0x2034437801b62ede275210f76e2d4e77d0198bff`],
+	// [`$ROO Contract`, `https://etherscan.io/token/0x2034437801b62ede275210f76e2d4e77d0198bff`],
 	// [`$ROOLAH Contract`, `https://etherscan.io/address/0xbB6eeb74377d7eE402AdAEcb88D7Cf9494AA2814`],
 ])
