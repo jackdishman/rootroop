@@ -28,7 +28,7 @@ watch(router.currentRoute, () => {
 						title: `BUY ROOS`,
 						url: `https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes`,
 					},
-					{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
+					// { title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 				]"
 				:expandedText="false"
 			/>
@@ -40,7 +40,7 @@ watch(router.currentRoute, () => {
 						title: `BUY JOEYS`,
 						url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
 					},
-					{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
+					// { title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
 					{ title: `INCUBATE JOEYS`, url: `https://joey.rootroop.com/` },
 				]"
 				:expandedText="false"
@@ -54,7 +54,7 @@ watch(router.currentRoute, () => {
 				]"
 				:expandedText="false"
 			/>
-			<HeaderDropdown
+			<!-- <HeaderDropdown
 				:id="`3`"
 				:label="`STAKE`"
 				:list="[
@@ -63,7 +63,7 @@ watch(router.currentRoute, () => {
 					{ title: `METAMASK $ROOLAH`, url: `roolah` },
 				]"
 				:expandedText="true"
-			/>
+			/> -->
 			<router-link
 				to="/jobs"
 				:class="router.currentRoute.value.path === `/jobs` ? `text-rooRed` : `text-white`"
@@ -107,7 +107,7 @@ watch(router.currentRoute, () => {
 			<div :class="showDropdown ? `block` : `hidden`" class="flex flex-row">
 				<div class="fixed top-0 bottom-0 left-0 right-0" @click.self="showDropdown = false"></div>
 				<div
-					class="flex flex-col text-sm block lg:hidden absolute top-0 right-0 items-center mt-10 rounded-b-lg border-b border-rooRed border-l bg-black -mr-8 w-48"
+					class="flex flex-col text-sm lg:hidden absolute top-0 right-0 items-center mt-10 rounded-b-lg border-b border-rooRed border-l bg-black -mr-8 w-48"
 				>
 					<HeaderDropdown
 						:id="`4`"
@@ -117,7 +117,7 @@ watch(router.currentRoute, () => {
 								title: `BUY ROOS`,
 								url: `https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes`,
 							},
-							{ title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
+							// { title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 						]"
 						:expandedText="false"
 					/>
@@ -129,7 +129,7 @@ watch(router.currentRoute, () => {
 								title: `BUY JOEYS`,
 								url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
 							},
-							{ title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
+							// { title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
 							{ title: `INCUBATE JOEYS`, url: `https://joey.rootroop.com/` },
 						]"
 						:expandedText="false"
@@ -143,7 +143,7 @@ watch(router.currentRoute, () => {
 						]"
 						:expandedText="false"
 					/>
-					<HeaderDropdown
+					<!-- <HeaderDropdown
 						:id="`7`"
 						:label="`STAKE`"
 						:list="[
@@ -152,7 +152,7 @@ watch(router.currentRoute, () => {
 							{ title: `METAMASK $ROOLAH`, url: `roolah` },
 						]"
 						:expandedText="false"
-					/>
+					/> -->
 					<router-link
 						to="/jobs"
 						class="header-link p-4"
