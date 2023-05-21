@@ -137,7 +137,7 @@ const toggleDropdown = (d: number) => {
 			</button>
 			<p v-if="activeDropdown === 8" class="font-normal mb-4">
 				If you'd like to submit jobs that you want us to shop to the community,
-				<a href="https://forms.gle/uL1hgbvu8nEUZHJdA" target="_blank" class="underline">click here</a>.
+				<a href="https://forms.gle/8e7BbHwPqj2GrLQs5" target="_blank" class="underline">click here</a>.
 			</p>
 			<p v-if="activeDropdown === 8" class="font-normal mb-4">
 				Once we approve the job(s), our team will post a bounty to the community and add you as a collaborator on the

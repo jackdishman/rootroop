@@ -24,7 +24,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 				</div>
 				<div class="xl:ml-6 mt-6 xl:mt-0">
 					<a
-						href="https://forms.gle/uL1hgbvu8nEUZHJdA"
+						href="https://forms.gle/8e7BbHwPqj2GrLQs5"
 						target="_blank"
 						class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"
 						>POST JOBS (FREE)</a
