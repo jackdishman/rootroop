@@ -81,14 +81,6 @@ import TeamCard from '@/components/TeamCard.vue'
 					:title="`Meme Prince`"
 					:twitterURL="`https://mobile.twitter.com/Tobber_TV`"
 				/>
-				<!-- Dfc2west (Don Clewley | Bounty Hub Manager | https://twitter.com/Dfc2west ) ->  -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/dfc.webp`)"
-					:name="`Don Clewley`"
-					:screenName="`Dfc2west`"
-					:title="`Bounty Hub Manager`"
-					:twitterURL="`https://twitter.com/Dfc2west`"
-				/>
 				<!-- Metacon (Kevin Schellman | Social Media Manager | https://twitter.com/metacon68 | attached pfp below)  -->
 				<TeamCard
 					:imgSrc="require(`@/assets/images/team/metacon.webp`)"
@@ -96,30 +88,6 @@ import TeamCard from '@/components/TeamCard.vue'
 					:screenName="`Metacon`"
 					:title="`Social Media Manager`"
 					:twitterURL="`https://twitter.com/metacon68`"
-				/>
-				<!-- El Chingon (Gio Hernandez-Parra [will get you pfp + socials] listed as Holder Relations) ->  -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/chingon.jpeg`)"
-					:name="`Gio Hernandez-Parra`"
-					:screenName="`El Chingon`"
-					:title="`Holder Relations`"
-					:twitterURL="`https://twitter.com/gio3272`"
-				/>
-				<!-- NairoFee (Michael Mwangi [will get you pfp + socials] listed as Troop Analyst) ->  -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/nairo.jpeg`)"
-					:name="`Michael Mwangi`"
-					:screenName="`NairoFee`"
-					:title="`Troop Analyst`"
-					:twitterURL="`https://twitter.com/NairoFee`"
-				/>
-				<!-- Brandy -->
-				<TeamCard
-					:imgSrc="require(`@/assets/images/team/brandy.webp`)"
-					:name="`Brandy Sanders`"
-					:screenName="`Brandy`"
-					:title="`Community Manager`"
-					:twitterURL="`https://twitter.com/plzstopnowty`"
 				/>
 			</div>
 		</div>

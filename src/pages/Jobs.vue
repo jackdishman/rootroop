@@ -173,7 +173,7 @@ onBeforeMount(() => {
 				Pay guide</a
 			>
 			<a
-				href="https://forms.gle/uL1hgbvu8nEUZHJdA"
+				href="https://forms.gle/8e7BbHwPqj2GrLQs5"
 				target="_blank"
 				class="bg-rooRed text-lg text-white rounded-lg text-center hover:font-semibold uppercase px-4 py-2 w-48 my-5"
 				>POST JOBS (FREE)</a
