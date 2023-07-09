@@ -9,8 +9,8 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 			<h2 class="uppercase text-4xl font-bold italic">Job Marketplace</h2>
 			<div class="my-4 font-bold italic"><RedUnderscore /></div>
 			<p class="mb-4">
-				Roo Troop is developing the first on-chain job marketplace. Think Indeed or Glassdoor but with proof of work
-				experience, proof of employment history, and proof of skills, all undeniably verifiable on-chain.
+				The MISSION of Roo Troop is to UNITE A COMMUNITY that is eager to build in Web 3 and RESHAPE THE FUTURE OF
+				RECRUITMENT with our revolutionary talent acquisition platform, powered by blockchain technology
 			</p>
 			<p class="mb-6">
 				While that is in development, we've been using the Roo Troop Bounty Hub to post several hundred job listings and
@@ -27,7 +27,7 @@ import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 						href="https://forms.gle/8e7BbHwPqj2GrLQs5"
 						target="_blank"
 						class="rounded-lg text-white font-semibold bg-rooRed px-6 py-2 text-sm"
-						>POST JOBS (FREE)</a
+						>POST JOBS</a
 					>
 				</div>
 				<div class="xl:ml-6 mt-6 xl:mt-0">

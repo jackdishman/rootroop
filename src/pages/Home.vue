@@ -98,7 +98,7 @@ onMounted(() => {
 			<iframe
 				width="560"
 				height="315"
-				src="https://www.youtube-nocookie.com/embed/_CCJQqrMmjQ"
+				src="https://youtube.com/embed/N9ebMbz1S2s"
 				title="YouTube video player"
 				frameborder="0"
 				class="w-full border-4 border-rooRed"
