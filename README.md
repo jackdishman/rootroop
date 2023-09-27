@@ -2,7 +2,7 @@
 
 <h1>Roo Troop Client</h1>
 
-Frontend website for Roo Troop
+Frontend website for [Roo Troop](https://rootroop.com)
 
 </div>
 
