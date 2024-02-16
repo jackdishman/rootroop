@@ -38,11 +38,11 @@ export default defineComponent({
 				snapAlign: 'start',
 			},
 		},
-		images: [],
+		images: [] as string[],
 	}),
 	mounted() {
-		const path = require.context('@/assets/images/slider/', true, /\.webp$/)
-		this.images = path.keys().map(path) as []
+		const gallery = Object.values(import.meta.glob('@/assets/images/slider/*.{webp}', { eager: true, as: 'url' }))
+		this.images = gallery
 	},
 })
 </script>

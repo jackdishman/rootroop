@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import SubpageHeader from '@/components/SubpageHeader.vue'
 import ChevronDown from '@/components/icons/ChevronDown.vue'
-import { Head } from '@vueuse/head'
+import { Head } from '@unhead/vue/components'
 
 const activeDropdown = ref<number>(-1)
 const toggleDropdown = (d: number) => {

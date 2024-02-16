@@ -16,3 +16,17 @@ declare module '*.png' {
 	const value: string
 	export default value
 }
+
+// mp3
+declare module '*.mp3' {
+	// eslint-disable-next-line init-declarations
+	const value: string
+	export default value
+}
+
+// mp4
+declare module '*.mp4' {
+	// eslint-disable-next-line init-declarations
+	const value: string
+	export default value
+}

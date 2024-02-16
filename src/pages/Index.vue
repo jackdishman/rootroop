@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { onMounted, ref, nextTick } from 'vue'
-import { Head } from '@vueuse/head'
+import { Head } from '@unhead/vue/components'
+
+// import media
+import landingVideo from '@/assets/video/landing.mp4'
+import rooLogo from '@/assets/images/RooLogo.png'
+
 const video = ref<HTMLVideoElement>()
 const videoHeight = ref<number>(video.value ? video.value?.clientHeight : 0)
 
@@ -38,7 +43,7 @@ onMounted(() => {
 			class="absolute lg:w-auto lg:max-w-screen lg:min-w-full lg:min-h-full lg:max-w-none"
 			style="filter: brightness(0.4)"
 		>
-			<source :src="require(`/src/assets/video/landing.mp4`)" type="video/mp4" />
+			<source :src="landingVideo" type="video/mp4" />
 		</video>
 		<!-- Desktop enter -->
 		<div class="hidden lg:block absolute z-10 bottom-10 w-full">
@@ -54,7 +59,7 @@ onMounted(() => {
 					</router-link>
 				</div>
 				<div class="mr-10">
-					<img :src="require(`@/assets/images/RooLogo.png`)" class="w-24 flex-shrink-0" />
+					<img :src="rooLogo" class="w-24 flex-shrink-0" />
 				</div>
 			</div>
 		</div>
@@ -62,7 +67,7 @@ onMounted(() => {
 		<div class="block lg:hidden">
 			<!-- Top icon -->
 			<div class="flex w-full justify-center absolute top-24 left-0 right-0">
-				<img :src="require(`@/assets/images/RooLogo.png`)" class="w-24 flex-shrink-0" />
+				<img :src="rooLogo" class="w-24 flex-shrink-0" />
 			</div>
 
 			<!-- Bottom enter -->

@@ -1,6 +1,12 @@
 <script setup lang="ts">
+import { Head } from '@unhead/vue/components'
 import SubpageHeader from '@/components/SubpageHeader.vue'
-import { Head } from '@vueuse/head'
+
+// import images
+import roo1 from '@/assets/images/philanthropy/roo1.png'
+import roo2 from '@/assets/images/philanthropy/roo2.png'
+import roo3 from '@/assets/images/philanthropy/roo3.png'
+import roo4 from '@/assets/images/philanthropy/roo4.png'
 </script>
 
 <template>
@@ -107,10 +113,10 @@ import { Head } from '@vueuse/head'
 			<p class="py-10 font-medium">Rooty Roo!</p>
 			<!-- bottom roos -->
 			<div class="flex flex-row justify-center max-w-full">
-				<img src="@/assets/images/philanthropy/roo3.png" class="w-24 h-24 lg:w-48 lg:h-48" />
-				<img src="@/assets/images/philanthropy/roo4.png" class="w-24 h-24 lg:w-48 lg:h-48" />
-				<img src="@/assets/images/philanthropy/roo1.png" class="w-24 h-24 lg:w-48 lg:h-48" />
-				<img src="@/assets/images/philanthropy/roo2.png" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img :src="roo3" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img :src="roo4" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img :src="roo1" class="w-24 h-24 lg:w-48 lg:h-48" />
+				<img :src="roo2" class="w-24 h-24 lg:w-48 lg:h-48" />
 			</div>
 		</div>
 	</div>

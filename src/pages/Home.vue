@@ -6,14 +6,19 @@ import DiscordLogo from '@/components/icons/Discord.vue'
 import NewsBanner from '@/components/home/Banner.vue'
 import RooCarousel from '@/components/home/RooCarousel.vue'
 import RooTraits from '@/components/home/RooTraits.vue'
-import Stats from '@/components/home/Stats.vue'
+// import Stats from '@/components/home/Stats.vue'
 import Comparison from '@/components/home/Comparison.vue'
 import Roadmap from '@/components/home/Roadmap.vue'
 import JobMarketplace from '@/components/home/JobMarketplace.vue'
 import Team from '@/components/home/Team.vue'
-import Partners from '@/components/home/Partners.vue'
 import router from '@/router/index'
-import { Head } from '@vueuse/head'
+import { Head } from '@unhead/vue/components'
+
+// images
+import bg from '@/assets/images/bg.png'
+import logo from '@/assets/images/logo.png'
+import roo1 from '@/assets/images/roo1.png'
+import roo2 from '@/assets/images/roo2.png'
 
 onMounted(() => {
 	document.getElementById(router.currentRoute.value.hash.substring(1))?.scrollIntoView()
@@ -32,22 +37,14 @@ onMounted(() => {
 	</Head>
 	<!-- Splash video, socials, logo -->
 	<div class="relative overflow-hidden pt-10 w-full">
-		<img
-			alt="Roo background image"
-			:src="require(`@/assets/images/bg.png`)"
-			class="absolute h-72 lg:h-96 w-full object-cover"
-		/>
+		<img alt="Roo background image" :src="bg" class="absolute h-72 lg:h-96 w-full object-cover" />
 		<!-- Logo -->
 		<div class="absolute h-fit w-full flex items-center justify-center">
-			<img :src="require(`@/assets/images/logo.png`)" class="object-contain h-64 sm:h-48 lg:h-72" />
+			<img :src="logo" class="object-contain h-64 sm:h-48 lg:h-72" />
 		</div>
 		<!-- Social links -->
 		<div class="flex items-end justify-center sm:justify-between text-white relative h-72 lg:h-96 pb-10">
-			<img
-				:src="require(`@/assets/images/roo1.png`)"
-				class="w-48 hidden sm:block -mb-16"
-				style="transform: scaleX(-1) rotate(-4deg)"
-			/>
+			<img :src="roo1" class="w-48 hidden sm:block -mb-16" style="transform: scaleX(-1) rotate(-4deg)" />
 			<div>
 				<div class="mb-4 sm:mb-8">
 					<a
@@ -71,11 +68,7 @@ onMounted(() => {
 					<a href="https://instagram.com/rootroop" target="_blank"><InstagramLogo /></a>
 				</div>
 			</div>
-			<img
-				:src="require(`@/assets/images/roo2.png`)"
-				class="w-48 hidden sm:block -mb-16"
-				style="transform: rotate(-4deg)"
-			/>
+			<img :src="roo2" class="w-48 hidden sm:block -mb-16" style="transform: rotate(-4deg)" />
 		</div>
 	</div>
 	<NewsBanner class="-mt-1" />
@@ -90,7 +83,7 @@ onMounted(() => {
 			a platform that will disrupt the traditional job market.
 			<div class="mb-5 text-2xl uppercase pt-5">
 				<a href="https://seekr.io/" target="_blank" class="underline text-rooRed italic font-semibold"
-					>Join the Seekr waitlist</a
+					>Sign Up for Seekr</a
 				>
 			</div>
 		</div>
@@ -120,9 +113,7 @@ onMounted(() => {
 	<!-- Every roo is unique -->
 	<RooTraits />
 	<!-- Our proud stats -->
-	<Stats />
-	<!-- Partners -->
-	<Partners />
+	<!-- <Stats /> -->
 	<!-- Team -->
 	<Team />
 </template>

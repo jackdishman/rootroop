@@ -3,81 +3,158 @@ import { ref } from 'vue'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
+// import all the roo images
+import img1 from '@/assets/images/slider/1.webp'
+import img666 from '@/assets/images/slider/666.webp'
+import img103 from '@/assets/images/slider/103.webp'
+import img185 from '@/assets/images/slider/185.webp'
+import img225 from '@/assets/images/slider/225.webp'
+import img266 from '@/assets/images/slider/266.webp'
+import img365 from '@/assets/images/slider/365.webp'
+import img420 from '@/assets/images/slider/420.webp'
+import img537 from '@/assets/images/slider/537.webp'
+import img634 from '@/assets/images/slider/634.webp'
+import img637 from '@/assets/images/slider/637.webp'
+import img783 from '@/assets/images/slider/783.webp'
+import img886 from '@/assets/images/slider/886.webp'
+import img927 from '@/assets/images/slider/927.webp'
+import img1183 from '@/assets/images/slider/1183.webp'
+import img1423 from '@/assets/images/slider/1423.webp'
+import img1454 from '@/assets/images/slider/1454.webp'
+import img1605 from '@/assets/images/slider/1605.webp'
+import img1622 from '@/assets/images/slider/1622.webp'
+import img1818 from '@/assets/images/slider/1818.webp'
+import img2358 from '@/assets/images/slider/2358.webp'
+import img2495 from '@/assets/images/slider/2495.webp'
+import img3227 from '@/assets/images/slider/3227.webp'
+import img3235 from '@/assets/images/slider/3235.webp'
+import img3549 from '@/assets/images/slider/3549.webp'
+import img4031 from '@/assets/images/slider/4031.webp'
+import img4300 from '@/assets/images/slider/4300.webp'
+
+// import all the joey images (add joey_ to import prefix)
+import joey_1 from '@/assets/images/joeys/18.webp'
+import joey_2 from '@/assets/images/joeys/22.webp'
+import joey_3 from '@/assets/images/joeys/21.webp'
+import joey_4 from '@/assets/images/joeys/20.webp'
+import joey_5 from '@/assets/images/joeys/19.webp'
+import joey_6 from '@/assets/images/joeys/17.webp'
+import joey_7 from '@/assets/images/joeys/16.webp'
+import joey_8 from '@/assets/images/joeys/15.webp'
+import joey_9 from '@/assets/images/joeys/14.webp'
+import joey_10 from '@/assets/images/joeys/13.webp'
+import joey_11 from '@/assets/images/joeys/12.webp'
+import joey_12 from '@/assets/images/joeys/11.webp'
+import joey_13 from '@/assets/images/joeys/10.webp'
+import joey_14 from '@/assets/images/joeys/9.webp'
+import joey_15 from '@/assets/images/joeys/8.webp'
+import joey_16 from '@/assets/images/joeys/7.webp'
+import joey_17 from '@/assets/images/joeys/6.webp'
+import joey_18 from '@/assets/images/joeys/5.webp'
+import joey_19 from '@/assets/images/joeys/4.webp'
+import joey_20 from '@/assets/images/joeys/3.webp'
+import joey_21 from '@/assets/images/joeys/2.webp'
+import joey_22 from '@/assets/images/joeys/1.webp'
+
+// import all the incubator images
+import incubator_1 from '@/assets/images/incubators/unnamed.png'
+import incubator_2 from '@/assets/images/incubators/unnamed_1.png'
+import incubator_3 from '@/assets/images/incubators/unnamed_2.png'
+import incubator_4 from '@/assets/images/incubators/unnamed_3.png'
+import incubator_5 from '@/assets/images/incubators/unnamed_4.png'
+import incubator_6 from '@/assets/images/incubators/unnamed_5.png'
+import incubator_7 from '@/assets/images/incubators/unnamed_6.png'
+import incubator_8 from '@/assets/images/incubators/unnamed_7.png'
+import incubator_9 from '@/assets/images/incubators/unnamed_8.png'
+import incubator_10 from '@/assets/images/incubators/unnamed_9.png'
+import incubator_11 from '@/assets/images/incubators/unnamed_10.png'
+import incubator_12 from '@/assets/images/incubators/unnamed_11.png'
+import incubator_13 from '@/assets/images/incubators/unnamed_12.png'
+import incubator_14 from '@/assets/images/incubators/unnamed_13.png'
+import incubator_15 from '@/assets/images/incubators/unnamed_14.png'
+import incubator_16 from '@/assets/images/incubators/unnamed_15.png'
+import incubator_17 from '@/assets/images/incubators/unnamed_16.png'
+import incubator_18 from '@/assets/images/incubators/unnamed_17.png'
+import incubator_19 from '@/assets/images/incubators/unnamed_18.png'
+import incubator_20 from '@/assets/images/incubators/unnamed_19.png'
+
+// array of roo images
 const images = ref<string[]>([
-	require(`@/assets/images/slider/1.webp`),
-	require(`@/assets/images/slider/666.webp`),
-	require(`@/assets/images/slider/103.webp`),
-	require(`@/assets/images/slider/185.webp`),
-	require(`@/assets/images/slider/225.webp`),
-	require(`@/assets/images/slider/266.webp`),
-	require(`@/assets/images/slider/365.webp`),
-	require(`@/assets/images/slider/420.webp`),
-	require(`@/assets/images/slider/537.webp`),
-	require(`@/assets/images/slider/634.webp`),
-	require(`@/assets/images/slider/637.webp`),
-	require(`@/assets/images/slider/783.webp`),
-	require(`@/assets/images/slider/886.webp`),
-	require(`@/assets/images/slider/927.webp`),
-	require(`@/assets/images/slider/1183.webp`),
-	require(`@/assets/images/slider/1423.webp`),
-	require(`@/assets/images/slider/1454.webp`),
-	require(`@/assets/images/slider/1605.webp`),
-	require(`@/assets/images/slider/1622.webp`),
-	require(`@/assets/images/slider/1818.webp`),
-	require(`@/assets/images/slider/2358.webp`),
-	require(`@/assets/images/slider/2495.webp`),
-	require(`@/assets/images/slider/3227.webp`),
-	require(`@/assets/images/slider/3235.webp`),
-	require(`@/assets/images/slider/3549.webp`),
-	require(`@/assets/images/slider/4031.webp`),
-	require(`@/assets/images/slider/4300.webp`),
+	img1,
+	img666,
+	img103,
+	img185,
+	img225,
+	img266,
+	img365,
+	img420,
+	img537,
+	img634,
+	img637,
+	img783,
+	img886,
+	img927,
+	img1183,
+	img1423,
+	img1454,
+	img1605,
+	img1622,
+	img1818,
+	img2358,
+	img2495,
+	img3227,
+	img3235,
+	img3549,
+	img4031,
+	img4300,
 ])
+
 const joeyImages = ref<string[]>([
-	require(`@/assets/images/joeys/18.webp`),
-	require(`@/assets/images/joeys/22.webp`),
-	require(`@/assets/images/joeys/21.webp`),
-	require(`@/assets/images/joeys/20.webp`),
-	require(`@/assets/images/joeys/19.webp`),
-	require(`@/assets/images/joeys/17.webp`),
-	require(`@/assets/images/joeys/16.webp`),
-	require(`@/assets/images/joeys/15.webp`),
-	require(`@/assets/images/joeys/14.webp`),
-	require(`@/assets/images/joeys/13.webp`),
-	require(`@/assets/images/joeys/12.webp`),
-	require(`@/assets/images/joeys/11.webp`),
-	require(`@/assets/images/joeys/10.webp`),
-	require(`@/assets/images/joeys/9.webp`),
-	require(`@/assets/images/joeys/8.webp`),
-	require(`@/assets/images/joeys/7.webp`),
-	require(`@/assets/images/joeys/6.webp`),
-	require(`@/assets/images/joeys/5.webp`),
-	require(`@/assets/images/joeys/4.webp`),
-	require(`@/assets/images/joeys/3.webp`),
-	require(`@/assets/images/joeys/2.webp`),
-	require(`@/assets/images/joeys/1.webp`),
+	joey_1,
+	joey_2,
+	joey_3,
+	joey_4,
+	joey_5,
+	joey_6,
+	joey_7,
+	joey_8,
+	joey_9,
+	joey_10,
+	joey_11,
+	joey_12,
+	joey_13,
+	joey_14,
+	joey_15,
+	joey_16,
+	joey_17,
+	joey_18,
+	joey_19,
+	joey_20,
+	joey_21,
+	joey_22,
 ])
+
 const incubatorImages = ref<string[]>([
-	require(`@/assets/images/incubators/unnamed.png`),
-	require(`@/assets/images/incubators/unnamed_1.png`),
-	require(`@/assets/images/incubators/unnamed_2.png`),
-	require(`@/assets/images/incubators/unnamed_3.png`),
-	require(`@/assets/images/incubators/unnamed_4.png`),
-	require(`@/assets/images/incubators/unnamed_5.png`),
-	require(`@/assets/images/incubators/unnamed_6.png`),
-	require(`@/assets/images/incubators/unnamed_7.png`),
-	require(`@/assets/images/incubators/unnamed_8.png`),
-	require(`@/assets/images/incubators/unnamed_9.png`),
-	require(`@/assets/images/incubators/unnamed_10.png`),
-	require(`@/assets/images/incubators/unnamed_11.png`),
-	require(`@/assets/images/incubators/unnamed_12.png`),
-	require(`@/assets/images/incubators/unnamed_13.png`),
-	require(`@/assets/images/incubators/unnamed_14.png`),
-	require(`@/assets/images/incubators/unnamed_15.png`),
-	require(`@/assets/images/incubators/unnamed_16.png`),
-	require(`@/assets/images/incubators/unnamed_17.png`),
-	require(`@/assets/images/incubators/unnamed_18.png`),
-	require(`@/assets/images/incubators/unnamed_19.png`),
-	require(`@/assets/images/incubators/unnamed_20.png`),
+	incubator_1,
+	incubator_2,
+	incubator_3,
+	incubator_4,
+	incubator_5,
+	incubator_6,
+	incubator_7,
+	incubator_8,
+	incubator_9,
+	incubator_10,
+	incubator_11,
+	incubator_12,
+	incubator_13,
+	incubator_14,
+	incubator_15,
+	incubator_16,
+	incubator_17,
+	incubator_18,
+	incubator_19,
+	incubator_20,
 ])
 </script>
 
@@ -123,7 +200,6 @@ const incubatorImages = ref<string[]>([
 					<li>Free or discounted entry to Roo Troop IRL events</li>
 					<li>Ability to compete in Roo Troop sponsored events</li>
 					<li>Exclusive visibility to job listings one week before the public</li>
-					<li>Larger token airdrop upon the marketplace's full public launch</li>
 					<li>Free features within the on-chain job marketplace that will be monetized for others</li>
 				</ul>
 			</div>
@@ -172,7 +248,6 @@ const incubatorImages = ref<string[]>([
 					<li>Discounts on select brand deals</li>
 					<li>Rarity-based staking at 1/2 the rate as Roos</li>
 					<li>Ability to compete in Roo Troop sponsored events</li>
-					<li>Token airdrop upon the marketplace's full public launch</li>
 					<li>Access to Kanga-Kademy & any education-based partnerships</li>
 					<li>Access to all alpha channels & tools, including any alpha-centric partnerships</li>
 					<li>Added perks within the on-chain job marketplace when holding both Roos + Joeys</li>

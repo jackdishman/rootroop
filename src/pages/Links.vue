@@ -2,29 +2,31 @@
 import { linksMap } from '@/links'
 import SubpageHeader from '@/components/SubpageHeader.vue'
 import { ref } from 'vue'
-import { Head } from '@vueuse/head'
+import { Head } from '@unhead/vue/components'
 
-const roos = ref<string[]>([
-	require(`@/assets/images/slider/2358.webp`),
-	require(`@/assets/images/slider/2495.webp`),
-	require(`@/assets/images/slider/3227.webp`),
-	require(`@/assets/images/slider/3235.webp`),
-	require(`@/assets/images/slider/3549.webp`),
-	require(`@/assets/images/slider/4031.webp`),
-	require(`@/assets/images/slider/4300.webp`),
-	require(`@/assets/images/slider/1423.webp`),
-])
+// import all roo images
+import roo1 from '@/assets/images/slider/2358.webp'
+import roo2 from '@/assets/images/slider/2495.webp'
+import roo3 from '@/assets/images/slider/3227.webp'
+import roo4 from '@/assets/images/slider/3235.webp'
+import roo5 from '@/assets/images/slider/3549.webp'
+import roo6 from '@/assets/images/slider/4031.webp'
+import roo7 from '@/assets/images/slider/4300.webp'
+import roo8 from '@/assets/images/slider/1423.webp'
 
-const joeys = ref<string[]>([
-	require(`@/assets/images/joeys/10.webp`),
-	require(`@/assets/images/joeys/7.webp`),
-	require(`@/assets/images/joeys/6.webp`),
-	require(`@/assets/images/joeys/5.webp`),
-	require(`@/assets/images/joeys/4.webp`),
-	require(`@/assets/images/joeys/3.webp`),
-	require(`@/assets/images/joeys/2.webp`),
-	require(`@/assets/images/joeys/1.webp`),
-])
+// import all joey images
+import joey1 from '@/assets/images/joeys/10.webp'
+import joey2 from '@/assets/images/joeys/7.webp'
+import joey3 from '@/assets/images/joeys/6.webp'
+import joey4 from '@/assets/images/joeys/5.webp'
+import joey5 from '@/assets/images/joeys/4.webp'
+import joey6 from '@/assets/images/joeys/3.webp'
+import joey7 from '@/assets/images/joeys/2.webp'
+import joey8 from '@/assets/images/joeys/1.webp'
+
+const roos = ref<string[]>([roo1, roo2, roo3, roo4, roo5, roo6, roo7, roo8])
+
+const joeys = ref<string[]>([joey1, joey2, joey3, joey4, joey5, joey6, joey7, joey8])
 </script>
 <template>
 	<Head>
