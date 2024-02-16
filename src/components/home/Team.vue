@@ -1,6 +1,17 @@
 <script setup lang="ts">
 import RedUnderscore from '@/components/icons/RedUnderscore.vue'
 import TeamCard from '@/components/TeamCard.vue'
+
+// import all team members
+import Stone from '@/assets/images/team/stone.webp'
+import Cory from '@/assets/images/team/cory.webp'
+import Itsoktocry from '@/assets/images/team/itsoktocry.webp'
+import Yunggod from '@/assets/images/team/yunggod.webp'
+import Sam from '@/assets/images/team/sam.png'
+import HiddenLotus from '@/assets/images/team/hiddenlotus.webp'
+import Dish from '@/assets/images/team/dish.webp'
+import Rev from '@/assets/images/team/rev.webp'
+import Tobber from '@/assets/images/team/Tobber.webp'
 </script>
 <template>
 	<div class="bg-rooBlack w-full py-10 flex justify-center">
@@ -11,7 +22,7 @@ import TeamCard from '@/components/TeamCard.vue'
 			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-10 gap-x-4 lg:gap-x-12 mt-12">
 				<!-- Stone -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/stone.webp`)"
+					:imgSrc="Stone"
 					:name="`Morgan Stone`"
 					:screenName="`STØNE`"
 					:title="`Founder & CEO`"
@@ -19,7 +30,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- ToxicPizza -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/cory.webp`)"
+					:imgSrc="Cory"
 					:name="`Cory Cherven`"
 					:screenName="`ToxicPizza`"
 					:title="`CTO`"
@@ -27,7 +38,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- ITSOKTOCRY -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/itsoktocry.webp`)"
+					:imgSrc="Itsoktocry"
 					:name="`Gwen Stacy`"
 					:screenName="`ITSOKTOCRY`"
 					:title="`Artist`"
@@ -35,7 +46,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- YUNGGOD -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/yunggod.webp`)"
+					:imgSrc="Yunggod"
 					:name="`William Bordeau`"
 					:screenName="`YUNGGOD`"
 					:title="`Discord Developer`"
@@ -43,7 +54,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- Sam G -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/sam.png`)"
+					:imgSrc="Sam"
 					:name="`Sam G.`"
 					:screenName="`SamGMan`"
 					:title="`Project Manager & Support Lead`"
@@ -51,7 +62,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- HiddenLotus -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/hiddenlotus.webp`)"
+					:imgSrc="HiddenLotus"
 					:name="`Lu`"
 					:screenName="`HiddenLotus`"
 					:title="`Web Developer`"
@@ -59,7 +70,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- Dish -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/dish.webp`)"
+					:imgSrc="Dish"
 					:name="`Jack Dishman`"
 					:screenName="`DISH`"
 					:title="`Web Developer`"
@@ -67,7 +78,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- Rev -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/rev.webp`)"
+					:imgSrc="Rev"
 					:name="`Revant Singh`"
 					:screenName="`Rev`"
 					:title="`Software Consultant`"
@@ -75,7 +86,7 @@ import TeamCard from '@/components/TeamCard.vue'
 				/>
 				<!-- TOBBER -->
 				<TeamCard
-					:imgSrc="require(`@/assets/images/team/Tobber.webp`)"
+					:imgSrc="Tobber"
 					:name="`TOBBER`"
 					:screenName="`TOBBER`"
 					:title="`Meme Prince`"

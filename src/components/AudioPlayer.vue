@@ -1,6 +1,7 @@
 <!-- eslint-disable @typescript-eslint/ban-ts-comment -->
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import audio from '@/assets/audio/jungle.mp3'
 
 const isPlaying = ref<boolean>(false)
 const isMuted = ref<boolean>(false)
@@ -63,7 +64,7 @@ onMounted(() => {
 
 <template>
 	<div class="audio-player w-full">
-		<audio ref="audioElement" :src="require(`@/assets/audio/jungle.mp3`)" type="audio/mpeg"></audio>
+		<audio ref="audioElement" :src="audio" type="audio/mpeg"></audio>
 		<div class="controls flex justify-between px-5 -mb-4">
 			<!-- Play / pause button -->
 			<button ref="player-button" class="player-button mb-5" @click="toggleAudio">

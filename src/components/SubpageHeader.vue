@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import headerBG from '@/assets/images/headerBG.webp'
+
 defineProps({
 	title: {
 		type: String,
@@ -8,7 +10,7 @@ defineProps({
 </script>
 <template>
 	<div class="w-full relative flex items-center justify-center" style="padding-top: 50px">
-		<img :src="require(`@/assets/images/headerBG.webp`)" class="w-full" />
+		<img :src="headerBG" class="w-full" />
 		<div class="w-full absolute flex items-center justify-center lg:justify-start h-full">
 			<h3 class="text-white text-3xl font-bold italic text-center lg:text-left lg:pl-32">{{ title }}</h3>
 		</div>

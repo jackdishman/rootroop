@@ -6,8 +6,8 @@ import Footer from '@/components/Footer.vue'
 import AudioPlayer from './components/AudioPlayer.vue'
 import router from '@/router/index'
 import { watch } from 'vue'
-import { useHead } from '@vueuse/head'
-import { Head } from '@vueuse/head'
+import { useHead } from '@unhead/vue'
+import { Head } from '@unhead/vue/components'
 
 useHead({
 	// Can be static or computed

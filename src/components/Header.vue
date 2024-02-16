@@ -4,6 +4,7 @@ import CloseIcon from '@/components/icons/CloseIcon.vue'
 import HamburgerIcon from '@/components/icons/HamburgerMenu.vue'
 import router from '@/router/index'
 import { ref, watch } from 'vue'
+import overlay from '@/assets/images/overlay.png'
 
 const showDropdown = ref<boolean>(false)
 
@@ -16,7 +17,7 @@ watch(router.currentRoute, () => {
 	<div class="w-full bg-black flex flex-row justify-between items-center px-6">
 		<!-- Left side: Logo -->
 		<router-link to="/home">
-			<div><img :src="require(`@/assets/images/overlay.png`)" style="height: 23px" /></div>
+			<div><img :src="overlay" style="height: 23px" /></div>
 		</router-link>
 		<!-- Desktop bar -->
 		<div class="text-sm hidden lg:flex-row lg:flex">
@@ -64,19 +65,7 @@ watch(router.currentRoute, () => {
 				]"
 				:expandedText="true"
 			/> -->
-			<router-link
-				to="/jobs"
-				:class="router.currentRoute.value.path === `/jobs` ? `text-rooRed` : `text-white`"
-				class="header-link p-4"
-				>JOBS</router-link
-			>
 			<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
-			<router-link
-				to="/partners"
-				:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
-				class="header-link p-4"
-				>PARTNERS</router-link
-			>
 			<router-link
 				to="/philanthropy"
 				:class="router.currentRoute.value.fullPath === `/philanthropy` ? `text-rooRed` : `text-white`"
@@ -153,19 +142,7 @@ watch(router.currentRoute, () => {
 						]"
 						:expandedText="false"
 					/> -->
-					<router-link
-						to="/jobs"
-						class="header-link p-4"
-						:class="router.currentRoute.value.path === `/jobs` ? `text-rooRed` : `text-white`"
-						>JOBS</router-link
-					>
 					<a href="https://shop.rootroop.com" target="_blank" class="text-white header-link p-4">SHOP</a>
-					<router-link
-						to="/partners"
-						:class="router.currentRoute.value.fullPath === `/partners` ? `text-rooRed` : `text-white`"
-						class="header-link p-4"
-						>PARTNERS</router-link
-					>
 					<router-link
 						to="/philanthropy"
 						:class="router.currentRoute.value.fullPath === `/philanthropy` ? `text-rooRed` : `text-white`"

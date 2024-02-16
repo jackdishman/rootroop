@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://rootroop.com</loc></url><url><loc>https://rootroop.com/home</loc></url><url><loc>https://rootroop.com/partners</loc></url><url><loc>https://rootroop.com/faq</loc></url><url><loc>https://rootroop.com/philanthropy</loc></url><url><loc>https://rootroop.com/links</loc></url><url><loc>https://rootroop.com/jobs</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://rootroop.com</loc>
+    </url>
+    <url>
+        <loc>https://rootroop.com/home</loc>
+    </url>
+    <url>
+        <loc>https://rootroop.com/faq</loc>
+    </url>
+    <url>
+        <loc>https://rootroop.com/philanthropy</loc>
+    </url>
+    <url>
+        <loc>https://rootroop.com/links</loc>
+    </url>
+</urlset>

@@ -1,11 +1,9 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import Index from '../pages/Index.vue'
 import Home from '@/pages/Home.vue'
-import Partners from '@/pages/Partners.vue'
 import FAQ from '@/pages/FAQ.vue'
 import Philanthropy from '@/pages/Philanthropy.vue'
 import Links from '@/pages/Links.vue'
-import Jobs from '@/pages/Jobs.vue'
 
 const routes = [
 	// {
@@ -27,12 +25,6 @@ const routes = [
 		meta: { title: 'Home - Roo Troop' },
 	},
 	{
-		path: '/partners',
-		name: 'Partners',
-		component: Partners,
-		meta: { title: 'Partners - Roo Troop' },
-	},
-	{
 		path: '/faq',
 		name: 'FAQ',
 		component: FAQ,
@@ -49,12 +41,6 @@ const routes = [
 		name: 'Links',
 		component: Links,
 		meta: { title: 'Links - Roo Troop' },
-	},
-	{
-		path: '/jobs',
-		name: 'Jobs',
-		component: Jobs,
-		meta: { title: 'Jobs - Roo Troop' },
 	},
 ]
 
