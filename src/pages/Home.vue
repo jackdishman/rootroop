@@ -48,14 +48,14 @@ onMounted(() => {
 			<div>
 				<div class="mb-4 sm:mb-8">
 					<a
-						href="https://buy.rootroop.com/marketplace/roo-troop?traits=zzBuy+Now%3AYes"
+						href="https://buy.rootroop.com/collections/0x4768cbf202f365fbf704b9b9d397551a0443909b/networks/polygon"
 						target="_blank"
 						class="uppercase text-white text-sm font-semibold rounded-lg bg-gray-600 border border-white px-4 py-2 mr-5"
 					>
 						Buy Roos
 					</a>
 					<a
-						href="https://buy.rootroop.com/marketplace/joeymob?traits=zzBuy+Now%3AYes"
+						href="https://buy.rootroop.com/collections/0xb6fd6ba3fc87816e1a5450a02f69577dfa46a475/networks/polygon"
 						target="_blank"
 						class="uppercase text-white text-sm font-semibold rounded-lg bg-gray-600 border border-white px-4 py-2"
 					>

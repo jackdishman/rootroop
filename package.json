@@ -3,12 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve",
-    "format": "prettier .  --write",
-    "preview": "serve -s dist",
-    "sitemap": "vue-cli-service sitemap"
+    "build": "vite build",
+    "lint": "eslint .",
+    "dev": "vite"
   },
   "dependencies": {
     "@unhead/vue": "^1.8.10",
@@ -40,7 +37,8 @@
     "serve": "^14.2.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
-    "vite-plugin-html": "^3.2.2"
+    "vite-plugin-html": "^3.2.2",
+    "@types/node": "^20.11.24"
   },
   "browserslist": [
     "last 2 versions",

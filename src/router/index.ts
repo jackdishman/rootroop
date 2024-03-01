@@ -4,6 +4,7 @@ import Home from '@/pages/Home.vue'
 import FAQ from '@/pages/FAQ.vue'
 import Philanthropy from '@/pages/Philanthropy.vue'
 import Links from '@/pages/Links.vue'
+import Bridge from '@/pages/Bridge.vue'
 
 const routes = [
 	// {
@@ -41,6 +42,12 @@ const routes = [
 		name: 'Links',
 		component: Links,
 		meta: { title: 'Links - Roo Troop' },
+	},
+	{
+		path: '/bridge',
+		name: 'Bridge',
+		component: Bridge,
+		meta: { title: 'Bridge - Roo Troop' },
 	},
 ]
 

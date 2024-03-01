@@ -27,7 +27,7 @@ watch(router.currentRoute, () => {
 				:list="[
 					{
 						title: `BUY ROOS`,
-						url: `https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes`,
+						url: `https://buy.rootroop.com/collections/0x4768cbf202f365fbf704b9b9d397551a0443909b/networks/polygon`,
 					},
 					// { title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 				]"
@@ -39,7 +39,7 @@ watch(router.currentRoute, () => {
 				:list="[
 					{
 						title: `BUY JOEYS`,
-						url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
+						url: `https://buy.rootroop.com/collections/0xb6fd6ba3fc87816e1a5450a02f69577dfa46a475/networks/polygon`,
 					},
 					// { title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
 					{ title: `INCUBATE JOEYS`, url: `https://joey.rootroop.com/` },
@@ -85,6 +85,12 @@ watch(router.currentRoute, () => {
 				class="header-link p-4"
 				>FAQ</router-link
 			>
+			<router-link
+				to="/bridge"
+				:class="router.currentRoute.value.fullPath === `/bridge` ? `text-rooRed` : `text-white`"
+				class="header-link p-4"
+				>BRIDGE</router-link
+			>
 		</div>
 		<!-- MOBILE SIDEBAR -->
 		<div class="lg:hidden w-full relative">
@@ -104,7 +110,7 @@ watch(router.currentRoute, () => {
 						:list="[
 							{
 								title: `BUY ROOS`,
-								url: `https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes`,
+								url: `https://buy.rootroop.com/collections/0x4768cbf202f365fbf704b9b9d397551a0443909b/networks/polygon`,
 							},
 							// { title: `STAKE ROOS`, url: `https://stake.rootroop.com/` },
 						]"
@@ -116,7 +122,7 @@ watch(router.currentRoute, () => {
 						:list="[
 							{
 								title: `BUY JOEYS`,
-								url: `https://buy.rootroop.com/#/marketplace/joeymob?traits=zzBuy+Now%3AYes`,
+								url: `https://buy.rootroop.com/collections/0xb6fd6ba3fc87816e1a5450a02f69577dfa46a475/networks/polygon`,
 							},
 							// { title: `STAKE JOEYS`, url: `https://stake.rootroop.com/` },
 							{ title: `INCUBATE JOEYS`, url: `https://joey.rootroop.com/` },
@@ -161,6 +167,12 @@ watch(router.currentRoute, () => {
 						:class="router.currentRoute.value.fullPath === `/faq` ? `text-rooRed` : `text-white`"
 						class="header-link p-4"
 						>FAQ</router-link
+					>
+					<router-link
+						to="/bridge"
+						:class="router.currentRoute.value.fullPath === `/bridge` ? `text-rooRed` : `text-white`"
+						class="header-link p-4"
+						>BRIDGE</router-link
 					>
 				</div>
 			</div>

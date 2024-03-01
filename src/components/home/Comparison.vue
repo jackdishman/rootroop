@@ -206,7 +206,7 @@ const incubatorImages = ref<string[]>([
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
 				<div>
 					<a
-						href="https://buy.rootroop.com/marketplace/roo-troop?traits=zzBuy+Now%3AYes"
+						href="https://buy.rootroop.com/collections/0x4768cbf202f365fbf704b9b9d397551a0443909b/networks/polygon"
 						target="_blank"
 						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
@@ -256,7 +256,7 @@ const incubatorImages = ref<string[]>([
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
 				<div>
 					<a
-						href="https://buy.rootroop.com/marketplace/joeymob?traits=zzBuy+Now%3AYes"
+						href="https://buy.rootroop.com/collections/0xb6fd6ba3fc87816e1a5450a02f69577dfa46a475/networks/polygon"
 						target="_blank"
 						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
@@ -301,8 +301,7 @@ const incubatorImages = ref<string[]>([
 			<div class="flex justify-center mb-10 absolute bottom-0 w-full">
 				<div>
 					<a
-						href="https://buy.rootroop.com/#/marketplace/roo-troop?traits=zzBuy+Now%3AYes
-"
+						href="https://buy.rootroop.com/collections/0x4768cbf202f365fbf704b9b9d397551a0443909b/networks/polygon"
 						target="_blank"
 						class="w-full block uppercase bg-rooRed text-white px-6 py-2 text-sm text-center"
 						style="border-radius: 7px"
