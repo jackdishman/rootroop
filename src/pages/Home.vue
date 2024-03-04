@@ -40,7 +40,7 @@ onMounted(() => {
 		<img alt="Roo background image" :src="bg" class="absolute h-72 lg:h-96 w-full object-cover" />
 		<!-- Logo -->
 		<div class="absolute h-fit w-full flex items-center justify-center">
-			<img :src="logo" class="object-contain h-40 sm:h-48 lg:h-72" />
+			<img :src="logo" class="object-contain h-48 sm:h-40 lg:h-64" />
 		</div>
 		<!-- Social links -->
 		<div class="flex items-end justify-center sm:justify-between text-white relative h-72 pb-3 lg:h-96 lg:pb-10">
