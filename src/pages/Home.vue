@@ -40,13 +40,13 @@ onMounted(() => {
 		<img alt="Roo background image" :src="bg" class="absolute h-72 lg:h-96 w-full object-cover" />
 		<!-- Logo -->
 		<div class="absolute h-fit w-full flex items-center justify-center">
-			<img :src="logo" class="object-contain h-64 max-[312px]:h-56 sm:h-64 lg:h-72" />
+			<img :src="logo" class="object-contain h-40 sm:h-48 lg:h-72" />
 		</div>
 		<!-- Social links -->
 		<div class="flex items-end justify-center sm:justify-between text-white relative h-72 pb-3 lg:h-96 lg:pb-10">
 			<img :src="roo1" class="w-48 hidden sm:block -mb-16" style="transform: scaleX(-1) rotate(-4deg)" />
 			<div>
-				<div class="mb-4 flex justify-center flex-wrap gap-3 sm:mb-8">
+				<div class="flex justify-center flex-wrap gap-3">
 					<a
 						href="https://buy.rootroop.com/collections/0x4768cbf202f365fbf704b9b9d397551a0443909b/networks/polygon"
 						target="_blank"
@@ -61,6 +61,8 @@ onMounted(() => {
 					>
 						Buy Joeys
 					</a>
+				</div>
+				<div class="mb-4 mt-3 flex justify-center flex-wrap gap-3 sm:mb-8">
 					<router-link
 						to="/bridge"
 						class="uppercase text-white text-sm font-semibold rounded-lg bg-gray-600 border border-white px-4 py-2"
